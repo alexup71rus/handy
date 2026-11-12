@@ -34,6 +34,16 @@ class InstallCLITests(unittest.TestCase):
         self.assertEqual(self.version.read_text(),'new app')
         self.assertEqual(command.resolve(),self.root/'handy')
 
+    def test_linux_installs_command_without_macos_build(self):
+        with patch.object(install_cli.sys, 'platform', 'linux'), \
+                patch.object(install_cli.subprocess, 'run') as run, \
+                patch('integration.macos.build.require_closed') as require_closed:
+            command = install_cli.install(self.bin)
+        self.assertEqual(command.resolve(), self.root / 'handy')
+        require_closed.assert_not_called()
+        self.assertFalse(any(str(self.root / 'integration/macos/build.py') in call.args[0]
+                             for call in run.call_args_list))
+
     def test_live_app_blocks_install_before_dependencies_or_command_change(self):
         with patch('integration.macos.build.require_closed',side_effect=ValueError('Закрой приложение Handy')), \
                 patch.object(install_cli.subprocess,'run') as run:
