@@ -1,0 +1,1970 @@
+[
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"No reasoning\"",
+    "new": "\"Без рассуждений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Very brief reasoning (~1k tokens)\"",
+    "new": "\"Краткие рассуждения (~1k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Light reasoning (~2k tokens)\"",
+    "new": "\"Лёгкие рассуждения (~2k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Moderate reasoning (~8k tokens)\"",
+    "new": "\"Средние рассуждения (~8k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Deep reasoning (~16k tokens)\"",
+    "new": "\"Глубокие рассуждения (~16k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Extra-high reasoning (~32k tokens)\"",
+    "new": "\"Углублённые рассуждения (~32k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Maximum reasoning\"",
+    "new": "\"Максимальные рассуждения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"No reasoning\"",
+    "new": "\"Без рассуждений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Very brief reasoning (~1k tokens)\"",
+    "new": "\"Краткие рассуждения (~1k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Light reasoning (~2k tokens)\"",
+    "new": "\"Лёгкие рассуждения (~2k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Moderate reasoning (~8k tokens)\"",
+    "new": "\"Средние рассуждения (~8k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Deep reasoning (~16k tokens)\"",
+    "new": "\"Глубокие рассуждения (~16k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Extra-high reasoning (~32k tokens)\"",
+    "new": "\"Углублённые рассуждения (~32k токенов)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Maximum reasoning\"",
+    "new": "\"Максимальные рассуждения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Ask\"",
+    "new": "\"Спрашивать\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Always trust\"",
+    "new": "\"Всегда доверять\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Never trust\"",
+    "new": "\"Не доверять\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Anthropic extra usage\"",
+    "new": "\"Дополнительные расходы Anthropic\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Warn when Anthropic subscription auth may use paid extra usage\"",
+    "new": "\"Предупреждать о платном расходе сверх подписки Anthropic\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Theme created from your terminal's colors\"",
+    "new": "\"Цвета текущего терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Use separate themes for light and dark terminal appearance\"",
+    "new": "\"Отдельные темы для светлого и тёмного терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Theme\"",
+    "new": "\"Оформление\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Select a theme, or choose automatic to follow terminal appearance.\"",
+    "new": "\"Выбери тему или автоматическую смену вслед за терминалом.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Automatic Theme\"",
+    "new": "\"Автоматическая тема\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Choose themes for terminal light and dark appearance.\"",
+    "new": "\"Выбери темы для светлого и тёмного режима терминала.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Light/dark detection requires terminal support.\"",
+    "new": "\"Терминал должен поддерживать определение режима оформления.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Light theme\"",
+    "new": "\"Светлая тема\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Theme to use in automatic mode when the terminal is light\"",
+    "new": "\"Тема для светлого режима терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Light Theme\"",
+    "new": "\"Светлая тема\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Select the theme to use for light terminal appearance\"",
+    "new": "\"Выбери тему для светлого терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Dark theme\"",
+    "new": "\"Тёмная тема\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Theme to use in automatic mode when the terminal is dark\"",
+    "new": "\"Тема для тёмного режима терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Dark Theme\"",
+    "new": "\"Тёмная тема\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Select the theme to use for dark terminal appearance\"",
+    "new": "\"Выбери тему для тёмного терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Apply\"",
+    "new": "\"Применить\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Save and go back\"",
+    "new": "\"Сохранить и вернуться\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Change mode\"",
+    "new": "\"Изменить режим\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Switch to one theme for light and dark\"",
+    "new": "\"Использовать одну тему в обоих режимах\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Auto-compact\"",
+    "new": "\"Автосжатие\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Automatically compact context when it gets too large\"",
+    "new": "\"Сжимать историю, когда контекст заполняется\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Steering mode\"",
+    "new": "\"Уточнения во время ответа\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Enter while streaming queues steering messages. 'one-at-a-time': deliver one, wait for response. 'all': deliver all at once.\"",
+    "new": "\"Enter отправляет уточнение во время ответа. one-at-a-time — по одному с ожиданием ответа; all — все сразу.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Follow-up mode\"",
+    "new": "\"Очередь сообщений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Transport\"",
+    "new": "\"Соединение\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Preferred transport for providers that support multiple transports\"",
+    "new": "\"Способ соединения для провайдеров с несколькими вариантами\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Session share destination\"",
+    "new": "\"Публикация чатов\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Where to upload sessions with /share (auto prefers Radius when authenticated, otherwise GitHub Gist)\"",
+    "new": "\"Куда публиковать чат через /share: auto выбирает Radius при наличии входа, иначе GitHub Gist\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"HTTP idle timeout\"",
+    "new": "\"Тайм-аут ожидания HTTP\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Maximum idle gap while waiting for HTTP headers or body chunks. Disable for local models that pause longer than five minutes.\"",
+    "new": "\"Допустимая пауза между частями HTTP-ответа. Отключи для локальных моделей с паузами дольше пяти минут.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Cache warming\"",
+    "new": "\"Поддержание кэша\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Hide thinking\"",
+    "new": "\"Скрывать рассуждения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Hide thinking blocks in assistant responses\"",
+    "new": "\"Скрывать блоки рассуждений в ответах\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Mermaid diagrams\"",
+    "new": "\"Диаграммы Mermaid\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Render Mermaid code blocks as Unicode diagrams\"",
+    "new": "\"Показывать Mermaid как текстовые диаграммы\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Cache miss notices\"",
+    "new": "\"Уведомления о кэше\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Show transcript notices for cache costs and provider recovery diagnostics\"",
+    "new": "\"Показывать расходы на кэш и сведения о восстановлении соединения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Collapse changelog\"",
+    "new": "\"Сворачивать список изменений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Show condensed changelog after updates\"",
+    "new": "\"Краткий список изменений после обновления\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Quiet startup\"",
+    "new": "\"Тихий запуск\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Disable verbose printing at startup (header: keep only the startup header)\"",
+    "new": "\"Скрывать подробности при запуске; header оставляет заголовок\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Install telemetry\"",
+    "new": "\"Телеметрия установки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Send an anonymous version/update ping after changelog-detected updates\"",
+    "new": "\"Отправлять анонимные сведения о версии после обновлений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Default project trust\"",
+    "new": "\"Доверие проектам\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Fallback behavior when no extension or saved trust decision decides project trust\"",
+    "new": "\"Режим доверия, если для проекта нет сохранённого решения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Double-escape action\"",
+    "new": "\"Двойное нажатие Esc\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Action when pressing Escape twice with empty editor\"",
+    "new": "\"Действие при двойном Esc в пустом поле ввода\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Tree filter mode\"",
+    "new": "\"Фильтр дерева\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Default filter when opening /tree\"",
+    "new": "\"Начальный фильтр дерева /tree\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Warnings\"",
+    "new": "\"Предупреждения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Enable or disable individual warnings\"",
+    "new": "\"Включить или выключить отдельные предупреждения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Default thinking level per model\"",
+    "new": "\"Рассуждения для отдельных моделей\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Per-Model Thinking Level\"",
+    "new": "\"Рассуждения для модели\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Select a model to configure\"",
+    "new": "\"Выбери модель для настройки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"No models available\"",
+    "new": "\"Нет доступных моделей\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Log in to a provider or configure an API key first\"",
+    "new": "\"Сначала войди к провайдеру или добавь ключ API\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Select default thinking level for this model\"",
+    "new": "\"Выбери обычный уровень рассуждений этой модели\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"  (clear override)\"",
+    "new": "\"  (сбросить настройку)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"TUI mode\"",
+    "new": "\"Режим терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Interface layout; regular mode uses the terminal's normal scrollback\"",
+    "new": "\"regular использует обычную прокрутку терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Fullscreen exit output\"",
+    "new": "\"Вывод после выхода\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Print the transcript or only a session resume hint when exiting fullscreen mode\"",
+    "new": "\"После выхода показывать весь диалог или только команду продолжения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Fullscreen scrollbar\"",
+    "new": "\"Полоса прокрутки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Scrollbar behavior in fullscreen mode; has no effect in regular mode\"",
+    "new": "\"Полоса прокрутки в полноэкранном режиме; не влияет на regular\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Fullscreen copy on select\"",
+    "new": "\"Копировать выделенное\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Automatically copy selected text in fullscreen mode; disable to copy selections with Ctrl+X\"",
+    "new": "\"Копировать выделенное автоматически; иначе используй Ctrl+X\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Fullscreen wheel scrolling\"",
+    "new": "\"Прокрутка колёсиком\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Lines per mouse-wheel event in fullscreen mode; 'auto' speeds up fast wheel spins where the terminal does not\"",
+    "new": "\"Число строк на шаг колеса; auto ускоряет быструю прокрутку, если терминал сам этого не делает\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Color theme for the interface\"",
+    "new": "\"Цветовое оформление интерфейса\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Show images\"",
+    "new": "\"Показывать изображения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Render images inline in terminal\"",
+    "new": "\"Отображать изображения в терминале\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Image width\"",
+    "new": "\"Ширина изображений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Preferred inline image width in terminal cells\"",
+    "new": "\"Ширина изображения в ячейках терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Auto-resize images\"",
+    "new": "\"Уменьшать изображения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Resize large images to 2000x2000 max for better model compatibility\"",
+    "new": "\"Уменьшать большие изображения до 2000×2000 для совместимости с моделями\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Block images\"",
+    "new": "\"Не отправлять изображения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Prevent images from being sent to LLM providers\"",
+    "new": "\"Запретить отправку изображений моделям\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Skill commands\"",
+    "new": "\"Команды навыков\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Register skills as /skill:name commands\"",
+    "new": "\"Добавлять навыки как команды /skill:name\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Show hardware cursor\"",
+    "new": "\"Курсор терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Use the terminal cursor instead of Pi's drawn cursor\"",
+    "new": "\"Использовать курсор терминала вместо курсора pi\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Editor padding\"",
+    "new": "\"Отступ поля ввода\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Horizontal padding for input editor (0-3)\"",
+    "new": "\"Боковой отступ поля ввода: 0–3 ячейки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Output padding\"",
+    "new": "\"Отступ вывода\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Horizontal padding for messages, tool output, and command output\"",
+    "new": "\"Боковой отступ сообщений и результатов команд\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Autocomplete max items\"",
+    "new": "\"Строки автодополнения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Max visible items in autocomplete dropdown (3-20)\"",
+    "new": "\"Число видимых вариантов автодополнения: 3–20\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Clear on shrink\"",
+    "new": "\"Очищать пустые строки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Clear empty rows when content shrinks (may cause flicker)\"",
+    "new": "\"Очищать освободившиеся строки; возможно мерцание\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Terminal progress\"",
+    "new": "\"Индикатор выполнения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"Show OSC 9;4 progress indicators in the terminal tab bar\"",
+    "new": "\"Показывать выполнение в заголовке вкладки терминала через OSC 9;4\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "description: \"off; streaming while the agent runs; idle also between runs while continuation stays profitable\"",
+    "new": "description: \"off — выключено; streaming — во время работы; idle — также между запросами, пока это выгодно\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "`${followUpKey} queues follow-up messages until agent stops. 'one-at-a-time': deliver one, wait for response. 'all': deliver all at once.`",
+    "new": "`${followUpKey} добавляет сообщение в очередь до завершения ответа. one-at-a-time — по одному; all — все сразу.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "`Override the default thinking level for specific models. ${cycleThinkingKey} cycles in-session.`",
+    "new": "`Уровень рассуждений для выбранных моделей. ${cycleThinkingKey} переключает его в текущем чате.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "`Thinking Level for ${m ? modelDisplayLabel(m) : ctx.model}`",
+    "new": "`Рассуждения: ${m ? modelDisplayLabel(m) : ctx.model}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "`Revert to global default (${config.thinkingLevel})`",
+    "new": "`Вернуть общий уровень (${config.thinkingLevel})`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "\"Thinking Level\"",
+    "new": "\"Уровень рассуждений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "`${keyDisplayText(\"app.thinking.cycle\")} cycles thinking levels in-session`",
+    "new": "`${keyDisplayText(\"app.thinking.cycle\")} переключает уровень в текущем чате`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "`${LEVEL_DESCRIPTIONS[level]} · default`",
+    "new": "`${LEVEL_DESCRIPTIONS[level]} · по умолчанию`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "keyHint(\"app.tools.expand\", \"to collapse\")",
+    "new": "keyHint(\"app.tools.expand\", \"свернуть\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "keyHint(\"app.tools.expand\", \"to expand\")",
+    "new": "keyHint(\"app.tools.expand\", \"развернуть\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bordered-loader.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-editor.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-editor.js",
+    "old": "keyHint(\"app.editor.external\", \"external editor\")",
+    "new": "keyHint(\"app.editor.external\", \"внешний редактор\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-input.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-selector.js",
+    "old": "rawKeyHint(\"↑↓\", \"navigate\")",
+    "new": "rawKeyHint(\"↑↓\", \"выбрать\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-selector.js",
+    "old": "keyHint(\"tui.select.confirm\", \"select\")",
+    "new": "keyHint(\"tui.select.confirm\", \"открыть\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-selector.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "rawKeyHint(\"↑↓\", \"navigate\")",
+    "new": "rawKeyHint(\"↑↓\", \"выбрать\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "keyHint(\"tui.select.cancel\", \"skip setup\")",
+    "new": "keyHint(\"tui.select.cancel\", \"пропустить настройку\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "keyHint(\"tui.select.cancel\", \"to cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "keyHint(\"tui.select.cancel\", \"to cancel,\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена,\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "keyHint(\"tui.select.confirm\", \"to submit\")",
+    "new": "keyHint(\"tui.select.confirm\", \"отправить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "keyHint(\"tui.select.cancel\", \"to close\")",
+    "new": "keyHint(\"tui.select.cancel\", \"закрыть\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "keyHint(\"tui.input.tab\", \"scope\")",
+    "new": "keyHint(\"tui.input.tab\", \"список\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"tui.select.confirm\", \"confirm\")",
+    "new": "keyHint(\"tui.select.confirm\", \"подтвердить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"tui.input.tab\", \"scope\")",
+    "new": "keyHint(\"tui.input.tab\", \"список\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"app.session.toggleSort\", \"sort\")",
+    "new": "keyHint(\"app.session.toggleSort\", \"сортировка\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"app.session.toggleNamedFilter\", \"named\")",
+    "new": "keyHint(\"app.session.toggleNamedFilter\", \"с названием\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"app.session.delete\", \"delete\")",
+    "new": "keyHint(\"app.session.delete\", \"удалить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "keyHint(\"app.session.rename\", \"rename\")",
+    "new": "keyHint(\"app.session.rename\", \"переименовать\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tool-execution.js",
+    "old": "keyHint(\"app.tools.expand\", \"to expand\")",
+    "new": "keyHint(\"app.tools.expand\", \"развернуть\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "keyHint(\"tui.select.confirm\", \"save\")",
+    "new": "keyHint(\"tui.select.confirm\", \"сохранить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "rawKeyHint(\"↑↓\", \"navigate\")",
+    "new": "rawKeyHint(\"↑↓\", \"выбрать\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "keyHint(\"tui.select.confirm\", \"save\")",
+    "new": "keyHint(\"tui.select.confirm\", \"сохранить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "keyHint(\"tui.select.cancel\", \"cancel\")",
+    "new": "keyHint(\"tui.select.cancel\", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"System (matches your terminal colors)\"",
+    "new": "\"Системная — цвета терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Dark\"",
+    "new": "\"Тёмная\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Light\"",
+    "new": "\"Светлая\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Share anonymous usage data\"",
+    "new": "\"Отправлять анонимную статистику\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Don't share\"",
+    "new": "\"Не отправлять\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Pick a theme.\"",
+    "new": "\"Выбери тему оформления.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Opt-in to anonymous usage data sharing?\"",
+    "new": "\"Разрешить отправку анонимной статистики?\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "`Welcome to ${APP_NAME}, the minimal coding agent.`",
+    "new": "`Добро пожаловать в ${APP_NAME}.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/first-time-setup.js",
+    "old": "\"Opting in stores a tracking identifier in settings.json and enables anonymous\\nusage analytics. This helps us to better debug, reproduce, and resolve issues\\nand bugs within Pi. You can observe what is shared using /privacy and make\\nchanges anytime in settings.json.\"",
+    "new": "\"При согласии в settings.json сохраняется идентификатор для анонимной\\nстатистики. Она помогает находить и исправлять ошибки pi. Посмотреть\\nотправляемые сведения можно через /privacy, изменить выбор — в settings.json.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\"Refreshing model catalogs…\"",
+    "new": "\"Обновляю списки моделей…\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\"Only showing models from configured providers. Use /login to add providers.\"",
+    "new": "\"Показаны модели подключённых провайдеров. Добавить провайдера: /login.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\"Model refresh timed out; showing cached models.\"",
+    "new": "\"Список не обновился вовремя; показаны сохранённые модели.\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\"Model catalogs refreshed.\"",
+    "new": "\"Списки моделей обновлены.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\"Scope: \"",
+    "new": "\"Список: \"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\" (all/scoped)\"",
+    "new": "\" (все/выбранные)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "`Could not refresh ${result.errors.keys().next().value}; showing cached models.`",
+    "new": "`Не удалось обновить ${result.errors.keys().next().value}; показаны сохранённые модели.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "`Could not refresh ${result.errors.size} model catalogs (${[...result.errors.keys()].join(\", \")}); showing cached models.`",
+    "new": "`Не удалось обновить списки моделей (${[...result.errors.keys()].join(\", \")}); показаны сохранённые модели.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "`Could not refresh model catalogs: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось обновить модели: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "theme.fg(\"accent\", \"all\") : theme.fg(\"muted\", \"all\")",
+    "new": "theme.fg(\"accent\", \"все\") : theme.fg(\"muted\", \"все\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "theme.fg(\"accent\", \"scoped\") : theme.fg(\"muted\", \"scoped\")",
+    "new": "theme.fg(\"accent\", \"выбранные\") : theme.fg(\"muted\", \"выбранные\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "`  ${keyDisplayText(\"tui.select.confirm\")} to select · ${keyDisplayText(\"app.models.save\")} to set as default · ${keyDisplayText(\"tui.select.cancel\")} to cancel`",
+    "new": "`  ${keyDisplayText(\"tui.select.confirm\")} — выбрать · ${keyDisplayText(\"app.models.save\")} — по умолчанию · ${keyDisplayText(\"tui.select.cancel\")} — отмена`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "`  ${keyDisplayText(\"tui.select.confirm\")} to select · ${keyDisplayText(\"app.thinking.save\")} to set as default · ${keyDisplayText(\"tui.select.cancel\")} to cancel`",
+    "new": "`  ${keyDisplayText(\"tui.select.confirm\")} — выбрать · ${keyDisplayText(\"app.thinking.save\")} — по умолчанию · ${keyDisplayText(\"tui.select.cancel\")} — отмена`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-submenu.js",
+    "old": "\"  Type to filter \\u00b7 Enter to select \\u00b7 Esc to go back\"",
+    "new": "\"  Ввод — поиск · Enter — выбрать · Esc — назад\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-submenu.js",
+    "old": "\"  Enter to select \\u00b7 Esc to go back\"",
+    "new": "\"  Enter — выбрать · Esc — назад\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-submenu.js",
+    "old": "`Step ${stepIndex + 1}/${total} \\u00b7 `",
+    "new": "`Шаг ${stepIndex + 1}/${total} · `",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "\"Model Configuration\"",
+    "new": "\"Модели для переключения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "\"all enabled\"",
+    "new": "\"включены все\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "\"Model unavailable\"",
+    "new": "\"Модель недоступна\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`Session-only. ${keyDisplayText(\"app.models.save\")} to save to settings.`",
+    "new": "`Для текущего чата. ${keyDisplayText(\"app.models.save\")} — сохранить в настройках.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`Model Name: ${selected.model.name}`",
+    "new": "`Модель: ${selected.model.name}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "return \"none\";",
+    "new": "return \"не задано\";",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "const label = decision.decision ? \"trusted\" : \"untrusted\";",
+    "new": "const label = decision.decision ? \"доверенный\" : \"без доверия\";",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "`${label} (inherited from ${decision.path})`",
+    "new": "`${label} (унаследовано от ${decision.path})`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "\"Project trust\"",
+    "new": "\"Доверие проекту\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "`Saved decision: ${formatDecision(this.trustOptions[0]?.savedPath, options.savedDecision)}`",
+    "new": "`Сохранено: ${formatDecision(this.trustOptions[0]?.savedPath, options.savedDecision)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/trust-selector.js",
+    "old": "`Current session: ${options.projectTrusted ? \"trusted\" : \"untrusted\"}`",
+    "new": "`Текущий чат: ${options.projectTrusted ? \"доверенный\" : \"без доверия\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "`Login to ${providerName}`",
+    "new": "`Вход: ${providerName}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"Cmd+click to open\"",
+    "new": "\"Cmd+клик — открыть\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"Ctrl+click to open\"",
+    "new": "\"Ctrl+клик — открыть\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"to open browser and copy code\"",
+    "new": "\"открыть браузер и скопировать код\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"to open browser\"",
+    "new": "\"открыть браузер\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"to copy code\"",
+    "new": "\"скопировать код\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"Copying code...\"",
+    "new": "\"Копирую код…\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"Browser open requested\"",
+    "new": "\"Открываю браузер\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"Code copied to clipboard\"",
+    "new": "\"Код скопирован\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "\"Copy code manually\"",
+    "new": "\"Скопируй код вручную\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/login-dialog.js",
+    "old": "`Enter code: ${info.userCode}`",
+    "new": "`Введи код: ${info.userCode}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/status-indicator.js",
+    "old": "`Retrying (${attempt}/${maxAttempts}) in ${seconds}s... (${keyText(\"app.interrupt\")} to cancel)`",
+    "new": "`Повтор ${attempt}/${maxAttempts} через ${seconds} с… (${keyText(\"app.interrupt\")} — отмена)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/status-indicator.js",
+    "old": "`Compacting context... ${cancelHint}`",
+    "new": "`Сжимаю контекст… ${cancelHint}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/status-indicator.js",
+    "old": "`${reason === \"overflow\" ? \"Context overflow detected, \" : \"\"}Auto-compacting... ${cancelHint}`",
+    "new": "`${reason === \"overflow\" ? \"Контекст переполнен. \" : \"\"}Автосжатие… ${cancelHint}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/status-indicator.js",
+    "old": "`Summarizing branch... (${keyText(\"app.interrupt\")} to cancel)`",
+    "new": "`Составляю сводку ветки… (${keyText(\"app.interrupt\")} — отмена)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "`Running... (${keyText(\"tui.select.cancel\")} to cancel)`",
+    "new": "`Выполняю… (${keyText(\"tui.select.cancel\")} — отмена)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "\"(cancelled)\"",
+    "new": "\"(отменено)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "`(exit ${this.exitCode})`",
+    "new": "`(код выхода ${this.exitCode})`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "`Output truncated. Full output: ${this.fullOutputPath}`",
+    "new": "`Вывод сокращён. Полный результат: ${this.fullOutputPath}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/bash-execution.js",
+    "old": "`... ${hiddenLineCount} more lines (`",
+    "new": "`… ещё строк: ${hiddenLineCount} (`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/branch-summary-message.js",
+    "old": "\"**Branch Summary**\\n\\n\"",
+    "new": "\"**Сводка ветки**\\n\\n\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/branch-summary-message.js",
+    "old": "\"Branch summary (\"",
+    "new": "\"Сводка ветки (\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/branch-summary-message.js",
+    "old": "\" to expand)\"",
+    "new": "\" — развернуть)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/footer.js",
+    "old": "state.model?.id || \"no-model\"",
+    "new": "state.model?.id || \"модель не выбрана\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/footer.js",
+    "old": "`${modelName} • thinking off`",
+    "new": "`${modelName} • без рассуждений`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "return \"now\";",
+    "new": "return \"сейчас\";",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${diffMins}m`",
+    "new": "`${diffMins} мин`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${diffHours}h`",
+    "new": "`${diffHours} ч`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${diffDays}d`",
+    "new": "`${diffDays} д`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${Math.floor(diffDays / 7)}w`",
+    "new": "`${Math.floor(diffDays / 7)} нед`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${Math.floor(diffDays / 30)}mo`",
+    "new": "`${Math.floor(diffDays / 30)} мес`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${Math.floor(diffDays / 365)}y`",
+    "new": "`${Math.floor(diffDays / 365)} г`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Resume Session (Current Folder)\"",
+    "new": "\"Продолжить чат — текущая папка\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Resume Session (All)\"",
+    "new": "\"Продолжить чат — все папки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Threaded\"",
+    "new": "\"По веткам\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Recent\"",
+    "new": "\"Недавние\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Fuzzy\"",
+    "new": "\"По совпадению\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Sort: \"",
+    "new": "\"Порядок: \"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"All\"",
+    "new": "\"Все\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Named\"",
+    "new": "\"С названием\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Name: \"",
+    "new": "\"Название: \"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"○ Current Folder | \"",
+    "new": "\"○ Текущая папка | \"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"◉ Current Folder\"",
+    "new": "\"◉ Текущая папка\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\" | ○ All\"",
+    "new": "\" | ○ Все\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"◉ All\"",
+    "new": "\"◉ Все\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Rename Session\"",
+    "new": "\"Переименовать чат\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`Loading ${progressText}`",
+    "new": "`Загрузка ${progressText}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`Delete session? ${keyHint(\"tui.select.confirm\", \"подтвердить\")} · ${keyHint(\"tui.select.cancel\", \"отмена\")}`",
+    "new": "`Удалить чат? ${keyHint(\"tui.select.confirm\", \"подтвердить\")} · ${keyHint(\"tui.select.cancel\", \"отмена\")}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "this.showPath ? \"(on)\" : \"(off)\"",
+    "new": "this.showPath ? \"(вкл)\" : \"(выкл)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "'re:<pattern> regex · \"phrase\" exact'",
+    "new": "'re:<шаблон> — regex · \"фраза\" — точно'",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`path ${pathState}`",
+    "new": "`путь ${pathState}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`${keyText(\"tui.select.confirm\")} to save · ${keyText(\"tui.select.cancel\")} to cancel`",
+    "new": "`${keyText(\"tui.select.confirm\")} — сохранить · ${keyText(\"tui.select.cancel\")} — отмена`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"user: \"",
+    "new": "\"ты: \"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"assistant: \"",
+    "new": "\"модель: \"",
+    "count": 4
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"(aborted)\"",
+    "new": "\"(прервано)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"(no content)\"",
+    "new": "\"(пусто)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"Type to search:\"",
+    "new": "\"Введи запрос:\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"Label (empty to remove):\"",
+    "new": "\"Метка (пусто — удалить):\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"  Session Tree\"",
+    "new": "\"  Дерево чата\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "`[compaction: ${tokens}k tokens]`",
+    "new": "`[сжатие: ${tokens}k токенов]`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "`[branch summary]: `",
+    "new": "`[сводка ветки]: `",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "`[model: ${entry.modelId}]`",
+    "new": "`[модель: ${entry.modelId}]`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "`[thinking: ${entry.thinkingLevel}]`",
+    "new": "`[рассуждения: ${entry.thinkingLevel}]`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "`[custom: ${entry.customType}]`",
+    "new": "`[дополнение: ${entry.customType}]`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "`[label: ${entry.label ?? \"(cleared)\"}]`",
+    "new": "`[метка: ${entry.label ?? \"(удалена)\"}]`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"[title: \"",
+    "new": "\"[название: \"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"empty\"",
+    "new": "\"пусто\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "\"  No entries found\"",
+    "new": "\"  Записей не найдено\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\" · default\"",
+    "new": "\" · по умолчанию\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "\"  No matching models\"",
+    "new": "\"  Подходящих моделей нет\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/model-selector.js",
+    "old": "`  Model Name: ${selected.model.name}`",
+    "new": "`  Модель: ${selected.model.name}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "\"  No matching models\"",
+    "new": "\"  Подходящих моделей нет\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "\" [unavailable]\"",
+    "new": "\" [недоступна]\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "\"(unsaved)\"",
+    "new": "\"(не сохранено)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${enabledCount}/${this.allIds.length} enabled${unavailableCount ? ` · ${unavailableCount} unavailable` : \"\"}`",
+    "new": "`включено ${enabledCount}/${this.allIds.length}${unavailableCount ? ` · недоступно: ${unavailableCount}` : \"\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${keyDisplayText(\"tui.select.confirm\")} toggle`",
+    "new": "`${keyDisplayText(\"tui.select.confirm\")} — переключить`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${keyDisplayText(\"app.models.enableAll\")} all`",
+    "new": "`${keyDisplayText(\"app.models.enableAll\")} — все`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${keyDisplayText(\"app.models.clearAll\")} clear`",
+    "new": "`${keyDisplayText(\"app.models.clearAll\")} — сбросить`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${keyDisplayText(\"app.models.toggleProvider\")} provider`",
+    "new": "`${keyDisplayText(\"app.models.toggleProvider\")} — провайдер`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${keyDisplayText(\"app.models.save\")} save`",
+    "new": "`${keyDisplayText(\"app.models.save\")} — сохранить`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/scoped-models-selector.js",
+    "old": "`${keyDisplayText(\"app.models.reorderUp\")}/${keyDisplayText(\"app.models.reorderDown\")} reorder`",
+    "new": "`${keyDisplayText(\"app.models.reorderUp\")}/${keyDisplayText(\"app.models.reorderDown\")} — порядок`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Cannot delete the currently active session\"",
+    "new": "\"Нельзя удалить текущий открытый чат\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"  No sessions found\"",
+    "new": "\"  Чатов пока нет\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"  No sessions in current folder. Press Tab to view all.\"",
+    "new": "\"  В текущей папке чатов нет. Tab — показать все.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Session moved to trash\"",
+    "new": "\"Чат перемещён в корзину\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Session deleted\"",
+    "new": "\"Чат удалён\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "\"Unknown error\"",
+    "new": "\"Неизвестная ошибка\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`  No named sessions found. Press ${toggleKey} to show all.`",
+    "new": "`  Чатов с названием нет. ${toggleKey} — показать все.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`  No named sessions in current folder. Press ${toggleKey} to show all, or Tab to view all.`",
+    "new": "`  В текущей папке чатов с названием нет. ${toggleKey} — снять фильтр, Tab — все папки.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`Failed to delete: ${errorMessage}`",
+    "new": "`Не удалось удалить: ${errorMessage}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/session-selector.js",
+    "old": "`Failed to load sessions: ${message}`",
+    "new": "`Не удалось загрузить чаты: ${message}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/user-message-selector.js",
+    "old": "\"Fork from Message\"",
+    "new": "\"Новая ветка от сообщения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/user-message-selector.js",
+    "old": "\"Select a user message to copy the active path up to that point into a new session\"",
+    "new": "\"Выбери своё сообщение: предыдущая часть диалога скопируется в новый чат\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/assistant-message.js",
+    "old": "\"Response was truncated before completion.\"",
+    "new": "\"Ответ обрезан до завершения.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/assistant-message.js",
+    "old": "\"Operation aborted\"",
+    "new": "\"Действие прервано\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/assistant-message.js",
+    "old": "\"Unknown error\"",
+    "new": "\"Неизвестная ошибка\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/compaction-summary-message.js",
+    "old": "`\\x1b[1m[compaction]\\x1b[22m`",
+    "new": "`\\x1b[1m[сжатие]\\x1b[22m`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/compaction-summary-message.js",
+    "old": "`**Compacted from ${tokenStr} tokens**\\n\\n`",
+    "new": "`**Сжатие истории: было ${tokenStr} токенов**\\n\\n`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/compaction-summary-message.js",
+    "old": "`Compacted from ${tokenStr} tokens (`",
+    "new": "`Сжатие истории: было ${tokenStr} токенов (`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/compaction-summary-message.js",
+    "old": "\" to expand)\"",
+    "new": "\" — развернуть)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/branch-summary-message.js",
+    "old": "`\\x1b[1m[branch]\\x1b[22m`",
+    "new": "`\\x1b[1m[ветка]\\x1b[22m`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/show-images-selector.js",
+    "old": "\"Yes\"",
+    "new": "\"Да\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/show-images-selector.js",
+    "old": "\"No\"",
+    "new": "\"Нет\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/show-images-selector.js",
+    "old": "\"Show images inline in terminal\"",
+    "new": "\"Показывать изображения в терминале\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/show-images-selector.js",
+    "old": "\"Show text placeholder instead\"",
+    "new": "\"Показывать текст вместо изображения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/footer.js",
+    "old": "\" (auto)\"",
+    "new": "\" (авто)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/footer.js",
+    "old": "\" (sub)\"",
+    "new": "\" (подписка)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "const LEVEL_DESCRIPTIONS = {",
+    "new": "const HANDY_THINKING_LABELS = { off: \"выкл\", minimal: \"минимально\", low: \"низко\", medium: \"средне\", high: \"высоко\", xhigh: \"очень высоко\", max: \"максимально\" };\nconst LEVEL_DESCRIPTIONS = {",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/thinking-selector.js",
+    "old": "label: `${level === currentLevel ? \"✓ \" : \"  \"}${level}`",
+    "new": "label: `${level === currentLevel ? \"✓ \" : \"  \"}${HANDY_THINKING_LABELS[level] ?? level}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "const THINKING_DESCRIPTIONS = {",
+    "new": "const HANDY_THINKING_LABELS = { off: \"выкл\", minimal: \"минимально\", low: \"низко\", medium: \"средне\", high: \"высоко\", xhigh: \"очень высоко\", max: \"максимально\" };\nconst THINKING_DESCRIPTIONS = {",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "label: `${level === activeLevel ? \"✓ \" : \"  \"}${level}`",
+    "new": "label: `${level === activeLevel ? \"✓ \" : \"  \"}${HANDY_THINKING_LABELS[level] ?? level}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/footer.js",
+    "old": "const thinkingLevel = state.thinkingLevel || \"off\";",
+    "new": "const HANDY_THINKING_LABELS = { off: \"выкл\", minimal: \"минимально\", low: \"низко\", medium: \"средне\", high: \"высоко\", xhigh: \"очень высоко\", max: \"максимально\" };\n            const thinkingLevel = state.thinkingLevel || \"off\";",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/footer.js",
+    "old": "`${modelName} • ${thinkingLevel}`",
+    "new": "`${modelName} • ${HANDY_THINKING_LABELS[thinkingLevel] ?? thinkingLevel}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "\"Project Local Resources\"",
+    "new": "\"Ресурсы проекта\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "\"Global Resources\"",
+    "new": "\"Общие ресурсы\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "\"User settings\"",
+    "new": "\"Настройки пользователя\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "\"Project settings\"",
+    "new": "\"Настройки проекта\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "\"  No resources found\"",
+    "new": "\"  Ресурсов нет\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "`User (${formatBaseDir(metadata.baseDir)})`",
+    "new": "`Пользователь (${formatBaseDir(metadata.baseDir)})`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "`Project (${formatBaseDir(metadata.baseDir)})`",
+    "new": "`Проект (${formatBaseDir(metadata.baseDir)})`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "`User (${formatBaseDir(agentDir)})`",
+    "new": "`Пользователь (${formatBaseDir(agentDir)})`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "`Project (${CONFIG_DIR_NAME}/)`",
+    "new": "`Проект (${CONFIG_DIR_NAME}/)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "`${CONFIG_DIR_NAME}/settings.json · inherited global resources are dimmed`",
+    "new": "`${CONFIG_DIR_NAME}/settings.json · общие унаследованные ресурсы показаны тускло`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "keyHint(\"tui.input.tab\", \"switch mode\")",
+    "new": "keyHint(\"tui.input.tab\", \"область настроек\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "rawKeyHint(\"space\", \"cycle inherit/+/-\")",
+    "new": "rawKeyHint(\"space\", \"наследовать/вкл/выкл\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "rawKeyHint(\"space\", \"наследовать/вкл/выкл\") : rawKeyHint(\"space\", \"toggle\")",
+    "new": "rawKeyHint(\"space\", \"наследовать/вкл/выкл\") : rawKeyHint(\"space\", \"переключить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/config-selector.js",
+    "old": "rawKeyHint(\"esc\", \"close\")",
+    "new": "rawKeyHint(\"esc\", \"закрыть\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-input.js",
+    "old": "keyHint(\"tui.select.confirm\", \"submit\")",
+    "new": "keyHint(\"tui.select.confirm\", \"отправить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-editor.js",
+    "old": "keyHint(\"tui.select.confirm\", \"submit\")",
+    "new": "keyHint(\"tui.select.confirm\", \"отправить\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-input.js",
+    "old": "`${this.baseTitle} (${s}s)`",
+    "new": "`${this.baseTitle} (${s} с)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-selector.js",
+    "old": "`${this.baseTitle} (${s}s)`",
+    "new": "`${this.baseTitle} (${s} с)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "return \"none\";",
+    "new": "return \"нет\";",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "`${count} configured`",
+    "new": "`настроено: ${count}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "\"  automatic\"",
+    "new": "\"  автоматически\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/settings-selector.js",
+    "old": "label: `${name === currentTheme ? \"✓ \" : \"  \"}${name}`",
+    "new": "label: `${name === currentTheme ? \"✓ \" : \"  \"}${({ system: \"системная\", dark: \"тёмная\", light: \"светлая\" })[name] ?? name}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/extension-editor.js",
+    "old": "\", \"newline\")",
+    "new": "\", \"новая строка\")",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/user-message-selector.js",
+    "old": "\"  No user messages found\"",
+    "new": "\"  Твоих сообщений пока нет\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"move\"",
+    "new": "label: \"выбрать\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"page\"",
+    "new": "label: \"страница\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"branch\"",
+    "new": "label: \"ветка\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"copy\"",
+    "new": "label: \"копировать\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"label\"",
+    "new": "label: \"метка\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"label time\"",
+    "new": "label: \"время метки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"filters\"",
+    "new": "label: \"фильтры\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/components/tree-selector.js",
+    "old": "label: \"cycle\"",
+    "new": "label: \"переключить\"",
+    "count": 1
+  }
+]

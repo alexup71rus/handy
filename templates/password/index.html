@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Генератор паролей · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="password.js"></script>
+</head>
+<body>
+  <main class="shell utility-shell">
+    <header class="intro">
+      <h1>Генератор паролей</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю настройки…</p>
+    <section id="report" class="card" aria-labelledby="password-heading" hidden>
+      <div class="card-heading">
+        <h2 id="password-heading">Новый пароль</h2>
+      </div>
+      <div class="password-controls">
+        <div class="password-length">
+          <label for="password-length">Длина</label>
+          <input type="range" id="password-length" min="4" max="128" step="1">
+          <input type="number" id="password-length-exact" min="4" max="128" step="1" inputmode="numeric"
+                 aria-label="Точная длина пароля" autocomplete="off">
+        </div>
+        <fieldset class="password-alphabet">
+          <legend>Символы</legend>
+          <div class="password-groups" id="password-groups">
+            <label><input type="checkbox" value="lowercase"> Строчные буквы</label>
+            <label><input type="checkbox" value="uppercase"> Заглавные буквы</label>
+            <label><input type="checkbox" value="digits"> Цифры</label>
+            <label><input type="checkbox" value="symbols"> Спецсимволы</label>
+          </div>
+          <button type="button" class="password-secondary password-preset" id="password-letters-digits">Только буквы и цифры</button>
+        </fieldset>
+        <label class="sr-only" for="password-value">Сгенерированный пароль</label>
+        <input type="text" id="password-value" class="password-value" readonly
+               autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off">
+      </div>
+      <div class="password-actions">
+        <p id="password-status" class="quiet" role="status"></p>
+        <div class="password-buttons">
+          <button type="button" class="password-secondary" id="password-regenerate">Создать новый</button>
+          <button type="button" class="primary" id="password-copy">Скопировать</button>
+        </div>
+      </div>
+    </section>
+    <p class="source">Пароль генерируется в браузере и остаётся на этой странице до копирования.</p>
+  </main>
+</body>
+</html>

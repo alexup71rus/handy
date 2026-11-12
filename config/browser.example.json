@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "node": "/absolute/path/to/node",
+  "entry": "/absolute/path/to/chrome-devtools-mcp/build/src/index.js",
+  "timeout_seconds": 15,
+  "connect_timeout_seconds": 30,
+  "idle_seconds": 60
+}

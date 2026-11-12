@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "synonyms": {
+    "запуск": [
+      "запуск",
+      "запустить",
+      "запускать",
+      "start",
+      "run",
+      "development",
+      "install",
+      "установка"
+    ],
+    "зависим": [
+      "dependency",
+      "dependencies",
+      "requirements",
+      "dependencies",
+      "зависимости",
+      "библиотеки"
+    ],
+    "изображен": [
+      "image",
+      "images",
+      "изображения",
+      "картинки",
+      "фото"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Таблица · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="table.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="intro">
+      <h1>Таблица</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю данные…</p>
+    <section id="report" class="card" aria-labelledby="table-heading" hidden>
+      <div class="card-heading">
+        <h2 id="table-heading">Записи</h2>
+        <div class="card-tools">
+          <label class="search" for="filter">Поиск по таблице
+            <input type="search" id="filter" placeholder="Название, дата или значение" autocomplete="off">
+          </label>
+          <label class="search filter-column" for="filter-column">Поле поиска
+            <select id="filter-column">
+              <option value="">Все столбцы</option>
+            </select>
+          </label>
+          <div class="choice" role="group" aria-label="Плотность строк">
+            <button type="button" id="comfortable-table" aria-controls="data-table" aria-pressed="true">Обычная</button>
+            <button type="button" id="compact-table" aria-controls="data-table" aria-pressed="false">Компактная</button>
+          </div>
+        </div>
+      </div>
+      <p id="scroll-hint" class="scroll-hint" hidden>Прокрути таблицу в сторону, чтобы увидеть остальные столбцы.</p>
+      <div id="table-scroll" class="scroll" role="region" aria-label="Строки таблицы">
+        <table id="data-table">
+          <caption class="sr-only" id="table-caption">Записи</caption>
+          <thead><tr id="columns"></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div class="pager">
+        <p id="row-count" role="status"></p>
+        <span id="pagination" hidden>
+          <button type="button" id="previous-page">Назад</button>
+          <button type="button" id="next-page">Дальше</button>
+        </span>
+      </div>
+    </section>
+    <p class="source">Источник данных · <a href="data.json">data.json</a></p>
+  </main>
+</body>
+</html>

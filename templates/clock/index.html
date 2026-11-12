@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Часы · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="clock.js"></script>
+</head>
+<body>
+  <main class="shell utility-shell">
+    <header class="intro">
+      <h1>Часы</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю настройки…</p>
+    <section id="report" class="card" aria-labelledby="clock-heading" hidden>
+      <div class="card-heading">
+        <h2 id="clock-heading">Текущее время</h2>
+        <span class="badge" id="clock-zone"></span>
+      </div>
+      <div class="clock-face">
+        <time id="clock-time" role="timer"></time>
+        <p id="clock-date"></p>
+      </div>
+    </section>
+    <p class="source">Настройки · <a href="data.json">data.json</a></p>
+  </main>
+</body>
+</html>

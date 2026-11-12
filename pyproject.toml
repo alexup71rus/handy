@@ -1,0 +1,23 @@
+[project]
+name = "handy"
+version = "0.1.0"
+description = "Handy, a pi terminal assistant with app-managed models and MCP services"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.26,<2", "jsonschema>=4.23,<5", "rich>=13,<15", "prompt-toolkit>=3,<4"]
+
+[project.scripts]
+handy = "folder_memory.cli:main"
+handyctl = "folder_memory.control:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["folder_memory*"]
+
+[tool.setuptools.package-data]
+folder_memory = ["resources/*.json", "resources/*.js", "*.js"]
+
+[tool.handy]
+transport = "openai-compatible"

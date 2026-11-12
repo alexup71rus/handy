@@ -1,0 +1,608 @@
+[
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": "\"MCP servers\"",
+    "new": "\"Серверы MCP\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": "\"Loading…\"",
+    "new": "\"Загружаю…\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": "\"Nothing to show.\"",
+    "new": "\"Здесь пока ничего нет.\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": "\"Approve access in your browser. If it did not open, visit:\"",
+    "new": "\"Разреши доступ в браузере. Если он не открылся, перейди по ссылке:\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": "\"If the browser runs on another machine, paste the URL it was redirected to:\"",
+    "new": "\"Если браузер на другом компьютере, вставь адрес страницы после входа:\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": ", \"cancel\")",
+    "new": ", \"отмена\")",
+    "count": 2
+  },
+  {
+    "file": "extensions/mcp/ui.js",
+    "old": ", \"submit\")",
+    "new": ", \"отправить\")",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": ", \"cancel\")",
+    "new": ", \"отмена\")",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": ", \"select\")",
+    "new": ", \"выбрать\")",
+    "count": 2
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": ", \"close\")",
+    "new": ", \"закрыть\")",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": ", \"back\")",
+    "new": ", \"назад\")",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": ", \"stop\")",
+    "new": ", \"остановить\")",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": ", \"load/unload/download\")",
+    "new": ", \"загрузить/выгрузить/скачать\")",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "\"llama.cpp models\"",
+    "new": "\"Модели llama.cpp\"",
+    "count": 2
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "\"Loading…\"",
+    "new": "\"Загружаю…\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "\"Model name or owner/repository[:quant]\"",
+    "new": "\"Название модели или автор/репозиторий[:квантование]\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "\"Download model…\"",
+    "new": "\"Скачать модель…\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "\"Hugging Face owner/repository[:quant]\"",
+    "new": "\"Hugging Face: автор/репозиторий[:квантование]\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "\"Download model\"",
+    "new": "\"Скачать модель\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "details.push(\"loaded\");",
+    "new": "details.push(\"загружена\");",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "details.push(model.status.value);",
+    "new": "details.push(({ loading: \"загружается\", unloading: \"выгружается\", failed: \"ошибка\", sleeping: \"спит\" })[model.status.value] ?? model.status.value);",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "`${context} context`",
+    "new": "`контекст ${context}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "`${compactCount(model.downloads)} downloads`",
+    "new": "`скачиваний: ${compactCount(model.downloads)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "options.map((option) => ({ value: option, label: option }))",
+    "new": "options.map((option) => ({ value: option, label: ({ Yes: \"Да\", No: \"Нет\", Retry: \"Повторить\", Close: \"Закрыть\", Cancel: \"Отмена\", \"Unload all and load\": \"Выгрузить остальные и загрузить\", \"Keep loaded and load\": \"Загрузить вместе с остальными\" })[option] ?? option.replace(\" · recommended\", \" · рекомендуется\") }))",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "const SEARCH_MAX_VISIBLE = 10;",
+    "new": "const HANDY_SEARCH_STATUS = { \"Type at least 2 characters\": \"Введи хотя бы 2 символа\", \"No GGUF models found\": \"Модели GGUF не найдены\", \"Searching Hugging Face…\": \"Ищу в Hugging Face…\" };\nconst SEARCH_MAX_VISIBLE = 10;",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "`  ${this.status}`",
+    "new": "`  ${HANDY_SEARCH_STATUS[this.status] ?? this.status}`",
+    "count": 2
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"MCP servers\"",
+    "new": "\"Серверы MCP\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"This server is no longer configured.\"",
+    "new": "\"Этот сервер больше не настроен.\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"for this session\"",
+    "new": "\"для текущего чата\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"saved to the project mcp.json\"",
+    "new": "\"сохраняется в mcp.json проекта\"",
+    "count": 2
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"saved to mcp.json\"",
+    "new": "\"сохраняется в mcp.json\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"opens the browser\"",
+    "new": "\"открыть браузер\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"deletes the stored credentials\"",
+    "new": "\"удалить сохранённые данные входа\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"The server offers no tools.\"",
+    "new": "\"Сервер не предоставляет инструментов.\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"Contacting the authorization server…\"",
+    "new": "\"Подключаюсь к серверу авторизации…\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"Connecting…\"",
+    "new": "\"Подключаюсь…\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Enable\"",
+    "new": "label: \"Включить\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Enable in this project\"",
+    "new": "label: \"Включить в этом проекте\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Sign in\"",
+    "new": "label: \"Войти\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Tools\"",
+    "new": "label: \"Инструменты\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Reconnect\"",
+    "new": "label: \"Переподключить\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Sign out\"",
+    "new": "label: \"Выйти\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Exposure\"",
+    "new": "label: \"Доступность инструментов\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Disable\"",
+    "new": "label: \"Выключить\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: \"Disable in this project\"",
+    "new": "label: \"Выключить в этом проекте\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "confirmLabel: \"manage\"",
+    "new": "confirmLabel: \"настроить\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "cancelLabel: \"close\"",
+    "new": "cancelLabel: \"закрыть\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "confirmLabel: \"back\"",
+    "new": "confirmLabel: \"назад\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "cancelLabel: \"back\"",
+    "new": "cancelLabel: \"назад\"",
+    "count": 4
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "confirmLabel: \"select\"",
+    "new": "confirmLabel: \"выбрать\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "confirmLabel: \"save\"",
+    "new": "confirmLabel: \"сохранить\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`No MCP servers configured. Add them to ${resolve(getAgentDir(), \"mcp.json\")} or .pi/mcp.json.`",
+    "new": "`Серверов MCP нет. Добавь их в ${resolve(getAgentDir(), \"mcp.json\")} или .pi/mcp.json.`",
+    "count": 2
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`saved to the ${entry.scope} mcp.json`",
+    "new": "`сохраняется в ${entry.scope === \"global\" ? \"общем\" : \"проектном\"} mcp.json`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`${connection.tools.length} offered`",
+    "new": "`доступно: ${connection.tools.length}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`State: ${describeState(server, false)}`",
+    "new": "`Состояние: ${describeState(server, false)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`MCP server ${name}`",
+    "new": "`Сервер MCP: ${name}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`Tools of ${server.entry.name}`",
+    "new": "`Инструменты: ${server.entry.name}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`Exposure of ${server.entry.name}`",
+    "new": "`Доступность инструментов: ${server.entry.name}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`Applies to this session; the server is registered by ${server.entry.source}.`",
+    "new": "`Для текущего чата; сервер добавлен расширением ${server.entry.source}.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`Saved to ${server.entry.override ?? server.entry.source}.`",
+    "new": "`Сохраняется в ${server.entry.override ?? server.entry.source}.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`Sign in to ${server.entry.name}`",
+    "new": "`Вход: ${server.entry.name}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`project override: ${entry.override}`",
+    "new": "`настройки проекта: ${entry.override}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"called from codemode scripts, which find them with searchTools()\"",
+    "new": "\"вызов из JavaScript через codemode; поиск через searchTools()\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"not declared until tool_search loads them, then called directly; no codemode needed\"",
+    "new": "\"схема подгружается через tool_search, затем инструмент вызывается напрямую\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "\"declared to the model like built-in tools\"",
+    "new": "\"схема передаётся модели сразу, как у встроенных инструментов\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`Exposure ${exposure}: ${exposure === \"hidden\" ? \"unreachable\" : EXPOSURE_DESCRIPTIONS[exposure]}${overridden ? \"\\nSome tools override it with toolExposure.\" : \"\"}`",
+    "new": "`Режим ${exposure}: ${exposure === \"hidden\" ? \"недоступны\" : EXPOSURE_DESCRIPTIONS[exposure]}${overridden ? \"\\nДля отдельных инструментов задан toolExposure.\" : \"\"}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return \"disabled\";",
+    "new": "return \"выключен\";",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return \"starting\";",
+    "new": "return \"запускается\";",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return \"needs sign-in\";",
+    "new": "return \"нужен вход\";",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return \"connecting…\";",
+    "new": "return \"подключается…\";",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return withError ? `failed: ${firstLine(connection.error ?? \"unknown error\")}` : \"failed\";",
+    "new": "return withError ? `ошибка: ${firstLine(connection.error ?? \"неизвестная ошибка\")}` : \"ошибка\";",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return `connected · ${tools.length} tool${tools.length === 1 ? \"\" : \"s\"}${hasResources ? \" · resources\" : \"\"}`;",
+    "new": "return `подключён · инструментов: ${tools.length}${hasResources ? \" · есть ресурсы\" : \"\"}`;",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Could not connect to the server.\"",
+    "new": "\"Не удалось подключиться к серверу.\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Restoring previously loaded models\"",
+    "new": "\"Восстанавливаю ранее загруженные модели\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Loading model\"",
+    "new": "\"Загрузка модели\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Starting…\"",
+    "new": "\"Начинаю…\"",
+    "count": 2
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Stop loading?\"",
+    "new": "\"Остановить загрузку в память?\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Downloading model\"",
+    "new": "\"Скачивание модели\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Stop download?\"",
+    "new": "\"Остановить скачивание?\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Manage llama.cpp router models\"",
+    "new": "\"Управление моделями llama.cpp\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"/llama is available in interactive mode\"",
+    "new": "\"Команда /llama доступна в интерактивном режиме\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`${loaded.length} model${loaded.length === 1 ? \" is\" : \"s are\"} loaded`",
+    "new": "`Моделей в памяти: ${loaded.length}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Loaded ${target.id}`",
+    "new": "`Загружена ${target.id}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Load started for ${target.id}`",
+    "new": "`Началась загрузка ${target.id}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Select quantization\\n${details.id}`",
+    "new": "`Выбери квантование\\n${details.id}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Downloaded ${model}`",
+    "new": "`Скачана ${model}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Configure llama.cpp with /login ${LLAMA_PROVIDER_ID}`",
+    "new": "`Подключи llama.cpp через /login ${LLAMA_PROVIDER_ID}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "`llama.cpp unavailable\\n${serverUrl}\\n\\n${message}`",
+    "new": "`llama.cpp недоступен\\n${serverUrl}\\n\\n${message}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/ui.js",
+    "old": "Cancel: \"Отмена\",",
+    "new": "Cancel: \"Отмена\", Continue: \"Продолжить\", Back: \"Назад\",",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Unload model?\"",
+    "new": "\"Выгрузить модель из памяти?\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Loading model details\"",
+    "new": "\"Загружаю сведения о модели\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Manual approval is required\"",
+    "new": "\"Нужно ручное разрешение автора\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "\"Accept the access terms\"",
+    "new": "\"Прими условия доступа\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Unloaded ${model.id}`",
+    "new": "`Выгружена ${model.id}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/llama/index.js",
+    "old": "`Hugging Face access required\\n${details.id}\\n\\n${approval} at:\\nhttps://huggingface.co/${details.id}\\n\\nThe llama.cpp server needs HF_TOKEN with access.`",
+    "new": "`Нужен доступ в Hugging Face\\n${details.id}\\n\\n${approval}:\\nhttps://huggingface.co/${details.id}\\n\\nСерверу llama.cpp нужен HF_TOKEN с доступом к модели.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "return connection.state;",
+    "new": "return ({ disconnected: \"отключён\", closing: \"закрывается\" })[connection.state] ?? connection.state;",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "const EXPOSURE_DESCRIPTIONS = {",
+    "new": "const HANDY_MCP_EXPOSURE_LABELS = { codemode: \"через JavaScript\", deferred: \"по запросу\", direct: \"сразу в контексте\", hidden: \"скрыты\" };\nconst HANDY_MCP_SCOPE_LABELS = { global: \"общие\", project: \"проект\", extension: \"расширение\", config: \"настройки\" };\nconst EXPOSURE_DESCRIPTIONS = {",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "description: `${describeState(server)} · ${exposureOf(server.entry)} · ${server.entry.override ? \"global, project override\" : (server.entry.scope ?? server.entry.source)}`",
+    "new": "description: `${describeState(server)} · ${HANDY_MCP_EXPOSURE_LABELS[exposureOf(server.entry)] ?? exposureOf(server.entry)} · ${server.entry.override ? \"общие, с настройками проекта\" : (HANDY_MCP_SCOPE_LABELS[server.entry.scope] ?? server.entry.source)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "description: exposureOf(entry)",
+    "new": "description: HANDY_MCP_EXPOSURE_LABELS[exposureOf(entry)] ?? exposureOf(entry)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "`${entry.scope ?? \"config\"}: ${entry.source}`",
+    "new": "`${HANDY_MCP_SCOPE_LABELS[entry.scope ?? \"config\"] ?? entry.scope}: ${entry.source}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/index.js",
+    "old": "label: `${exposure === current ? \"✓ \" : \"  \"}${exposure}`",
+    "new": "label: `${exposure === current ? \"✓ \" : \"  \"}${HANDY_MCP_EXPOSURE_LABELS[exposure] ?? exposure}`",
+    "count": 1
+  }
+]

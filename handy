@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""Launch Handy's pi integration without changing the working directory."""
+
+import os
+from pathlib import Path
+import sys
+
+
+project = Path(__file__).resolve().parent
+interpreter = project / '.venv/bin/python'
+if not interpreter.is_file():
+    sys.exit(f'Сначала установи Handy: python3 {project / "scripts/install_cli.py"}')
+os.environ['PYTHONPATH'] = str(project) + (os.pathsep + os.environ['PYTHONPATH'] if os.environ.get('PYTHONPATH') else '')
+os.execv(str(interpreter), [str(interpreter), '-m', 'folder_memory.cli', *sys.argv[1:]])

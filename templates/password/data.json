@@ -1,0 +1,10 @@
+{
+  "title": "Генератор паролей",
+  "length": 24,
+  "groups": [
+    "lowercase",
+    "uppercase",
+    "digits",
+    "symbols"
+  ]
+}

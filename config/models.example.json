@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "selected_chat": "external",
+  "selected_embedding": null,
+  "standard_provider_visible": true,
+  "providers": {
+    "my-api": {
+      "name": "My provider",
+      "visible": true,
+      "base_url": "https://provider.example/v1",
+      "api_key_env": "MY_PROVIDER_API_KEY"
+    }
+  },
+  "profiles": {
+    "external": {
+      "kind": "chat",
+      "backend": "openai",
+      "enabled": true,
+      "visible": true,
+      "name": "My API model",
+      "provider_id": "my-api",
+      "model_id": "provider-model-id",
+      "context": 65536,
+      "sampling": {"temperature": 0.3}
+    }
+  }
+}

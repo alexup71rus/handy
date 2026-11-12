@@ -1,0 +1,9 @@
+{
+  "title": "Запланированные задачи",
+  "worker_running": true,
+  "partial": false,
+  "jobs": [
+    {"id": "f30cbfa15012", "title": "Кофе", "host": "example.com", "enabled": true, "state": "Включена", "interval": "1 дн", "direction": "снижение", "price": "1250 RUB", "next": "10.11.2026 12:00", "error": null},
+    {"id": "5912c65b3310", "title": "Наушники", "host": "example.com", "enabled": false, "state": "На паузе", "interval": "2 нед", "direction": "любое изменение", "price": "—", "next": "—", "error": null}
+  ]
+}

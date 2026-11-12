@@ -1,0 +1,386 @@
+[
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Usage:",
+    "new": "Использование:",
+    "count": 5
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Configure and check MCP servers and sign in to OAuth servers without starting a session.",
+    "new": "Настраивать и проверять MCP-серверы, входить через OAuth без открытия чата.",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Reads ~/${CONFIG_DIR_NAME}/agent/mcp.json and, in trusted projects, ${CONFIG_DIR_NAME}/mcp.json.",
+    "new": "Читает ~/${CONFIG_DIR_NAME}/agent/mcp.json и, в доверенных проектах, ${CONFIG_DIR_NAME}/mcp.json.",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Commands:",
+    "new": "Команды:",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Add or replace a server in mcp.json",
+    "new": "Добавить или заменить сервер в mcp.json",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Remove a server from mcp.json",
+    "new": "Удалить сервер из mcp.json",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Show state, tools, and errors (exits 1 on failure)",
+    "new": "Показать состояние, инструменты и ошибки (код 1 при сбое)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Sign in through the browser",
+    "new": "Войти через браузер",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Delete the stored OAuth credentials",
+    "new": "Удалить сохранённые данные OAuth",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Options for add, remove, login, and logout:",
+    "new": "Параметры add, remove, login и logout:",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Use ${CONFIG_DIR_NAME}/mcp.json in the current project instead of the global file",
+    "new": "Использовать ${CONFIG_DIR_NAME}/mcp.json проекта вместо общего файла",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Options for add:",
+    "new": "Параметры add:",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Streamable HTTP server URL (instead of a command)",
+    "new": "URL сервера Streamable HTTP (вместо команды)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Environment variable for a stdio server (repeatable)",
+    "new": "Переменная окружения сервера stdio (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Working directory for a stdio server",
+    "new": "Рабочая папка сервера stdio",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "HTTP header (repeatable)",
+    "new": "Заголовок HTTP (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Send \"Authorization: Bearer \\${NAME}\"",
+    "new": "Отправлять \"Authorization: Bearer \\${NAME}\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Pre-registered OAuth client id",
+    "new": "Заранее зарегистрированный ID клиента OAuth",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "OAuth client secret (may be \\${NAME} or !command)",
+    "new": "Секрет клиента OAuth (можно \\${NAME} или !command)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Fixed OAuth callback port",
+    "new": "Фиксированный порт обратного вызова OAuth",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Client name sent when registering with the OAuth server",
+    "new": "Имя клиента при регистрации на сервере OAuth",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "auto (default), cimd, or dcr",
+    "new": "auto (по умолчанию), cimd или dcr",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "codemode (default), deferred, direct, or hidden",
+    "new": "codemode (по умолчанию), deferred, direct или hidden",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "What the server offers, shown in the system prompt",
+    "new": "Возможности сервера для системного промпта",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Other options:",
+    "new": "Другие параметры:",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Print the list as JSON",
+    "new": "Вывести список в JSON",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "Time limit for the whole sign-in (default: 300)",
+    "new": "Время на весь процесс входа (по умолчанию 300 секунд)",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Use \"${APP_NAME} mcp --help\" for usage.`",
+    "new": "`Справка: «${APP_NAME} mcp --help».`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Unknown option ${typed}.\\n${HELP_HINT}`",
+    "new": "`Неизвестный параметр ${typed}.\\n${HELP_HINT}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`${arg} needs a value.`",
+    "new": "`${arg} требует значения.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Unknown mcp command \"${command}\".\\n${HELP_HINT}`",
+    "new": "`Неизвестная команда mcp «${command}».\\n${HELP_HINT}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`MCP server \"${name}\" is defined in ${entry.source}, not in the project; omit --local.`",
+    "new": "`MCP-сервер «${name}» задан в ${entry.source}, вне проекта; убери --local.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`MCP server \"${name}\" uses the credentials of provider \"${authProvider}\". Run \"${APP_NAME} auth ${command} ${authProvider}\".`",
+    "new": "`MCP-сервер «${name}» использует данные входа провайдера «${authProvider}». Выполни «${APP_NAME} auth ${command} ${authProvider}».`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`MCP server \"${name}\" does not use OAuth. Only HTTP servers without an Authorization header do.`",
+    "new": "`MCP-сервер «${name}» не использует OAuth. OAuth доступен HTTP-серверам без заголовка Authorization.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Signed out of MCP server \"${name}\".`",
+    "new": "`Вход на MCP-сервер «${name}» завершён.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`No stored credentials for MCP server \"${name}\".`",
+    "new": "`Нет сохранённых данных входа для MCP-сервера «${name}».`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "\"--timeout must be a positive number of seconds.\"",
+    "new": "\"--timeout должен быть положительным числом секунд.\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`--${option} expects KEY=VALUE, got \"${pair}\".`",
+    "new": "`--${option} требует KEY=VALUE, получено «${pair}».`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`--${misplaced} only applies to ${url === undefined ? \"HTTP servers (--url)\" : \"stdio servers\"}.`",
+    "new": "`--${misplaced} применим только к ${url === undefined ? \"HTTP-серверам (--url)\" : \"серверам stdio\"}.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Could not update ${path}: ${errorMessage(addError)}`",
+    "new": "`Не удалось обновить ${path}: ${errorMessage(addError)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Could not update ${path}: ${errorMessage(removeError)}`",
+    "new": "`Не удалось обновить ${path}: ${errorMessage(removeError)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`${replaced ? \"Replaced\" : \"Added\"} ${scope} MCP server \"${name}\" in ${path}.`",
+    "new": "`${replaced ? \"Обновлён\" : \"Добавлен\"} ${scope === \"project\" ? \"проектный\" : \"общий\"} MCP-сервер «${name}» в ${path}.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`The project is not trusted, so ${path} is ignored until you start ${APP_NAME} in the project and trust it.`",
+    "new": "`Доверие к проекту не задано. Файл ${path} не используется, пока ты не откроешь проект в ${APP_NAME} и не разрешишь доверие.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Check it with: ${APP_NAME} mcp list${mayNeedSignIn ? `. If it requires sign-in: ${APP_NAME} mcp login ${name}` : \"\"}`",
+    "new": "`Проверь: ${APP_NAME} mcp list${mayNeedSignIn ? `. Если нужен вход: ${APP_NAME} mcp login ${name}` : \"\"}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Removed ${scope} MCP server \"${name}\" from ${path}.`",
+    "new": "`Удалён ${scope === \"project\" ? \"проектный\" : \"общий\"} MCP-сервер «${name}» из ${path}.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`No ${scope} MCP server named \"${name}\" in ${path}.${other ? ` It is defined in ${other.source}${other.scope === \"project\" ? \"; use --local\" : \"; omit --local\"}.` : \"\"}`",
+    "new": "`В ${path} нет ${scope === \"project\" ? \"проектного\" : \"общего\"} MCP-сервера «${name}».${other ? ` Он задан в ${other.source}${other.scope === \"project\" ? \"; добавь --local\" : \"; убери --local\"}.` : \"\"}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`No MCP servers configured. Add them to ${join(options.agentDir, \"mcp.json\")} or .pi/mcp.json.`",
+    "new": "`MCP-серверы не настроены. Добавь их в ${join(options.agentDir, \"mcp.json\")} или .pi/mcp.json.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`connected, ${report.tools.length} tool${report.tools.length === 1 ? \"\" : \"s\"}`",
+    "new": "`подключён, инструментов: ${report.tools.length}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "? \"needs sign-in\"\n                : report.state;",
+    "new": "? \"нужен вход\"\n                : ({ disabled: \"выключен\", disconnected: \"отключён\", connecting: \"подключается\", error: \"ошибка\" }[report.state] ?? report.state);",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`  project override: ${report.override}`",
+    "new": "`  настройки проекта: ${report.override}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`  sign in with: /login ${report.authProvider} in ${APP_NAME}`",
+    "new": "`  для входа: /login ${report.authProvider} в ${APP_NAME}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`  sign in with: ${APP_NAME} mcp login ${report.name}`",
+    "new": "`  для входа: ${APP_NAME} mcp login ${report.name}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`  tools: ${tools.join(\", \")}`",
+    "new": "`  инструменты: ${tools.join(\", \")}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "\"  offers resources\"",
+    "new": "\"  предоставляет ресурсы\"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`config error: ${configError}`",
+    "new": "`ошибка настроек: ${configError}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Already signed in to MCP server \"${name}\" (${connection.tools.length} tools).`",
+    "new": "`Вход на MCP-сервер «${name}» уже выполнен (инструментов: ${connection.tools.length}).`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`MCP server \"${name}\" failed to connect: ${connection.error ?? \"unknown error\"}`",
+    "new": "`Не удалось подключить MCP-сервер «${name}»: ${connection.error ?? \"неизвестная ошибка\"}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Sign in to MCP server \"${name}\" in your browser:\\n${authorizationUrl.href}`",
+    "new": "`Войди на MCP-сервер «${name}» в браузере:\\n${authorizationUrl.href}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Sign-in to MCP server \"${name}\" was cancelled or not completed within ${Math.round(timeoutMs / 1000)} seconds.`",
+    "new": "`Вход на MCP-сервер «${name}» отменён или не завершён за ${Math.round(timeoutMs / 1000)} секунд.`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Sign-in to MCP server \"${name}\" failed: ${errorMessage(signInError)}`",
+    "new": "`Не удалось войти на MCP-сервер «${name}»: ${errorMessage(signInError)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Signed in, but ${errorMessage(connectError)}`",
+    "new": "`Вход выполнен, но ${errorMessage(connectError)}`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "`Signed in to MCP server \"${name}\" (${connection.tools.length} tools).`",
+    "new": "`Вход на MCP-сервер «${name}» выполнен (инструментов: ${connection.tools.length}).`",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "\"If the browser cannot reach this machine, paste the URL it was redirected to: \"",
+    "new": "\"Если браузер не может открыть этот компьютер, вставь URL после перенаправления: \"",
+    "count": 1
+  },
+  {
+    "file": "extensions/mcp/cli.js",
+    "old": "log(`${report.name}: ${state} (${report.exposure}, ${report.scope})`);",
+    "new": "log(`${report.name}: ${state} (${({codemode:\"codemode\",deferred:\"по запросу\",direct:\"напрямую\",hidden:\"скрыт\"})[report.exposure] ?? report.exposure}, ${report.scope === \"project\" ? \"проект\" : \"общие\"})`);",
+    "count": 1
+  }
+]

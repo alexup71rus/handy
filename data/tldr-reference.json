@@ -1,0 +1,1348 @@
+{
+  "schema_version": 1,
+  "purpose": "Pinned CLI reference descriptions and conservatively filtered examples. Data only, never executable tool definitions or authorization.",
+  "repository": "https://github.com/tldr-pages/tldr",
+  "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+  "license": "CC-BY-4.0",
+  "attribution": "tldr-pages team and contributors",
+  "entries": [
+    {
+      "id": "tldr:ru:common:cat",
+      "name": "cat",
+      "description": "Выводит и объединяет файлы.",
+      "aliases": [],
+      "signatures": [
+        "cat {{путь/к/файлу}}"
+      ],
+      "examples": [
+        "cat {{путь/к/файлу}}"
+      ],
+      "example_details": [
+        {
+          "description": "Выводит содержимое файла в стандартный вывод:",
+          "command": "cat {{путь/к/файлу}}"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/cat.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/cat.md",
+        "sha256": "423a9fa030b51f47896ebd28bed5527f8836cdeb452d22d982f9b59b61a62753",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:curl",
+      "name": "curl",
+      "description": "Передавать данные с сервера или на сервер. Поддерживает большинство протоколов, включая HTTP, HTTPS, FTP, SCP и другие. Смотрите также: `wcurl`, `wget`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/curl.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/curl.md",
+        "sha256": "a15bdd5333733401fc24a610ad41177b2ca570f8fff1348a9781fc097946de17",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:cut",
+      "name": "cut",
+      "description": "Вырезать поля из стандартного ввода или файлов.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/cut.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/cut.md",
+        "sha256": "d17a62631fe19139d8ef6b1d8106809f3cf51b533b737a8e194cb395814cba7d",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:df",
+      "name": "df",
+      "description": "Отображать информацию об использовании дискового пространства файловых систем.",
+      "aliases": [],
+      "signatures": [
+        "df",
+        "df {{путь/к/файлу_или_каталогу}}",
+        "df -k",
+        "df -P"
+      ],
+      "examples": [
+        "df",
+        "df {{путь/к/файлу_или_каталогу}}",
+        "df -k",
+        "df -P"
+      ],
+      "example_details": [
+        {
+          "description": "Показывать все файловые системы и использование диска для них в 512-байтных блоках:",
+          "command": "df"
+        },
+        {
+          "description": "Показывать информацию о файловой системе для указанного файла или каталога:",
+          "command": "df {{путь/к/файлу_или_каталогу}}"
+        },
+        {
+          "description": "Использовать 1024-байтные блоки при отображении размеров:",
+          "command": "df -k"
+        },
+        {
+          "description": "Показывать информацию в портируемом (POSIX) формате:",
+          "command": "df -P"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/df.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/df.md",
+        "sha256": "d653eacbbc8a557181b4e5e6ab0fa1fa71f6c760a04875970fdd6676380ff27c",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:docker-compose",
+      "name": "docker compose",
+      "description": "Запускать и управлять многоконтейнерными Docker-приложениями. Некоторые подкоманды, такие как `up`, `down`, `logs`, `stop`, имеют собственную документацию по использованию.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/docker-compose.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/docker-compose.md",
+        "sha256": "59b215fb8fafb26ad3e6d9af32423fc390f1eb3cdd64f6d756978e567911124b",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:docker-compose-logs",
+      "name": "docker compose logs",
+      "description": "Просматривать вывод контейнеров в Docker Compose приложении.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/docker-compose-logs.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/docker-compose-logs.md",
+        "sha256": "5d4386bc678bf3329efebcd6eb5662f2d36570d5f9d8dad0c31b423a1f2d9117",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:docker-logs",
+      "name": "docker logs",
+      "description": "Эта команда — псевдоним для `docker container logs`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/docker-logs.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/docker-logs.md",
+        "sha256": "8e35e7f0925aca8ab074f851a8a48cbb97af63d5d6213fec45f8458704b55047",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:du",
+      "name": "du",
+      "description": "Использование диска: оценивать и суммировать использование дискового пространства файлами и каталогами. Смотрите также: `ncdu`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/du.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/du.md",
+        "sha256": "a4ceb67a7b738a6db9880a713a501e44db394219aa1362fd1c94cb15260aac8c",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:echo",
+      "name": "echo",
+      "description": "Выводить указанные аргументы. Смотрите также: `printf`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/echo.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/echo.md",
+        "sha256": "248da9c913a7a65ab4fd49248673ed998126bc3d09c1e44e505ca2b6873f0e0e",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:common:file",
+      "name": "file",
+      "description": "Determine file type. See also: `stat`.",
+      "aliases": [],
+      "signatures": [
+        "file {{path/to/file}}"
+      ],
+      "examples": [
+        "file {{path/to/file}}"
+      ],
+      "example_details": [
+        {
+          "description": "Give a description of the type of the specified file:",
+          "command": "file {{path/to/file}}"
+        }
+      ],
+      "platform": "common",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/file.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/common/file.md",
+        "sha256": "c34a5741ebde4ff4e3f15ef7bba57fae0dbf11fd850d4079576c3b72fb08f631",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:find",
+      "name": "find",
+      "description": "Рекурсивно искать файлы или каталоги в дереве каталогов. Смотрите также: `fd`.",
+      "aliases": [],
+      "signatures": [
+        "find {{путь/к/каталогу}} -name '{{*.ext}}'",
+        "find {{путь/к/каталогу}} -type d -iname '{{*lib*}}'"
+      ],
+      "examples": [
+        "find {{путь/к/каталогу}} -name '{{*.ext}}'",
+        "find {{путь/к/каталогу}} -type d -iname '{{*lib*}}'"
+      ],
+      "example_details": [
+        {
+          "description": "Найти файлы по расширению:",
+          "command": "find {{путь/к/каталогу}} -name '{{*.ext}}'"
+        },
+        {
+          "description": "Найти каталоги по имени без учёта регистра:",
+          "command": "find {{путь/к/каталогу}} -type d -iname '{{*lib*}}'"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/find.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/find.md",
+        "sha256": "d71a945f284d92506d18854150edde2392f329b3b2ed5780731f1ae5a4d07d27",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:git",
+      "name": "git",
+      "description": "Распределённая система управления версиями. Некоторые подкоманды, такие как `commit`, `add`, `branch`, `switch`, `push` и другие, имеют собственную документацию по использованию.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/git.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/git.md",
+        "sha256": "bb79f7ea65ae52309be6d5974e31bf68287758cfb563aead6d5f5693a6c0a8d5",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:grep",
+      "name": "grep",
+      "description": "Поиск по шаблону в файлах используя регулярные выражения. Смотрите также: `rg`, `regex`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/grep.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/grep.md",
+        "sha256": "836e99f8e83922bf4ebfc232aa1d25a19cc514efd77abd47834a1b2fb4662eda",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:head",
+      "name": "head",
+      "description": "Выводить первую часть файлов.",
+      "aliases": [],
+      "signatures": [
+        "head -n {{количество_строк}} {{путь/к/файлу}}"
+      ],
+      "examples": [
+        "head -n {{количество_строк}} {{путь/к/файлу}}"
+      ],
+      "example_details": [
+        {
+          "description": "Вывести первые несколько строк файла:",
+          "command": "head -n {{количество_строк}} {{путь/к/файлу}}"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/head.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/head.md",
+        "sha256": "468bf39390efaa79a91b4b4080bac754e72ebfd9b09161b3c4905c86d5b41335",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:jq",
+      "name": "jq",
+      "description": "Процессор JSON, использующий предметно-ориентированный язык (DSL).",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/jq.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/jq.md",
+        "sha256": "c9070dea2c26b25694518cf37015100850bf116afb96951808db5a164f40e59a",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:ls",
+      "name": "ls",
+      "description": "Выводить содержимое каталога.",
+      "aliases": [],
+      "signatures": [
+        "ls -1"
+      ],
+      "examples": [
+        "ls -1"
+      ],
+      "example_details": [
+        {
+          "description": "Вывести список файлов по одному в строке:",
+          "command": "ls -1"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/ls.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/ls.md",
+        "sha256": "c798b28ab5de1f5bcdf6076305a9ddfc0c86945603345cc8828c619a58d0d3db",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:lsof",
+      "name": "lsof",
+      "description": "Выводить список открытых файлов и соответствующих им процессов. Примечание: для просмотра файлов, открытых другими пользователями, требуются права суперпользователя (root).",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/lsof.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/lsof.md",
+        "sha256": "9bf2ee89ff173d691a1901d0076735b25f13bd4c3bf1e7d5c9a051204ec6590b",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:common:ps",
+      "name": "ps",
+      "description": "Information about running processes.",
+      "aliases": [],
+      "signatures": [
+        "ps aux",
+        "ps auxww",
+        "ps aux | grep {{[s]tring}}"
+      ],
+      "examples": [
+        "ps aux",
+        "ps auxww",
+        "ps aux | grep {{[s]tring}}"
+      ],
+      "example_details": [
+        {
+          "description": "List all running processes:",
+          "command": "ps aux"
+        },
+        {
+          "description": "List all running processes including the full command string:",
+          "command": "ps auxww"
+        },
+        {
+          "description": "Search for a process that matches a string (the brackets will prevent `grep` from matching itself):",
+          "command": "ps aux | grep {{[s]tring}}"
+        }
+      ],
+      "platform": "common",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/ps.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/common/ps.md",
+        "sha256": "8f862a3c3f1e83391982a4359d025f4093a811e864410ef54d6a18d8136ef161",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:pwd",
+      "name": "pwd",
+      "description": "Вывести название текущего/рабочего каталога.",
+      "aliases": [],
+      "signatures": [
+        "pwd"
+      ],
+      "examples": [
+        "pwd"
+      ],
+      "example_details": [
+        {
+          "description": "Вывести текущий каталог:",
+          "command": "pwd"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/pwd.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/pwd.md",
+        "sha256": "b92b81154e29155003fd24abbd538f0edb9ee0173f08c3b1f88c4b32da8bfcc3",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:common:python",
+      "name": "python",
+      "description": "Python language interpreter.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/python.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/common/python.md",
+        "sha256": "2a07652c1437e460eb9eb6f449a1df3f4c6e4d7c573198d4f232b8327c91c9e7",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:rg",
+      "name": "rg",
+      "description": "Ripgrep - рекурсивный построчный инструмент поиска. Более быстрая альтернатива `grep`.",
+      "aliases": [],
+      "signatures": [
+        "rg {{шаблон}}",
+        "rg {{шаблон}} {{путь/к/файлу_или_каталогу}}"
+      ],
+      "examples": [
+        "rg {{шаблон}}",
+        "rg {{шаблон}} {{путь/к/файлу_или_каталогу}}"
+      ],
+      "example_details": [
+        {
+          "description": "Рекурсивно искать шаблон (`regex`) в текущем каталоге:",
+          "command": "rg {{шаблон}}"
+        },
+        {
+          "description": "Рекурсивно искать шаблон в файле или каталоге:",
+          "command": "rg {{шаблон}} {{путь/к/файлу_или_каталогу}}"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/rg.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/rg.md",
+        "sha256": "882c4777e59ef87a07a8f58ee7273b561b74e42cfd0a62781e43ce47166dc120",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:sed",
+      "name": "sed",
+      "description": "Редактировать текст в скриптовом режиме. Смотрите также: `awk`, `ed`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/sed.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/sed.md",
+        "sha256": "3dd806f035bd1345243b5f8ac96637a3dbdb523c704145977d33a973842929c3",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:sort",
+      "name": "sort",
+      "description": "Сортировать строки текстовых файлов.",
+      "aliases": [],
+      "signatures": [
+        "sort {{путь/к/файлу}}"
+      ],
+      "examples": [
+        "sort {{путь/к/файлу}}"
+      ],
+      "example_details": [
+        {
+          "description": "Отсортировать файл по возрастанию:",
+          "command": "sort {{путь/к/файлу}}"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/sort.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/sort.md",
+        "sha256": "3ed1f3bccd461732082a485277a47b0b200efb3e5b8267f91e9fbcb6a8a5961a",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:ssh",
+      "name": "ssh",
+      "description": "Secure Shell (SSH) — это протокол для безопасного входа на удаленные системы. Его можно использовать для входа или выполнения команд на удаленном сервере.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/ssh.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/ssh.md",
+        "sha256": "9c09622170535151cafba83bb61e57dc8c4ccc5ba72b8cb5f4d2ad1d5ef653c9",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:stat",
+      "name": "stat",
+      "description": "Отображать информацию о файле и файловой системе. Смотрите также: `file`.",
+      "aliases": [],
+      "signatures": [
+        "stat {{путь/к/файлу}}"
+      ],
+      "examples": [
+        "stat {{путь/к/файлу}}"
+      ],
+      "example_details": [
+        {
+          "description": "Показать свойства файла, такие как размер, права доступа, даты создания и последнего обращения и другие:",
+          "command": "stat {{путь/к/файлу}}"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/stat.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/stat.md",
+        "sha256": "3d0059b16773893c50bda55803106b341b8fc756761c7bea5f96b00f3f45d0cb",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:common:tail",
+      "name": "tail",
+      "description": "Display the last part of a file. See also: `head`.",
+      "aliases": [],
+      "signatures": [
+        "tail {{path/to/file}}"
+      ],
+      "examples": [
+        "tail {{path/to/file}}"
+      ],
+      "example_details": [
+        {
+          "description": "Show last 10 lines in a file:",
+          "command": "tail {{path/to/file}}"
+        }
+      ],
+      "platform": "common",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/tail.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/common/tail.md",
+        "sha256": "b208bcdcfdd66475cb10dcc10e568dcd66ccca2d1f9d2f5eb6fad27b7c84e40d",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:common:uname",
+      "name": "uname",
+      "description": "Показать информацию о текущей машине и операционной системе. Смотрите также: `lsb_release`.",
+      "aliases": [],
+      "signatures": [
+        "uname"
+      ],
+      "examples": [
+        "uname"
+      ],
+      "example_details": [
+        {
+          "description": "Показать имя ядра:",
+          "command": "uname"
+        }
+      ],
+      "platform": "common",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/uname.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/common/uname.md",
+        "sha256": "97716468f49c96d05a19d3dc162d0787bd977e18c31522b5e04e1e082cacb832",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:common:uniq",
+      "name": "uniq",
+      "description": "Output the unique lines from an input or file. Since it does not detect repeated lines unless they are adjacent, we need to sort them first. See also: `sort`.",
+      "aliases": [],
+      "signatures": [
+        "sort {{path/to/file}} | uniq"
+      ],
+      "examples": [
+        "sort {{path/to/file}} | uniq"
+      ],
+      "example_details": [
+        {
+          "description": "Display each line once:",
+          "command": "sort {{path/to/file}} | uniq"
+        }
+      ],
+      "platform": "common",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/uniq.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/common/uniq.md",
+        "sha256": "09952e52098a315af12499e79c38f699213871a249218876ddbc58fbbfc55e8a",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:common:wc",
+      "name": "wc",
+      "description": "Count lines, words, and bytes.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "common",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/wc.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/common/wc.md",
+        "sha256": "97c17362b5ccfaea4084384f44e827bcae39b9abfcdcf4ef32b77a0059d3d5a3",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:linux:dmesg",
+      "name": "dmesg",
+      "description": "Write the kernel messages to `stdout`. See also: `journalctl`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/linux/dmesg.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/linux/dmesg.md",
+        "sha256": "139b9e6916d9058bf0ad872457b173666e519fc3fef0b6c152bb9705a615bcdb",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:linux:free",
+      "name": "free",
+      "description": "Показывать количество свободной и используемой памяти в системе.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/free.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/linux/free.md",
+        "sha256": "5539f91b6e95213fa896aa70845303116faef28e67b76042d7fa1cd9848733a1",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:linux:ip",
+      "name": "ip",
+      "description": "Показывать и управлять маршрутизацией, устройствами, политиками маршрутизации и туннелями. Некоторые подкоманды, такие как `address`, имеют собственную документацию.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/ip.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/linux/ip.md",
+        "sha256": "d017db194ddaf4ab92c0a571049a45475bead6d82242d922722b14d434667fe3",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:linux:journalctl",
+      "name": "journalctl",
+      "description": "Запрашивать записи из журнала systemd. Смотрите также: `dmesg`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/journalctl.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/linux/journalctl.md",
+        "sha256": "9d0e023e111ca3b9cbb15d9583ea33a90307c390db98d2af4ea1bb19d1a36cac",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:ru:linux:ss",
+      "name": "ss",
+      "description": "Утилита для анализа сокетов.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "ru",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/ss.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages.ru/linux/ss.md",
+        "sha256": "32db97009fcfea431e3285d47553feea2559af21c74842da9eb547014eb17fff",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:linux:systemctl",
+      "name": "systemctl",
+      "description": "Control the systemd system and service manager. Some subcommands such as `disable`, `status`, `reboot`, etc. have their own usage documentation.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/linux/systemctl.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/linux/systemctl.md",
+        "sha256": "b6b255f1dd1c3fa900d03de9f5d978522ed6b48003e6f4aaa7441fbd0712afb3",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:linux:vmstat",
+      "name": "vmstat",
+      "description": "Report information about processes, memory, paging, block IO, traps, disks, and CPU activity.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "linux",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/linux/vmstat.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/linux/vmstat.md",
+        "sha256": "f75a943d4b98ed830ae1a9cce10ad94dcf9e30d50fed26d755d8c1329f759116",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:launchctl",
+      "name": "launchctl",
+      "description": "Control Apple's `launchd` manager for launch daemons (system-wide services) and launch agents (per-user programs). `launchd` loads XML-based `*.plist` files placed in the appropriate locations, and runs the corresponding commands according to their defined schedule.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/launchctl.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/launchctl.md",
+        "sha256": "bbafa0d1883454b756b54c323fda35dc2a34b5e5cbd29a855efc7b6294604269",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:log",
+      "name": "log",
+      "description": "View, export, and configure logging systems.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/log.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/log.md",
+        "sha256": "7ac3caf5496b360a8d4be5c60ef34af6e04ecab0e64b28f556998c3513695e3f",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:mdfind",
+      "name": "mdfind",
+      "description": "List files matching a query.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/mdfind.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/mdfind.md",
+        "sha256": "d7ed163713994882cfe5c9bf2afd4a983243518d5b1bc3a699b12718cd210b44",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:mdls",
+      "name": "mdls",
+      "description": "Display the metadata attributes for a file.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/mdls.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/mdls.md",
+        "sha256": "71d77c556e9f9ff5178c049e52abf55c8c53c97d9233fc7a764302d63b07a76c",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:sed",
+      "name": "sed",
+      "description": "Edit text in a scriptable manner. See also: `awk`, `ed`.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/sed.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/sed.md",
+        "sha256": "8b816c18d0ed847ce3deb4bfa35d092fb06e2bba977ad2c7779363282b968013",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:sw_vers",
+      "name": "sw_vers",
+      "description": "Print macOS operating system version information.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/sw_vers.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/sw_vers.md",
+        "sha256": "3f6ae2e88a2566d06dd081219b16445632289a4779fad4a41719992506f50bc1",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:sysctl",
+      "name": "sysctl",
+      "description": "Access kernel state information.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/sysctl.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/sysctl.md",
+        "sha256": "3fbf92f80c914f6c2bbeeba234e3a1ae9c29b52d38921664c8b93d01a213f64e",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:system_profiler",
+      "name": "system_profiler",
+      "description": "Report system hardware and software configuration.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/system_profiler.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/system_profiler.md",
+        "sha256": "30097999c6b2fb33b51ca92ee000ff96315e7b165edecbc5cf80d30959e369e5",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    },
+    {
+      "id": "tldr:en:osx:vm_stat",
+      "name": "vm_stat",
+      "description": "Show virtual memory statistics.",
+      "aliases": [],
+      "signatures": [],
+      "examples": [],
+      "example_details": [],
+      "platform": "osx",
+      "language": "en",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/vm_stat.md"
+      ],
+      "provenance": {
+        "repository": "https://github.com/tldr-pages/tldr",
+        "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+        "path": "pages/osx/vm_stat.md",
+        "sha256": "86d243f2ea5d08347dc9164a2d6bf231fe71d5d247b41735a8944c8873db740f",
+        "license": "CC-BY-4.0",
+        "attribution": "tldr-pages team and contributors"
+      }
+    }
+  ]
+}

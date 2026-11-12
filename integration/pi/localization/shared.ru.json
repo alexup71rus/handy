@@ -1,0 +1,65 @@
+[
+  {
+    "package": "tui",
+    "file": "components/settings-list.js",
+    "old": "export class SettingsList {",
+    "new": "const RUSSIAN_SETTING_VALUES = {\"true\": \"да\", \"false\": \"нет\", \"on\": \"вкл.\", \"off\": \"выкл.\", \"all\": \"все\", \"one-at-a-time\": \"по одному\", \"header\": \"заголовок\", \"tree\": \"дерево\", \"fork\": \"новый чат\", \"none\": \"нет\", \"default\": \"обычный\", \"no-tools\": \"без инструментов\", \"user-only\": \"только мои\", \"labeled-only\": \"с метками\", \"regular\": \"обычный\", \"fullscreen\": \"на весь экран\", \"transcript\": \"переписка\", \"resume-hint\": \"как продолжить\", \"always\": \"всегда\", \"hidden\": \"скрыто\", \"auto\": \"авто\", \"idle\": \"при простое\", \"streaming\": \"при ответе\", \"final\": \"после ответа\", \"configure\": \"настроить\", \"dark\": \"тёмная\", \"light\": \"светлая\", \"system\": \"системная\", \"minimal\": \"минимальный\", \"low\": \"низкий\", \"medium\": \"средний\", \"high\": \"высокий\", \"xhigh\": \"очень высокий\", \"max\": \"максимальный\", \"save and go back\": \"сохранить и назад\", \"switch to single theme\": \"выбрать одну тему\"};\nexport class SettingsList {",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/settings-list.js",
+    "old": "truncateToWidth(item.currentValue, valueMaxWidth, \"\")",
+    "new": "truncateToWidth(RUSSIAN_SETTING_VALUES[item.currentValue] ?? item.currentValue, valueMaxWidth, \"\")",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/settings-list.js",
+    "old": "\"  No settings available\"",
+    "new": "\"  Настроек пока нет\"",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/settings-list.js",
+    "old": "\"  No matching settings\"",
+    "new": "\"  Настройки не найдены\"",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/settings-list.js",
+    "old": "\"  Type to search · Enter/Space to change · Esc to cancel\"",
+    "new": "\"  Ввод — поиск · Enter/Пробел — изменить · Esc — назад\"",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/settings-list.js",
+    "old": "\"  Enter/Space to change · Esc to cancel\"",
+    "new": "\"  Enter/Пробел — изменить · Esc — назад\"",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/select-list.js",
+    "old": "\"  No matching commands\"",
+    "new": "\"  Команды не найдены\"",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/editor.js",
+    "old": "` ${direction} ${hiddenLineCount} more `",
+    "new": "` ${direction} ещё ${hiddenLineCount} `",
+    "count": 1
+  },
+  {
+    "package": "tui",
+    "file": "components/editor.js",
+    "old": "`─── ${direction} ${hiddenLineCount} more `",
+    "new": "`─── ${direction} ещё ${hiddenLineCount} `",
+    "count": 1
+  }
+]

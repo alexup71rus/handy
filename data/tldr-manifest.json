@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/tldr-pages/tldr",
+  "revision": "758e8f23e08dcc26023eac7544c4d502e728b0de",
+  "reference_only": true,
+  "attribution": "tldr-pages team and contributors",
+  "license": {
+    "spdx": "CC-BY-4.0",
+    "path": "tldr-LICENSE.md",
+    "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/LICENSE.md",
+    "sha256": "826498c9793c53709035760c33bd6681e48380d34031320447febe675420ef4d"
+  },
+  "pack": {
+    "path": "tldr-reference.json",
+    "bytes": 50608,
+    "sha256": "260e6fba15311ca0e387320abf5877c993f3551829d4a849f68597fc478675a3"
+  },
+  "budgets": {
+    "max_page_bytes": 2097152,
+    "max_pack_bytes": 5242880,
+    "max_seconds": 150,
+    "workers": 4
+  },
+  "pages": [
+    {
+      "id": "tldr:ru:common:cat",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/cat.md",
+      "sha256": "423a9fa030b51f47896ebd28bed5527f8836cdeb452d22d982f9b59b61a62753",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/cat.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:ru:common:curl",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/curl.md",
+      "sha256": "a15bdd5333733401fc24a610ad41177b2ca570f8fff1348a9781fc097946de17",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/curl.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:cut",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/cut.md",
+      "sha256": "d17a62631fe19139d8ef6b1d8106809f3cf51b533b737a8e194cb395814cba7d",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/cut.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:df",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/df.md",
+      "sha256": "d653eacbbc8a557181b4e5e6ab0fa1fa71f6c760a04875970fdd6676380ff27c",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/df.md",
+      "safe_examples": 4
+    },
+    {
+      "id": "tldr:ru:common:docker-compose",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/docker-compose.md",
+      "sha256": "59b215fb8fafb26ad3e6d9af32423fc390f1eb3cdd64f6d756978e567911124b",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/docker-compose.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:docker-compose-logs",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/docker-compose-logs.md",
+      "sha256": "5d4386bc678bf3329efebcd6eb5662f2d36570d5f9d8dad0c31b423a1f2d9117",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/docker-compose-logs.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:docker-logs",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/docker-logs.md",
+      "sha256": "8e35e7f0925aca8ab074f851a8a48cbb97af63d5d6213fec45f8458704b55047",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/docker-logs.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:du",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/du.md",
+      "sha256": "a4ceb67a7b738a6db9880a713a501e44db394219aa1362fd1c94cb15260aac8c",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/du.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:echo",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/echo.md",
+      "sha256": "248da9c913a7a65ab4fd49248673ed998126bc3d09c1e44e505ca2b6873f0e0e",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/echo.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:common:file",
+      "language": "en",
+      "platform": "common",
+      "path": "pages/common/file.md",
+      "sha256": "c34a5741ebde4ff4e3f15ef7bba57fae0dbf11fd850d4079576c3b72fb08f631",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/file.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:ru:common:find",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/find.md",
+      "sha256": "d71a945f284d92506d18854150edde2392f329b3b2ed5780731f1ae5a4d07d27",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/find.md",
+      "safe_examples": 2
+    },
+    {
+      "id": "tldr:ru:common:git",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/git.md",
+      "sha256": "bb79f7ea65ae52309be6d5974e31bf68287758cfb563aead6d5f5693a6c0a8d5",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/git.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:grep",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/grep.md",
+      "sha256": "836e99f8e83922bf4ebfc232aa1d25a19cc514efd77abd47834a1b2fb4662eda",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/grep.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:head",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/head.md",
+      "sha256": "468bf39390efaa79a91b4b4080bac754e72ebfd9b09161b3c4905c86d5b41335",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/head.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:ru:common:jq",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/jq.md",
+      "sha256": "c9070dea2c26b25694518cf37015100850bf116afb96951808db5a164f40e59a",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/jq.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:ls",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/ls.md",
+      "sha256": "c798b28ab5de1f5bcdf6076305a9ddfc0c86945603345cc8828c619a58d0d3db",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/ls.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:ru:common:lsof",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/lsof.md",
+      "sha256": "9bf2ee89ff173d691a1901d0076735b25f13bd4c3bf1e7d5c9a051204ec6590b",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/lsof.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:common:ps",
+      "language": "en",
+      "platform": "common",
+      "path": "pages/common/ps.md",
+      "sha256": "8f862a3c3f1e83391982a4359d025f4093a811e864410ef54d6a18d8136ef161",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/ps.md",
+      "safe_examples": 3
+    },
+    {
+      "id": "tldr:ru:common:pwd",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/pwd.md",
+      "sha256": "b92b81154e29155003fd24abbd538f0edb9ee0173f08c3b1f88c4b32da8bfcc3",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/pwd.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:en:common:python",
+      "language": "en",
+      "platform": "common",
+      "path": "pages/common/python.md",
+      "sha256": "2a07652c1437e460eb9eb6f449a1df3f4c6e4d7c573198d4f232b8327c91c9e7",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/python.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:rg",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/rg.md",
+      "sha256": "882c4777e59ef87a07a8f58ee7273b561b74e42cfd0a62781e43ce47166dc120",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/rg.md",
+      "safe_examples": 2
+    },
+    {
+      "id": "tldr:ru:common:sed",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/sed.md",
+      "sha256": "3dd806f035bd1345243b5f8ac96637a3dbdb523c704145977d33a973842929c3",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/sed.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:sort",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/sort.md",
+      "sha256": "3ed1f3bccd461732082a485277a47b0b200efb3e5b8267f91e9fbcb6a8a5961a",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/sort.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:ru:common:ssh",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/ssh.md",
+      "sha256": "9c09622170535151cafba83bb61e57dc8c4ccc5ba72b8cb5f4d2ad1d5ef653c9",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/ssh.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:common:stat",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/stat.md",
+      "sha256": "3d0059b16773893c50bda55803106b341b8fc756761c7bea5f96b00f3f45d0cb",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/stat.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:en:common:tail",
+      "language": "en",
+      "platform": "common",
+      "path": "pages/common/tail.md",
+      "sha256": "b208bcdcfdd66475cb10dcc10e568dcd66ccca2d1f9d2f5eb6fad27b7c84e40d",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/tail.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:ru:common:uname",
+      "language": "ru",
+      "platform": "common",
+      "path": "pages.ru/common/uname.md",
+      "sha256": "97716468f49c96d05a19d3dc162d0787bd977e18c31522b5e04e1e082cacb832",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/common/uname.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:en:common:uniq",
+      "language": "en",
+      "platform": "common",
+      "path": "pages/common/uniq.md",
+      "sha256": "09952e52098a315af12499e79c38f699213871a249218876ddbc58fbbfc55e8a",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/uniq.md",
+      "safe_examples": 1
+    },
+    {
+      "id": "tldr:en:common:wc",
+      "language": "en",
+      "platform": "common",
+      "path": "pages/common/wc.md",
+      "sha256": "97c17362b5ccfaea4084384f44e827bcae39b9abfcdcf4ef32b77a0059d3d5a3",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/common/wc.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:linux:dmesg",
+      "language": "en",
+      "platform": "linux",
+      "path": "pages/linux/dmesg.md",
+      "sha256": "139b9e6916d9058bf0ad872457b173666e519fc3fef0b6c152bb9705a615bcdb",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/linux/dmesg.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:linux:free",
+      "language": "ru",
+      "platform": "linux",
+      "path": "pages.ru/linux/free.md",
+      "sha256": "5539f91b6e95213fa896aa70845303116faef28e67b76042d7fa1cd9848733a1",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/free.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:linux:ip",
+      "language": "ru",
+      "platform": "linux",
+      "path": "pages.ru/linux/ip.md",
+      "sha256": "d017db194ddaf4ab92c0a571049a45475bead6d82242d922722b14d434667fe3",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/ip.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:linux:journalctl",
+      "language": "ru",
+      "platform": "linux",
+      "path": "pages.ru/linux/journalctl.md",
+      "sha256": "9d0e023e111ca3b9cbb15d9583ea33a90307c390db98d2af4ea1bb19d1a36cac",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/journalctl.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:ru:linux:ss",
+      "language": "ru",
+      "platform": "linux",
+      "path": "pages.ru/linux/ss.md",
+      "sha256": "32db97009fcfea431e3285d47553feea2559af21c74842da9eb547014eb17fff",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages.ru/linux/ss.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:linux:systemctl",
+      "language": "en",
+      "platform": "linux",
+      "path": "pages/linux/systemctl.md",
+      "sha256": "b6b255f1dd1c3fa900d03de9f5d978522ed6b48003e6f4aaa7441fbd0712afb3",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/linux/systemctl.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:linux:vmstat",
+      "language": "en",
+      "platform": "linux",
+      "path": "pages/linux/vmstat.md",
+      "sha256": "f75a943d4b98ed830ae1a9cce10ad94dcf9e30d50fed26d755d8c1329f759116",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/linux/vmstat.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:launchctl",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/launchctl.md",
+      "sha256": "bbafa0d1883454b756b54c323fda35dc2a34b5e5cbd29a855efc7b6294604269",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/launchctl.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:log",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/log.md",
+      "sha256": "7ac3caf5496b360a8d4be5c60ef34af6e04ecab0e64b28f556998c3513695e3f",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/log.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:mdfind",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/mdfind.md",
+      "sha256": "d7ed163713994882cfe5c9bf2afd4a983243518d5b1bc3a699b12718cd210b44",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/mdfind.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:mdls",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/mdls.md",
+      "sha256": "71d77c556e9f9ff5178c049e52abf55c8c53c97d9233fc7a764302d63b07a76c",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/mdls.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:sed",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/sed.md",
+      "sha256": "8b816c18d0ed847ce3deb4bfa35d092fb06e2bba977ad2c7779363282b968013",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/sed.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:sw_vers",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/sw_vers.md",
+      "sha256": "3f6ae2e88a2566d06dd081219b16445632289a4779fad4a41719992506f50bc1",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/sw_vers.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:sysctl",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/sysctl.md",
+      "sha256": "3fbf92f80c914f6c2bbeeba234e3a1ae9c29b52d38921664c8b93d01a213f64e",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/sysctl.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:system_profiler",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/system_profiler.md",
+      "sha256": "30097999c6b2fb33b51ca92ee000ff96315e7b165edecbc5cf80d30959e369e5",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/system_profiler.md",
+      "safe_examples": 0
+    },
+    {
+      "id": "tldr:en:osx:vm_stat",
+      "language": "en",
+      "platform": "osx",
+      "path": "pages/osx/vm_stat.md",
+      "sha256": "86d243f2ea5d08347dc9164a2d6bf231fe71d5d247b41735a8944c8873db740f",
+      "source": "https://raw.githubusercontent.com/tldr-pages/tldr/758e8f23e08dcc26023eac7544c4d502e728b0de/pages/osx/vm_stat.md",
+      "safe_examples": 0
+    }
+  ],
+  "missing": []
+}

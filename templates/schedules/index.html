@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Запланированные задачи · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="schedules.js"></script>
+</head>
+<body>
+  <main class="shell schedule-shell">
+    <header class="intro">
+      <h1>Запланированные задачи</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю задачи…</p>
+    <section id="report" hidden>
+      <div class="card schedule-tools">
+        <p id="worker-status"></p>
+        <label>Статус задач
+          <select id="job-filter">
+            <option value="all">Все</option>
+            <option value="on">Включены</option>
+            <option value="off">На паузе</option>
+          </select>
+        </label>
+      </div>
+      <div id="schedule-command" class="card schedule-tools" hidden>
+        <label for="command-value">Команда для чата Handy</label>
+        <input id="command-value" readonly>
+        <p id="command-status" role="status"></p>
+      </div>
+      <ul id="jobs" class="schedule-jobs"></ul>
+      <p id="jobs-empty" class="notice" hidden></p>
+    </section>
+    <p class="source">Снимок расписания. После изменений запроси в чате свежий список.</p>
+  </main>
+</body>
+</html>

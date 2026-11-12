@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Локальные утилиты · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="toolbox.js"></script>
+</head>
+<body>
+  <main class="shell toolbox-shell">
+    <header class="intro">
+      <h1>Локальные утилиты</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю утилиты…</p>
+    <section id="report" class="card" aria-labelledby="toolbox-heading" hidden>
+      <div class="card-heading">
+        <h2 id="toolbox-heading">Инструмент</h2>
+        <label class="search">
+          Действие
+          <select id="toolbox-operation">
+            <optgroup label="Случайный выбор">
+              <option value="numbers">Случайные числа</option>
+              <option value="choices">Выбор из списка</option>
+              <option value="shuffle">Перемешать список</option>
+              <option value="coin">Подбросить монету</option>
+            </optgroup>
+            <optgroup label="Данные и текст">
+              <option value="json-format">Отформатировать JSON</option>
+              <option value="json-minify">Сжать JSON</option>
+              <option value="json-validate">Проверить JSON</option>
+              <option value="text-count">Посчитать символы, слова и строки</option>
+            </optgroup>
+            <optgroup label="Кодировки">
+              <option value="base64-encode">Закодировать в Base64</option>
+              <option value="base64-decode">Декодировать Base64</option>
+              <option value="base64url-encode">Закодировать в Base64 URL-safe</option>
+              <option value="base64url-decode">Декодировать Base64 URL-safe</option>
+              <option value="url-encode">Закодировать URL-компонент</option>
+              <option value="url-decode">Декодировать URL-компонент</option>
+              <option value="hex-encode">Закодировать в hex</option>
+              <option value="hex-decode">Декодировать hex</option>
+            </optgroup>
+            <optgroup label="Идентификаторы и хеши">
+              <option value="uuid">Сгенерировать UUID v4</option>
+              <option value="sha256">Вычислить SHA-256</option>
+            </optgroup>
+          </select>
+        </label>
+      </div>
+      <div class="password-controls">
+        <p id="toolbox-hint" class="quiet"></p>
+        <div class="dice-fields toolbox-settings" id="toolbox-settings">
+          <label id="toolbox-min-field">От <input type="number" id="toolbox-min" min="-1000000000" max="1000000000" value="1" step="1"></label>
+          <label id="toolbox-max-field">До <input type="number" id="toolbox-max" min="-1000000000" max="1000000000" value="100" step="1"></label>
+          <label>Сколько <input type="number" id="toolbox-count" min="1" max="100" value="1" step="1"></label>
+        </div>
+        <label class="toolbox-check" id="toolbox-unique-field">
+          <input type="checkbox" id="toolbox-unique" checked> Без повторов
+        </label>
+        <div class="toolbox-workspace">
+          <label id="toolbox-input-field">
+            <span id="toolbox-input-label">Ввод</span>
+            <textarea id="toolbox-input" rows="8" maxlength="16000" autocomplete="off" spellcheck="false"></textarea>
+          </label>
+          <label>
+            Результат
+            <textarea id="toolbox-output" rows="8" readonly spellcheck="false"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="password-actions">
+        <p id="toolbox-status" class="quiet" role="status" aria-live="polite"></p>
+        <div class="password-buttons">
+          <button type="button" class="primary" id="toolbox-run">Выполнить</button>
+          <button type="button" class="password-secondary" id="toolbox-copy" disabled>Скопировать</button>
+          <button type="button" class="password-secondary" id="toolbox-clear">Очистить</button>
+        </div>
+      </div>
+    </section>
+    <p class="source">Ввод и результат остаются на этой странице.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "extensions": {
+    ".md": "markdown",
+    ".txt": "text",
+    ".rst": "text",
+    ".pdf": "pdf",
+    ".docx": "word",
+    ".xlsx": "excel",
+    ".csv": "csv",
+    ".tsv": "tsv",
+    ".json": "json",
+    ".jsonl": "jsonl",
+    ".yaml": "yaml",
+    ".yml": "yaml",
+    ".toml": "toml",
+    ".html": "html",
+    ".css": "css",
+    ".js": "javascript",
+    ".mjs": "javascript",
+    ".cjs": "javascript",
+    ".jsx": "javascript",
+    ".ts": "typescript",
+    ".tsx": "typescript",
+    ".py": "python",
+    ".pyw": "python",
+    ".rs": "rust",
+    ".go": "go",
+    ".php": "php",
+    ".swift": "swift",
+    ".sh": "shell",
+    ".sql": "sql",
+    ".png": "png",
+    ".jpg": "jpeg",
+    ".jpeg": "jpeg",
+    ".webp": "webp",
+    ".svg": "svg",
+    ".mp3": "mp3",
+    ".m4a": "m4a",
+    ".wav": "wav",
+    ".mp4": "mp4",
+    ".mov": "mov",
+    ".zip": "zip",
+    ".gz": "gzip",
+    ".tar": "tar",
+    ".lock": "lock"
+  },
+  "groups": {
+    "code": [
+      "javascript",
+      "typescript",
+      "python",
+      "rust",
+      "go",
+      "php",
+      "swift",
+      "shell",
+      "css",
+      "sql",
+      "html"
+    ],
+    "data": [
+      "json",
+      "csv",
+      "tsv",
+      "jsonl",
+      "excel"
+    ],
+    "image": [
+      "png",
+      "jpeg",
+      "webp",
+      "svg"
+    ],
+    "media": [
+      "mp3",
+      "m4a",
+      "wav",
+      "mp4",
+      "mov"
+    ],
+    "archive": [
+      "zip",
+      "gzip",
+      "tar"
+    ],
+    "document": [
+      "markdown",
+      "text",
+      "pdf",
+      "word"
+    ],
+    "config": [
+      "yaml",
+      "toml",
+      "lock"
+    ]
+  },
+  "text_formats": [
+    "javascript",
+    "typescript",
+    "python",
+    "rust",
+    "go",
+    "php",
+    "swift",
+    "shell",
+    "css",
+    "sql",
+    "html",
+    "markdown",
+    "text",
+    "csv",
+    "tsv",
+    "json",
+    "jsonl",
+    "yaml",
+    "toml",
+    "svg",
+    "lock"
+  ],
+  "path_rules": [
+    {
+      "basename_prefix": [
+        "readme",
+        "instructions"
+      ],
+      "tag": "role/instructions"
+    },
+    {
+      "path_part": [
+        "node_modules",
+        "vendor",
+        ".venv",
+        "venv"
+      ],
+      "tag": "role/dependency"
+    }
+  ]
+}

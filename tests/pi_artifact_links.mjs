@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { artifactLink } from '../integration/pi/artifact-links.ts';
+const receipt={status:'ok',data:{artifact:{title:'Часы',path:'/tmp/clock space/index.html',uri:'https://untrusted.test'}}};
+const link=artifactLink({structuredContent:{structuredContent:receipt}});
+assert.equal(link.uri,'file:///tmp/clock%20space/index.html');
+assert.equal(link.title,'Часы');
+assert.deepEqual(artifactLink({content:[{type:'text',text:JSON.stringify(receipt)}]}),link);
+assert.equal(artifactLink({content:[{type:'text',text:'Created a clock'}]}),undefined);
+assert.equal(artifactLink({structuredContent:{status:'error',data:receipt.data}}),undefined);
+assert.equal(artifactLink({structuredContent:{...receipt,data:{artifact:{path:'relative.html'}}}}),undefined);
+console.log('Artifact receipt links: 6 checks passed');

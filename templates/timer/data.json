@@ -1,0 +1,5 @@
+{
+  "title": "Таймер",
+  "mode": "countdown",
+  "durationSeconds": 300
+}

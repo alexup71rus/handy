@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Список · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="list.js"></script>
+</head>
+<body>
+  <main class="shell utility-shell">
+    <header class="intro">
+      <h1>Список</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю список…</p>
+    <section id="report" class="card" aria-labelledby="list-heading" hidden>
+      <div class="card-heading">
+        <div>
+          <h2 id="list-heading">Пункты</h2>
+          <p id="checked-count" class="quiet" role="status" hidden></p>
+        </div>
+        <label class="search" for="list-filter" id="list-search">Поиск по списку
+          <input type="search" id="list-filter" placeholder="Название или описание" autocomplete="off">
+        </label>
+      </div>
+      <ul id="list-items" class="list-items" role="list"></ul>
+      <p id="list-empty" class="list-empty" hidden></p>
+      <div class="pager">
+        <p id="list-count" role="status"></p>
+        <span id="list-pagination" hidden>
+          <button type="button" id="previous-page">Назад</button>
+          <button type="button" id="next-page">Дальше</button>
+        </span>
+      </div>
+    </section>
+    <p class="source">Источник данных · <a href="data.json">data.json</a></p>
+  </main>
+</body>
+</html>

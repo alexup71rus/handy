@@ -1,0 +1,1267 @@
+{
+  "schema_version": 1,
+  "purpose": "Reference knowledge about CLI programs; not a list of available or authorized tools. Examples are illustrative and must not be executed automatically.",
+  "entries": [
+    {
+      "id": "ls",
+      "name": "ls",
+      "description": "Показывает имена и атрибуты объектов каталога.",
+      "aliases": [
+        "список файлов",
+        "каталог"
+      ],
+      "signatures": [
+        "ls [-l] [file ...]"
+      ],
+      "examples": [
+        "ls -l ."
+      ],
+      "effect": "read",
+      "caveats": [
+        "Параметры и формат вывода различаются между реализациями."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/ls.html"
+      ]
+    },
+    {
+      "id": "pwd",
+      "name": "pwd",
+      "description": "Печатает путь текущей рабочей директории.",
+      "aliases": [
+        "рабочая папка"
+      ],
+      "signatures": [
+        "pwd [-L|-P]"
+      ],
+      "examples": [
+        "pwd"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Относительные пути процесса разрешаются от его текущей рабочей директории.",
+        "Символические ссылки влияют на логический и физический путь."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/pwd.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:почему|что\\s+(?:такое|значит|означает)|why|what\\s+is)\\b",
+          "\\b(?:working\\s+directory|рабоч\\w+\\s+(?:директори|каталог|папк)\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "cd",
+      "name": "cd",
+      "description": "Меняет текущую директорию оболочки.",
+      "aliases": [
+        "перейти в каталог"
+      ],
+      "signatures": [
+        "cd [directory]"
+      ],
+      "examples": [
+        "cd project"
+      ],
+      "effect": "state_change",
+      "caveats": [
+        "Обычно встроена в оболочку; меняет состояние текущей оболочки."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/cd.html"
+      ]
+    },
+    {
+      "id": "cat",
+      "name": "cat",
+      "description": "Выводит и объединяет содержимое файлов.",
+      "aliases": [
+        "прочитать файл"
+      ],
+      "signatures": [
+        "cat [file ...]"
+      ],
+      "examples": [
+        "cat notes.txt"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Перенаправление вывода оболочкой может изменить или создать файл."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/cat.html"
+      ]
+    },
+    {
+      "id": "head",
+      "name": "head",
+      "description": "Выводит начальную часть файла.",
+      "aliases": [
+        "первые строки"
+      ],
+      "signatures": [
+        "head [-n number] [file ...]"
+      ],
+      "examples": [
+        "head -n 10 notes.txt"
+      ],
+      "effect": "read",
+      "caveats": [],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/head.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:первые\\s+строк\\w*|начальн\\w+\\s+част\\w*|first\\s+(?:\\d+\\s+)?lines?|start\\s+of)\\b",
+          "\\b(?:файл\\w*|отч[её]т\\w*|документ\\w*|текст\\w*|files?|reports?|documents?|text)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "tail",
+      "name": "tail",
+      "description": "Выводит конечную часть файла.",
+      "aliases": [
+        "последние строки"
+      ],
+      "signatures": [
+        "tail [-n number] [file]"
+      ],
+      "examples": [
+        "tail -n 10 notes.txt"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Режим наблюдения может продолжать работу, ожидая новые данные."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/tail.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:последн\\w+\\s+(?:\\d+\\s+)?строк\\w*|last\\s+(?:\\d+\\s+)?lines?|end\\s+of)\\b",
+          "\\b(?:журнал\\w*|лог\\w*|файл\\w*|logs?|files?)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "grep",
+      "name": "grep",
+      "description": "Ищет строки, соответствующие шаблону.",
+      "aliases": [
+        "поиск текста",
+        "регулярные выражения"
+      ],
+      "signatures": [
+        "grep [-i] [-n] pattern [file ...]"
+      ],
+      "examples": [
+        "grep -n 'error' app.log"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Команда `grep -n 'error' app.log` найдёт совпавшие строки и выведет их номера. Для буквального поиска используй -F."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/grep.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:поиск\\w*|искать|найти|отобрать|search\\w*|find|match\\w*)\\b",
+          "\\b(?:строк\\w*|lines?)\\b",
+          "\\b(?:команд\\w*|bash|shell|terminal|command)\\b"
+        ],
+        [
+          "\\b(?:регулярн\\w*\\s+выражен\\w*|regular\\s+expressions?|regex)\\b",
+          "\\b(?:строк\\w*|текст\\w*|файл\\w*|lines?|text|files?|matching)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "find",
+      "name": "find",
+      "description": "Обходит дерево каталогов и выбирает объекты по условиям.",
+      "aliases": [
+        "поиск файлов"
+      ],
+      "signatures": [
+        "find path... [expression]"
+      ],
+      "examples": [
+        "find . -name \"*.txt\" -print"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Некоторые выражения запускают команды или удаляют файлы; изучайте выражение целиком."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/find.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:поиск\\w*|искать|найти|search\\w*|find)\\b",
+          "\\b(?:файл\\w*|files?)\\b",
+          "\\b(?:дерев\\w*|каталог\\w*|расширени\\w*|времени|recursive\\w*|extension|modified|subdirectories)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "wc",
+      "name": "wc",
+      "description": "Подсчитывает строки, слова и байты.",
+      "aliases": [
+        "количество строк"
+      ],
+      "signatures": [
+        "wc [-lwc] [file ...]"
+      ],
+      "examples": [
+        "wc -l notes.txt"
+      ],
+      "effect": "read",
+      "caveats": [],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/wc.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:строк\\w*|lines?)\\b",
+          "\\b(?:файл\\w*|отч[её]т\\w*|документ\\w*|текст\\w*|files?|reports?|documents?|text)\\b",
+          "\\b(?:счита\\w*|посчит\\w*|сосчит\\w*|подсч[иеё]\\w*|числ\\w*|количеств\\w*|длин\\w*|count\\w*|number)\\b"
+        ],
+        [
+          "\\b(?:строк\\w*|lines?)\\b",
+          "\\b(?:слов\\w*|words?)\\b",
+          "\\b(?:байт\\w*|bytes?)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "sort",
+      "name": "sort",
+      "description": "Сортирует строки входных данных.",
+      "aliases": [
+        "сортировка строк"
+      ],
+      "signatures": [
+        "sort [file ...]"
+      ],
+      "examples": [
+        "sort names.txt"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Вывод обычно идёт в stdout; параметр выходного файла или перенаправление записывают данные."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/sort.html"
+      ]
+    },
+    {
+      "id": "uniq",
+      "name": "uniq",
+      "description": "Обрабатывает соседние повторяющиеся строки.",
+      "aliases": [
+        "дубликаты строк"
+      ],
+      "signatures": [
+        "uniq [-c] [input [output]]"
+      ],
+      "examples": [
+        "uniq -c names.txt"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Сравнивает соседние строки; указанный выходной файл записывается."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/uniq.html"
+      ]
+    },
+    {
+      "id": "du",
+      "name": "du",
+      "description": "Оценивает использование дискового пространства файлами и каталогами.",
+      "aliases": [
+        "размер каталога",
+        "диск"
+      ],
+      "signatures": [
+        "du [-s] [file ...]"
+      ],
+      "examples": [
+        "du -s ."
+      ],
+      "effect": "read",
+      "caveats": [
+        "Результат отражает выделенное пространство и зависит от параметров и реализации."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/du.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:мест[оа]|диск\\w*|размер\\w*|хранилищ\\w*|disk|space|size)\\b",
+          "\\b(?:пап(?:к|ок)\\w*|подпап(?:к|ок)\\w*|каталог\\w*|директори\\w*|director(?:y|ies)|folders?)\\b",
+          "\\b(?:занима\\w*|занял\\w*|расход\\w*|отъел\\w*|использован\\w*|usage|consum\\w*|used|takes?)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "df",
+      "name": "df",
+      "description": "Показывает доступное и занятое пространство файловых систем.",
+      "aliases": [
+        "свободное место"
+      ],
+      "signatures": [
+        "df [file ...]"
+      ],
+      "examples": [
+        "df ."
+      ],
+      "effect": "read",
+      "caveats": [],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/df.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:мест[оа]|диск\\w*|размер\\w*|хранилищ\\w*|disk|space|size)\\b",
+          "\\b(?:свободн\\w*|доступн\\w*|free|available)\\b",
+          "\\b(?:файлов\\w*\\s+систем\\w*|filesystems?|mount\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "file",
+      "name": "file",
+      "description": "Определяет предполагаемый тип файла по содержимому и метаданным.",
+      "aliases": [
+        "тип файла"
+      ],
+      "signatures": [
+        "file file ..."
+      ],
+      "examples": [
+        "file notes.txt"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Определение типа является оценкой, а не гарантией содержимого."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/file.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:формат\\w*|тип\\w*|format|type)\\b",
+          "\\b(?:файл\\w*|files?)\\b",
+          "\\b(?:содержим\\w*|магическ\\w*|contents?|magic|signature)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "stat",
+      "name": "stat",
+      "description": "Показывает метаданные файла.",
+      "aliases": [
+        "атрибуты файла"
+      ],
+      "signatures": [
+        "stat file ..."
+      ],
+      "examples": [
+        "stat notes.txt"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Параметры и формат GNU и BSD stat различаются."
+      ],
+      "sources": [
+        "https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html",
+        "https://man.freebsd.org/cgi/man.cgi?query=stat&sektion=1"
+      ]
+    },
+    {
+      "id": "mkdir",
+      "name": "mkdir",
+      "description": "Создаёт каталоги.",
+      "aliases": [
+        "создать папку"
+      ],
+      "signatures": [
+        "mkdir [-p] directory ..."
+      ],
+      "examples": [
+        "mkdir notes"
+      ],
+      "effect": "mutation",
+      "caveats": [
+        "Изменяет файловую систему; -p может создать промежуточные каталоги."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/mkdir.html"
+      ]
+    },
+    {
+      "id": "tar",
+      "name": "tar",
+      "description": "Создаёт и извлекает архивы tar.",
+      "aliases": [
+        "архив",
+        "распаковать"
+      ],
+      "signatures": [
+        "tar -tf archive.tar"
+      ],
+      "examples": [
+        "tar -tf archive.tar"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Извлечение и создание архива изменяют файлы; проверяйте пути содержимого архива."
+      ],
+      "sources": [
+        "https://www.gnu.org/software/tar/manual/tar.html"
+      ]
+    },
+    {
+      "id": "curl",
+      "name": "curl",
+      "description": "Передаёт данные по URL с поддержкой HTTP и других протоколов.",
+      "aliases": [
+        "http",
+        "запрос",
+        "url"
+      ],
+      "signatures": [
+        "curl [options] URL"
+      ],
+      "examples": [
+        "curl --head https://example.org/"
+      ],
+      "effect": "network/mixed",
+      "caveats": [
+        "Обращается к сети; метод, данные и опции могут изменить удалённое состояние или записать локальный файл."
+      ],
+      "sources": [
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "git",
+      "description": "Управляет версиями файлов и историей репозитория.",
+      "aliases": [
+        "контроль версий",
+        "репозиторий"
+      ],
+      "signatures": [
+        "git <command> [options]"
+      ],
+      "examples": [
+        "git status --short"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Подкоманды могут изменять файлы, историю или удалённый репозиторий."
+      ],
+      "sources": [
+        "https://git-scm.com/docs/git"
+      ]
+    },
+    {
+      "id": "ssh",
+      "name": "ssh",
+      "description": "Подключается к удалённому хосту по защищённому протоколу.",
+      "aliases": [
+        "удалённый доступ"
+      ],
+      "signatures": [
+        "ssh destination [command]"
+      ],
+      "examples": [],
+      "effect": "network/mixed",
+      "caveats": [
+        "Подключается к удалённой системе; заданная команда выполняется на ней.",
+        "Строчная опция -g разрешает подключения к локальному пробросу с других машин. Прописная -G печатает итоговую конфигурацию и завершает работу."
+      ],
+      "sources": [
+        "https://man.openbsd.org/ssh.1"
+      ]
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "description": "Фильтрует и преобразует JSON.",
+      "aliases": [
+        "json",
+        "фильтр"
+      ],
+      "signatures": [
+        "jq filter [file ...]"
+      ],
+      "examples": [
+        "jq . data.json"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Вывод в файл через перенаправление меняет файловую систему."
+      ],
+      "sources": [
+        "https://jqlang.org/manual/"
+      ],
+      "match_any": [
+        [
+          "\\bjson\\b",
+          "\\b(?:извлеч\\w*|фильтр\\w*|выбрат\\w*|extract\\w*|filter\\w*|select\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "python3",
+      "name": "python3",
+      "description": "Запускает интерпретатор Python 3 или указанный скрипт.",
+      "aliases": [
+        "python",
+        "интерпретатор"
+      ],
+      "signatures": [
+        "python3 [options] [script]"
+      ],
+      "examples": [
+        "python3 --version"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Код и скрипты могут выполнять произвольные действия с правами пользователя."
+      ],
+      "sources": [
+        "https://docs.python.org/3/using/cmdline.html"
+      ]
+    },
+    {
+      "id": "node",
+      "name": "node",
+      "description": "Запускает среду выполнения JavaScript Node.js.",
+      "aliases": [
+        "javascript",
+        "nodejs"
+      ],
+      "signatures": [
+        "node [options] [script]"
+      ],
+      "examples": [
+        "node --version"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Скрипт может выполнять произвольные действия с правами пользователя."
+      ],
+      "sources": [
+        "https://nodejs.org/api/cli.html"
+      ],
+      "command_aliases": [
+        "nodejs"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "docker",
+      "description": "Управляет контейнерами, образами и другими ресурсами Docker.",
+      "aliases": [
+        "контейнеры",
+        "образы"
+      ],
+      "signatures": [
+        "docker [OPTIONS] COMMAND"
+      ],
+      "examples": [
+        "docker version"
+      ],
+      "effect": "mixed",
+      "caveats": [
+        "Команды могут изменять контейнеры и образы или обращаться к сети и демону."
+      ],
+      "sources": [
+        "https://docs.docker.com/reference/cli/docker/"
+      ]
+    },
+    {
+      "id": "rg",
+      "name": "rg",
+      "description": "Ищет текст в файлах, обычно рекурсивно.",
+      "aliases": [
+        "ripgrep",
+        "поиск по проекту"
+      ],
+      "signatures": [
+        "rg [OPTIONS] PATTERN [PATH ...]"
+      ],
+      "examples": [
+        "rg TODO ."
+      ],
+      "effect": "read",
+      "caveats": [
+        "По умолчанию учитывает правила игнорирования и пропускает некоторые файлы."
+      ],
+      "sources": [
+        "https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md"
+      ],
+      "command_aliases": [
+        "ripgrep"
+      ]
+    },
+    {
+      "id": "ps",
+      "name": "ps",
+      "description": "Показывает сведения о запущенных процессах. PPID — идентификатор родительского процесса, PID — идентификатор самого процесса.",
+      "aliases": [
+        "процессы"
+      ],
+      "signatures": [
+        "ps [options]"
+      ],
+      "examples": [
+        "ps -e"
+      ],
+      "effect": "read",
+      "caveats": [
+        "Флаги и столбцы различаются между системами."
+      ],
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/ps.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:процесс\\w*|process(?:es)?|pids?|ppids?)\\b",
+          "\\b(?:запущенн\\w*|текущ\\w*|running|snapshot)\\b"
+        ],
+        [
+          "\\b(?:процесс\\w*|process(?:es)?|pids?|ppids?)\\b",
+          "\\b(?:родитель\\w*|ppid|parent\\s+ids?)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "tldr:ru:common:lsof",
+      "name": "lsof",
+      "description": "Сопоставляет открытые файлы, сокеты и прослушиваемые порты с процессами. Пример показывает только слушателей TCP-порта 8080.",
+      "aliases": [],
+      "signatures": [
+        "lsof -nP -iTCP:8080 -sTCP:LISTEN"
+      ],
+      "examples": [
+        "lsof -nP -iTCP:8080 -sTCP:LISTEN"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Видимость процессов зависит от прав. Подставь свой номер порта вместо 8080."
+      ],
+      "sources": [
+        "https://github.com/lsof-org/lsof/blob/master/Lsof.8"
+      ],
+      "match_any": [
+        [
+          "\\b(?:открыт\\w*|open)\\b",
+          "\\b(?:файл\\w*|отч[её]т\\w*|документ\\w*|текст\\w*|files?|reports?|documents?|text)\\b",
+          "\\b(?:процесс\\w*|process(?:es)?|pids?|ppids?)\\b"
+        ],
+        [
+          "\\b(?:macos|mac|os\\s+x|мак(?:е|а|ом)?)\\b",
+          "\\b(?:tcp|udp|сокет\\w*|порт\\w*|sockets?|ports?)\\b",
+          "\\b(?:слуша\\w*|listen\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "systemctl",
+      "name": "systemctl",
+      "description": "В Linux с systemd показывает состояние юнита, а is-enabled проверяет его привязку к автозапуску. Состояние active и настройка enabled отвечают на разные вопросы.",
+      "aliases": [
+        "статус systemd-юнита",
+        "проверить автозапуск службы",
+        "systemd service status",
+        "enabled unit"
+      ],
+      "signatures": [
+        "systemctl status --no-pager example.service",
+        "systemctl is-enabled example.service"
+      ],
+      "examples": [
+        "systemctl status --no-pager example.service",
+        "systemctl is-enabled example.service"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Примеры читают состояние. Статический юнит может запускаться как зависимость другого юнита."
+      ],
+      "sources": [
+        "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:systemd|unit\\w*|юнит\\w*|\\.service)\\b",
+          "\\b(?:статус\\w*|состоян\\w*|status|active|enabled|автозапуск\\w*|включ[её]н\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "journalctl",
+      "name": "journalctl",
+      "description": "Читает структурированный журнал systemd. -u выбирает юнит, -b -1 предыдущую загрузку, -n ограничивает число записей.",
+      "aliases": [
+        "сообщения службы systemd",
+        "журнал прошлой загрузки",
+        "previous boot service logs",
+        "unit messages"
+      ],
+      "signatures": [
+        "journalctl --list-boots --no-pager",
+        "journalctl -u example.service -b -1 -n 100 --no-pager"
+      ],
+      "examples": [
+        "journalctl --list-boots --no-pager",
+        "journalctl -u example.service -b -1 -n 100 --no-pager"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Предыдущая загрузка доступна, если журнал её сохранил и у пользователя есть права чтения."
+      ],
+      "sources": [
+        "https://www.freedesktop.org/software/systemd/man/latest/journalctl.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:systemd|unit\\w*|юнит\\w*|\\.service)\\b",
+          "\\b(?:лог\\w*|журнал\\w*|сообщени\\w*|logs?|journals?|messages?)\\b"
+        ],
+        [
+          "\\b(?:загрузк\\w*|бут\\w*|boot)\\b",
+          "\\b(?:лог\\w*|журнал\\w*|logs?|logging|journals?)\\b",
+          "\\b(?:прошл\\w*|предыдущ\\w*|last|previous)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "ss",
+      "name": "ss",
+      "description": "Утилита iproute2 для просмотра сетевых сокетов Linux. -l оставляет слушатели, -n отключает преобразование портов в имена, -t выбирает TCP, -p добавляет сведения о процессе.",
+      "aliases": [
+        "слушающие TCP UDP сокеты Linux PID",
+        "Linux listening sockets owning process"
+      ],
+      "signatures": [
+        "ss -lntp",
+        "ss -lunp"
+      ],
+      "examples": [
+        "ss -lntp",
+        "ss -lunp"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Во втором примере -u выбирает UDP. Чужие процессы могут быть скрыты правами доступа."
+      ],
+      "sources": [
+        "https://man7.org/linux/man-pages/man8/ss.8.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:linux|линукс\\w*|debian|ubuntu|fedora)\\b",
+          "\\b(?:tcp|udp|сокет\\w*|порт\\w*|sockets?|ports?)\\b",
+          "\\b(?:слуша\\w*|listen\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "ip",
+      "name": "ip",
+      "description": "Показывает адреса сетевых интерфейсов и таблицы маршрутов iproute2 в Linux.",
+      "aliases": [
+        "интерфейсы IP адреса маршруты Linux",
+        "Linux interface addresses routing table"
+      ],
+      "signatures": [
+        "ip -brief address show",
+        "ip route show"
+      ],
+      "examples": [
+        "ip -brief address show",
+        "ip route show"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://man7.org/linux/man-pages/man8/ip.8.html"
+      ]
+    },
+    {
+      "id": "free",
+      "name": "free",
+      "description": "Показывает сводку RAM и swap в Linux. Столбец available оценивает память, которую можно использовать без подкачки, с учётом освобождаемого кэша.",
+      "aliases": [
+        "свободная доступная память Linux swap",
+        "available memory Linux"
+      ],
+      "signatures": [
+        "free -h"
+      ],
+      "examples": [
+        "free -h"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://man7.org/linux/man-pages/man1/free.1.html"
+      ],
+      "match_any": [
+        [
+          "\\b(?:linux|линукс\\w*|debian|ubuntu|fedora)\\b",
+          "\\b(?:ram|swap|памят\\w*|подкачк\\w*|memory)\\b",
+          "\\b(?:доступн\\w*|свободн\\w*|available|free)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "vmstat",
+      "name": "vmstat",
+      "description": "В Linux выводит сводку очередей процессов, памяти, подкачки, дискового ввода-вывода и CPU. В примере пять выборок с интервалом одна секунда.",
+      "aliases": [
+        "подкачка ввод-вывод очередь процессов",
+        "swap CPU IO sampling"
+      ],
+      "signatures": [
+        "vmstat 1 5"
+      ],
+      "examples": [
+        "vmstat 1 5"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Первая строка активности обычно усреднена с момента загрузки. Следующие отражают интервал."
+      ],
+      "sources": [
+        "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+      ]
+    },
+    {
+      "id": "dmesg",
+      "name": "dmesg",
+      "description": "Читает кольцевой буфер сообщений ядра Linux. Этот пример выбирает ошибки и предупреждения.",
+      "aliases": [
+        "сообщения ядра Linux",
+        "kernel ring buffer"
+      ],
+      "signatures": [
+        "dmesg --level=err,warn"
+      ],
+      "examples": [
+        "dmesg --level=err,warn"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Чтение может быть ограничено системной политикой. Буфер не равен полному архиву журнала."
+      ],
+      "sources": [
+        "https://man7.org/linux/man-pages/man1/dmesg.1.html"
+      ]
+    },
+    {
+      "id": "log:osx",
+      "name": "log",
+      "description": "Читает Unified Logging macOS. Подкоманда show ищет в сохранённом журнале, stream читает новые события, --last ограничивает время, а --predicate отбирает записи по полям.",
+      "aliases": [
+        "единый журнал macOS по подсистеме",
+        "Mac unified log archive subsystem predicate"
+      ],
+      "signatures": [
+        "log show --last 10m --predicate 'subsystem == \"com.example.app\"' --info"
+      ],
+      "examples": [
+        "log show --last 10m --predicate 'subsystem == \"com.example.app\"' --info"
+      ],
+      "platform": "osx",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Подставь свой идентификатор subsystem. macOS может скрывать приватные поля журнала."
+      ],
+      "sources": [
+        "https://developer.apple.com/documentation/os/logging"
+      ],
+      "title": "log show на macOS",
+      "command_aliases": [
+        "log show",
+        "log stream"
+      ],
+      "match_any": [
+        [
+          "\\b(?:macos|mac|os\\s+x|мак(?:е|а|ом)?)\\b",
+          "\\b(?:unified\\s+log(?:s|ging)?|системн\\w+\\s+(?:журнал\\w*|лог\\w*)|подсистем\\w*|subsystem)\\b",
+          "\\b(?:лог\\w*|журнал\\w*|logs?|logging|journals?)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "vm_stat:osx",
+      "name": "vm_stat",
+      "description": "Показывает состояние виртуальной памяти macOS в страницах. Размер страницы указан в первой строке вывода, поэтому его следует брать оттуда при переводе в байты.",
+      "aliases": [
+        "страницы виртуальной памяти macOS",
+        "macOS virtual memory page counts"
+      ],
+      "signatures": [
+        "vm_stat"
+      ],
+      "examples": [
+        "vm_stat"
+      ],
+      "platform": "osx",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://github.com/apple-oss-distributions/system_cmds/blob/main/vm_stat/vm_stat.1"
+      ]
+    },
+    {
+      "id": "sysctl:osx",
+      "name": "sysctl",
+      "description": "Читает выбранные параметры ядра и оборудования macOS. Опция -n печатает только значение.",
+      "aliases": [
+        "число логических процессоров macOS",
+        "macOS physical memory size",
+        "hw.logicalcpu hw.memsize"
+      ],
+      "signatures": [
+        "sysctl -n hw.logicalcpu",
+        "sysctl -n hw.memsize"
+      ],
+      "examples": [
+        "sysctl -n hw.logicalcpu",
+        "sysctl -n hw.memsize"
+      ],
+      "platform": "osx",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "hw.memsize указан в байтах. Примеры не меняют параметры."
+      ],
+      "sources": [
+        "https://github.com/apple-oss-distributions/system_cmds/blob/main/sysctl/sysctl.8"
+      ]
+    },
+    {
+      "id": "sed:osx",
+      "name": "sed",
+      "description": "Штатный sed macOS печатает преобразованный текст в stdout. У опции -i обязателен аргумент расширения резервной копии. Пустое расширение отключает резервную копию.",
+      "aliases": [
+        "BSD sed extension in place",
+        "замена текста sed macOS"
+      ],
+      "signatures": [
+        "sed 's/old/new/g' input.txt"
+      ],
+      "examples": [
+        "sed 's/old/new/g' input.txt"
+      ],
+      "platform": "osx",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Флаг -i меняет файл на месте. Пример выводит результат без записи."
+      ],
+      "sources": [
+        "https://github.com/apple-oss-distributions/text_cmds/blob/main/sed/sed.1"
+      ],
+      "title": "Штатный sed macOS",
+      "command_aliases": [
+        "BSD sed",
+        "macOS sed"
+      ]
+    },
+    {
+      "id": "sed:linux",
+      "name": "sed",
+      "description": "GNU sed поддерживает -i[SUFFIX] для изменения файла на месте. Необязательный суффикс копии присоединяют к флагу без пробела, например -i.bak. Синтаксис отличается от штатного sed macOS.",
+      "aliases": [
+        "GNU sed optional backup suffix in place",
+        "замена текста GNU sed Linux"
+      ],
+      "signatures": [
+        "sed 's/old/new/g' input.txt"
+      ],
+      "examples": [
+        "sed 's/old/new/g' input.txt"
+      ],
+      "platform": "linux",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Эта карточка относится к GNU sed. На macOS отдельная GNU-версия обычно называется gsed. Пример выводит результат без записи."
+      ],
+      "sources": [
+        "https://www.gnu.org/software/sed/manual/html_node/Command_002dLine-Options.html"
+      ],
+      "title": "GNU sed",
+      "command_aliases": [
+        "GNU sed",
+        "gsed"
+      ]
+    },
+    {
+      "id": "ssh.remote_load",
+      "name": "ssh remote load",
+      "title": "Проверка нагрузки сервера по SSH",
+      "description": "Укажи SSH-алиас или адрес вместо example-host. Команда uptime выполнится на сервере и покажет среднюю нагрузку за 1, 5 и 15 минут.",
+      "aliases": [
+        "средняя нагрузка удалённого сервера",
+        "remote load average over SSH"
+      ],
+      "signatures": [
+        "ssh example-host uptime"
+      ],
+      "examples": [
+        "ssh example-host uptime"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Load average отражает среднюю нагрузку системы. Для процента загрузки CPU нужен другой показатель."
+      ],
+      "sources": [
+        "https://man.openbsd.org/ssh.1",
+        "https://man.openbsd.org/uptime.1"
+      ],
+      "match_any": [
+        [
+          "\\b(?:ssh|openssh)\\b",
+          "\\b(?:нагрузк\\w*|загруженност\\w*|загрузк\\w*\\b(?!\\s+(?:файл\\w*|архив\\w*|данн\\w*|ключ\\w*|страниц\\w*))|load\\s+average|(?:server|system)\\s+load|uptime)\\b",
+          "\\b(?:(?:по)?смотр\\w*|провер\\w*|средн\\w*|check|show|uptime|average)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "ssh.effective_config",
+      "name": "ssh -G",
+      "description": "OpenSSH с прописной -G печатает итоговые настройки для алиаса, в том числе HostName, User и Port после разбора Host и Match, и завершает работу без обычного SSH-сеанса.",
+      "aliases": [
+        "итоговая конфигурация SSH алиаса до подключения",
+        "OpenSSH effective configuration hostname user port"
+      ],
+      "signatures": [
+        "ssh -G example-host"
+      ],
+      "examples": [
+        "ssh -G example-host"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Используй свою доверенную конфигурацию. При обработке Match exec могут выполняться локальные команды. Это только справочный пример."
+      ],
+      "sources": [
+        "https://man.openbsd.org/ssh.1#G",
+        "https://man.openbsd.org/ssh_config.5#Match"
+      ],
+      "match_any": [
+        [
+          "\\b(?:ssh|openssh)\\b",
+          "\\b(?:hostname|ssh.config|конфигураци\\w*|настройк\\w*|effective)\\b",
+          "\\b(?:алиас\\w*|подключени\\w*|alias|connect\\w*|user|port)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "docker.logs",
+      "name": "docker logs",
+      "description": "Показывает лог одного контейнера по его имени или ID. --tail ограничивает вывод, --since задаёт нижнюю границу времени.",
+      "aliases": [
+        "лог одного контейнера по ID",
+        "container logs by ID tail"
+      ],
+      "signatures": [
+        "docker logs --tail 30 example-container"
+      ],
+      "examples": [
+        "docker logs --tail 30 example-container"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://docs.docker.com/reference/cli/docker/container/logs/"
+      ],
+      "command_aliases": [
+        "docker container logs"
+      ],
+      "match_any": [
+        [
+          "\\b(?:контейнер\\w*|containers?)\\b",
+          "\\b(?:лог\\w*|журнал\\w*|logs?|logging|journals?)\\b",
+          "\\b(?:одн(?:ого|ом|у|ин)|id|имени|single|one|name)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "docker.compose",
+      "name": "docker compose",
+      "description": "Управляет приложением из нескольких сервисов, описанных в Compose-файле. ps показывает контейнеры проекта, logs читает вывод сервисов, config разбирает описание проекта.",
+      "aliases": [
+        "Docker Compose V2 services project compose.yaml"
+      ],
+      "signatures": [],
+      "examples": [],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://docs.docker.com/reference/cli/docker/compose/"
+      ],
+      "command_aliases": [
+        "docker-compose"
+      ]
+    },
+    {
+      "id": "docker.compose.logs",
+      "name": "docker compose logs",
+      "description": "Читает вывод одного или нескольких сервисов Compose. --tail ограничивает число строк на контейнер, --since фильтрует по времени, --index выбирает реплику.",
+      "aliases": [
+        "последние строки логов сервиса Compose",
+        "Compose service output logs replicas tail"
+      ],
+      "signatures": [
+        "docker compose logs --tail 30 --since 15m example-service"
+      ],
+      "examples": [
+        "docker compose logs --tail 30 --since 15m example-service"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://docs.docker.com/reference/cli/docker/compose/logs/"
+      ],
+      "command_aliases": [
+        "docker-compose logs"
+      ],
+      "match_any": [
+        [
+          "\\bcompose\\b",
+          "\\b(?:сервис\\w*|служб\\w*|services?|реплик\\w*|replicas?)\\b",
+          "\\b(?:лог\\w*|журнал\\w*|logs?|tail\\w*|output)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "docker.compose.config",
+      "name": "docker compose config",
+      "description": "Проверяет и при обычном вызове печатает итоговую модель Compose после объединения файлов и подстановки переменных. --quiet проверяет конфигурацию без её печати и запуска контейнеров.",
+      "aliases": [
+        "валидация compose.yaml без вывода секретов",
+        "quiet validate compose configuration without starting"
+      ],
+      "signatures": [
+        "docker compose -f compose.yaml config --quiet"
+      ],
+      "examples": [
+        "docker compose -f compose.yaml config --quiet"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [
+        "Обычный config может раскрыть подставленные значения. Для проверки используй --quiet."
+      ],
+      "sources": [
+        "https://docs.docker.com/reference/cli/docker/compose/config/"
+      ],
+      "command_aliases": [
+        "docker-compose config"
+      ],
+      "match_any": [
+        [
+          "\\bcompose\\b",
+          "\\b(?:валид\\w*|синтаксис\\w*|конфигураци\\w*|validate\\w*|syntax|interpolat\\w*)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "docker.compose.ps",
+      "name": "docker compose ps",
+      "description": "Показывает контейнеры текущего проекта Compose, их сервисы, статус и опубликованные порты. --all включает остановленные контейнеры.",
+      "aliases": [
+        "список контейнеров текущего Compose проекта",
+        "Compose list running stopped containers ports"
+      ],
+      "signatures": [
+        "docker compose ps --all"
+      ],
+      "examples": [
+        "docker compose ps --all"
+      ],
+      "platform": "common",
+      "reference_only": true,
+      "executable": false,
+      "effect": "reference",
+      "caveats": [],
+      "sources": [
+        "https://docs.docker.com/reference/cli/docker/compose/ps/"
+      ],
+      "command_aliases": [
+        "docker-compose ps"
+      ],
+      "match_any": [
+        [
+          "\\bcompose\\b",
+          "\\b(?:контейнер\\w*|containers?)\\b",
+          "\\b(?:список|статус\\w*|остановленн\\w*|перечисл\\w*|list\\w*|stopped|status)\\b"
+        ]
+      ]
+    }
+  ]
+}

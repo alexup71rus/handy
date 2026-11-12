@@ -1,0 +1,2408 @@
+[
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Open settings menu\"",
+    "new": "\"Открыть настройки\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Select model (opens selector UI)\"",
+    "new": "\"Выбрать модель\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Navigate session tree (switch branches)\"",
+    "new": "\"Открыть дерево чата и переключить ветку\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Set thinking level\"",
+    "new": "\"Выбрать уровень рассуждений\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Enable/disable models for Ctrl+P cycling\"",
+    "new": "\"Выбрать модели для переключения через Ctrl+P\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Export session (HTML default, or specify path: .html/.jsonl)\"",
+    "new": "\"Экспортировать чат в HTML или JSONL\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Import a JSONL session, preserving its ID and working directory\"",
+    "new": "\"Импортировать чат JSONL, сохранив ID и рабочую папку\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Share session via a Radius artifact or a GitHub gist\"",
+    "new": "\"Поделиться чатом через Radius или GitHub gist\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Report a bug to the Pi developers\"",
+    "new": "\"Сообщить об ошибке разработчикам pi\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Copy last agent message to clipboard\"",
+    "new": "\"Скопировать последний ответ\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Set session display name\"",
+    "new": "\"Переименовать чат\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Show session info and stats\"",
+    "new": "\"Сведения и статистика чата\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Show changelog entries\"",
+    "new": "\"История изменений\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Show all keyboard shortcuts\"",
+    "new": "\"Горячие клавиши\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Create a new fork from a previous user message\"",
+    "new": "\"Создать отдельный чат из предыдущего сообщения\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Duplicate the current session at the current position\"",
+    "new": "\"Создать копию текущего чата\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Save project trust decision for future sessions\"",
+    "new": "\"Сохранить доверие к проекту\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Configure provider authentication\"",
+    "new": "\"Настроить вход к провайдеру\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Remove provider authentication\"",
+    "new": "\"Удалить авторизацию провайдера\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Start a new session\"",
+    "new": "\"Новый чат\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Manually compact the session context\"",
+    "new": "\"Сжать контекст чата вручную\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Resume another session\"",
+    "new": "\"Продолжить другой чат\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"Reload keybindings, extensions, skills, prompts, themes, and context files\"",
+    "new": "\"Перечитать клавиши, расширения, навыки, шаблоны, темы и контекст\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "description: `Quit ${APP_NAME}`",
+    "new": "description: `Выйти из ${APP_NAME}`",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"<provider/model>\"",
+    "new": "\"<провайдер/модель>\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"<level>\"",
+    "new": "\"<уровень>\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"<description>\"",
+    "new": "\"<описание>\"",
+    "count": 1
+  },
+  {
+    "file": "core/slash-commands.js",
+    "old": "\"<provider>\"",
+    "new": "\"<провайдер>\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Forked to new session\"",
+    "new": "\"Создан отдельный чат\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Navigated to selected point\"",
+    "new": "\"Переход к выбранному сообщению выполнен\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Startup is still in progress\"",
+    "new": "\"Запуск ещё не завершён\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"A bash command is already running. Press Esc to cancel it first.\"",
+    "new": "\"Команда Bash уже выполняется. Сначала останови её клавишей Esc.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No queued messages to restore\"",
+    "new": "\"В очереди нет сообщений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Current model does not support thinking\"",
+    "new": "\"Эта модель не поддерживает рассуждения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Close active overlays before changing TUI mode\"",
+    "new": "\"Закрой открытые меню перед сменой режима терминала\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Refreshing model catalogs…\"",
+    "new": "\"Обновляю каталоги моделей…\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Model refresh timed out; searching cached models.\"",
+    "new": "\"Не удалось вовремя обновить модели; поиск по сохранённому каталогу.\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Model selection saved to settings\"",
+    "new": "\"Выбор моделей сохранён\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No messages to fork from\"",
+    "new": "\"В чате пока нет сообщений для создания отдельной ветки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Nothing to clone yet\"",
+    "new": "\"Пока нечего копировать\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cloned to new session\"",
+    "new": "\"Создана копия чата\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No entries in session\"",
+    "new": "\"В чате пока нет записей\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Already at this point\"",
+    "new": "\"Это сообщение уже выбрано\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Wait for the current compaction or tree navigation to finish before navigating the session tree.\"",
+    "new": "\"Дождись завершения сжатия или текущего перехода по дереву чата.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Branch summarization cancelled\"",
+    "new": "\"Создание сводки ветки отменено\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Navigation cancelled\"",
+    "new": "\"Переход отменён\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Selected entry has no text to copy\"",
+    "new": "\"В выбранной записи нет текста\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Copied selected message to clipboard\"",
+    "new": "\"Выбранное сообщение скопировано\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Resumed session\"",
+    "new": "\"Чат открыт\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Resume cancelled\"",
+    "new": "\"Открытие чата отменено\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Failed to resume session\"",
+    "new": "\"Не удалось открыть чат\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No login methods available.\"",
+    "new": "\"Нет доступных способов входа.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Sign in with an account\"",
+    "new": "\"Войти в аккаунт\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Sign in with an API key\"",
+    "new": "\"Войти по ключу API\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Select authentication method:\"",
+    "new": "\"Выбери способ входа:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No account providers available.\"",
+    "new": "\"Нет провайдеров со входом в аккаунт.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No API key providers available.\"",
+    "new": "\"Нет провайдеров со входом по ключу API.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No login providers available.\"",
+    "new": "\"Нет провайдеров для входа.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No stored credentials to remove. /logout only removes credentials saved by /login; environment variables and models.json config are unchanged.\"",
+    "new": "\"Нет сохранённых данных входа. /logout удаляет только данные, сохранённые через /login; переменные окружения и models.json не меняются.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Wait for the current response to finish before reloading.\"",
+    "new": "\"Дождись завершения ответа перед перечитыванием настроек.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Wait for compaction to finish before reloading.\"",
+    "new": "\"Дождись завершения сжатия перед перечитыванием настроек.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Usage: /import <path.jsonl>\"",
+    "new": "\"Использование: /import <путь.jsonl>\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Import cancelled\"",
+    "new": "\"Импорт отменён\"",
+    "count": 5
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No agent messages to copy yet.\"",
+    "new": "\"Пока нет ответа для копирования.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Copied last agent message to clipboard\"",
+    "new": "\"Последний ответ скопирован\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Usage: /name <name>\"",
+    "new": "\"Использование: /name <название>\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Session Info\"",
+    "new": "\"О чате\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Name:\"",
+    "new": "\"Название:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"File:\"",
+    "new": "\"Файл:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"In-memory\"",
+    "new": "\"Без сохранения на диск\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Messages\"",
+    "new": "\"Сообщения\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Total:\"",
+    "new": "\"Всего:\"",
+    "count": 3
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"User:\"",
+    "new": "\"Пользователь:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Assistant:\"",
+    "new": "\"Помощник:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Tools:\"",
+    "new": "\"Инструменты:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Tokens\"",
+    "new": "\"Токены\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Input:\"",
+    "new": "\"Вход:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cached:\"",
+    "new": "\"Из кеша:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Uncached:\"",
+    "new": "\"Без кеша:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Output:\"",
+    "new": "\"Выход:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cache Warming\"",
+    "new": "\"Поддержание кеша\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Mode:\"",
+    "new": "\"Режим:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Status:\"",
+    "new": "\"Состояние:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Inactive (cache warming unavailable)\"",
+    "new": "\"Неактивно (поддержание кеша недоступно)\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cache miss penalty:\"",
+    "new": "\"Стоимость промаха кеша:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Refresh cost:\"",
+    "new": "\"Стоимость обновления:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cost\"",
+    "new": "\"Стоимость\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cache Re-billed:\"",
+    "new": "\"Повторная оплата кеша:\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"No changelog entries found.\"",
+    "new": "\"История изменений пуста.\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"What's New\"",
+    "new": "\"Что нового\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Keyboard Shortcuts\"",
+    "new": "\"Горячие клавиши\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"✓ New session started\"",
+    "new": "\"✓ Новый чат открыт\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Failed to create session\"",
+    "new": "\"Не удалось создать чат\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"✓ Debug log written\"",
+    "new": "\"✓ Журнал диагностики сохранён\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Queued message for after compaction\"",
+    "new": "\"Сообщение добавлено в очередь после сжатия\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Suspend to background is not supported on Windows\"",
+    "new": "\"Фоновая приостановка недоступна в Windows\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Operation aborted\"",
+    "new": "\"Действие прервано\"",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Compaction\"",
+    "new": "\"Сжатие\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Branch summary\"",
+    "new": "\"Сводка ветки\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"thinking block\"",
+    "new": "\"блок рассуждений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"thinking blocks\"",
+    "new": "\"блоки рассуждений\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cache miss\"",
+    "new": "\"Промах кеша\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Cache miss after model switch\"",
+    "new": "\"Промах кеша после смены модели\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Update Available\"",
+    "new": "\"Доступно обновление\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Package Updates Available\"",
+    "new": "\"Доступны обновления пакетов\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Changelog: \"",
+    "new": "\"История изменений: \"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Package updates are available. Run \"",
+    "new": "\"Доступны обновления пакетов. Выполни \"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Packages:\"",
+    "new": "\"Пакеты:\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "label: \"user\"",
+    "new": "label: \"пользователь\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "label: \"project\"",
+    "new": "label: \"проект\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "label: \"path\"",
+    "new": "label: \"путь\"",
+    "count": 3
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "scopeLabel: \"temp\"",
+    "new": "scopeLabel: \"временно\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Error: ${errorMessage}`",
+    "new": "`Ошибка: ${errorMessage}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Warning: ${warningMessage}`",
+    "new": "`Предупреждение: ${warningMessage}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Failed to paste from clipboard: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось вставить из буфера обмена: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Migrated credentials to auth.json: ${migratedProviders.join(\", \")}`",
+    "new": "`Данные входа перенесены в auth.json: ${migratedProviders.join(\", \")}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`models.json error: ${modelsJsonError}`",
+    "new": "`Ошибка models.json: ${modelsJsonError}`",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Shortcut handler error: ${err instanceof Error ? err.message : String(err)}`",
+    "new": "`Ошибка горячей клавиши: ${err instanceof Error ? err.message : String(err)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Thinking level: ${newLevel}`",
+    "new": "`Уровень рассуждений: ${HANDY_THINKING_LABELS[newLevel] ?? newLevel}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Default thinking level: ${level}`",
+    "new": "`Уровень рассуждений по умолчанию: ${HANDY_THINKING_LABELS[level] ?? level}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Thinking level: ${level}`",
+    "new": "`Уровень рассуждений: ${HANDY_THINKING_LABELS[level] ?? level}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Model: ${model.id}`",
+    "new": "`Модель: ${model.id}`",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Default model: ${model.provider}/${model.id}`",
+    "new": "`Модель по умолчанию: ${model.provider}/${model.id}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Switched to ${result.model.name || result.model.id}${thinkingStr}`",
+    "new": "`Выбрана модель ${result.model.name || result.model.id}${thinkingStr}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Tool output: ${expanded ? \"expanded\" : \"collapsed\"}`",
+    "new": "`Вывод инструментов: ${expanded ? \"развёрнут\" : \"свёрнут\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Thinking blocks: ${this.hideThinkingBlock ? \"hidden\" : \"visible\"}`",
+    "new": "`Рассуждения: ${this.hideThinkingBlock ? \"скрыты\" : \"показаны\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Unknown thinking level \"${searchTerm}\". Available levels: ${availableLevels.join(\", \")}.`",
+    "new": "`Неизвестный уровень рассуждений «${searchTerm}». Доступны: ${availableLevels.join(\", \")}.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Could not refresh ${[...result.errors.keys()].join(\", \")}; searching cached models.`",
+    "new": "`Не удалось обновить ${[...result.errors.keys()].join(\", \")}; поиск по сохранённому каталогу.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Saved trust decision: ${selection.trusted ? \"trusted\" : \"untrusted\"}. Restart ${APP_NAME} for this to take effect.`",
+    "new": "`Доверие к проекту: ${selection.trusted ? \"разрешено\" : \"отклонено\"}. Перезапусти ${APP_NAME}, чтобы применить выбор.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Resumed session in ${error.issue.fallbackCwd}`",
+    "new": "`Чат открыт в ${error.issue.fallbackCwd}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Forked into new session ${fork.getSessionId()} in ${cwd}`",
+    "new": "`Создан отдельный чат ${fork.getSessionId()} в ${cwd}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Select authentication method for ${providerOptions[0].name}:`",
+    "new": "`Способ входа для ${providerOptions[0].name}:`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Sign in with ${radiusOption.name}`",
+    "new": "`Войти через ${radiusOption.name}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Could not read stored credentials: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось прочитать сохранённые данные входа: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Reload failed: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось перечитать настройки: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Session exported to: ${filePath}`",
+    "new": "`Чат экспортирован: ${filePath}`",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Failed to export session: ${error instanceof Error ? error.message : \"Unknown error\"}`",
+    "new": "`Не удалось экспортировать чат: ${error instanceof Error ? error.message : \"Неизвестная ошибка\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Session imported from: ${inputPath}`",
+    "new": "`Чат импортирован: ${inputPath}`",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Failed to import session: ${error.message}`",
+    "new": "`Не удалось импортировать чат: ${error.message}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Session name was normalized from ${JSON.stringify(name)} to ${JSON.stringify(sessionName)}`",
+    "new": "`Название чата исправлено с ${JSON.stringify(name)} на ${JSON.stringify(sessionName)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Bash command failed: ${error instanceof Error ? error.message : \"Unknown error\"}`",
+    "new": "`Команда Bash завершилась ошибкой: ${error instanceof Error ? error.message : \"Неизвестная ошибка\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Steering: ${message}`",
+    "new": "`Уточнение: ${message}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Follow-up: ${message}`",
+    "new": "`В очереди: ${message}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`↳ ${dequeueHint} to edit all queued messages`",
+    "new": "`↳ ${dequeueHint} — изменить сообщения в очереди`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`New version ${release.version} is available. Run `",
+    "new": "`Доступна новая версия ${release.version}. Выполни `",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Session compacted ${times}`",
+    "new": "`Чат сжат: ${times}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "const times = compactionCount === 1 ? \"1 time\" : `${compactionCount} times`;",
+    "new": "const times = `${compactionCount} раз`;",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`(${cacheWrite.toLocaleString()} written to cache)`",
+    "new": "`(${cacheWrite.toLocaleString()} записано в кеш)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`(${formatTokens(entry.tokens)} tokens)`",
+    "new": "`(${formatTokens(entry.tokens)} токенов)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Cache miss after ${Math.round(miss.idleMs / 60_000)}m idle`",
+    "new": "`Промах кеша после ${Math.round(miss.idleMs / 60_000)} мин бездействия`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${formatTokens(miss.missedTokens)} tokens re-billed${cost}`",
+    "new": "`${formatTokens(miss.missedTokens)} токенов оплачено повторно${cost}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${label}: ${formatTokens(tokens)} tokens billed${cost}`",
+    "new": "`${label}: оплачено ${formatTokens(tokens)} токенов${cost}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`This project is not trusted. Project ${CONFIG_DIR_NAME} resources and packages are ignored. Use /trust to save a trust decision, then restart pi.`",
+    "new": "`Доверие к проекту не задано. Его ресурсы ${CONFIG_DIR_NAME} и пакеты не загружаются. Сохрани выбор через /trust и перезапусти pi.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "**Navigation**",
+    "new": "**Навигация**",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "| Key | Action |",
+    "new": "| Клавиша | Действие |",
+    "count": 4
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Move cursor / browse history",
+    "new": "Переместить курсор / просмотреть историю",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Move by word",
+    "new": "Перейти на слово",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Start of line",
+    "new": "Начало строки",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "End of line",
+    "new": "Конец строки",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Jump forward to character",
+    "new": "Перейти вперёд к символу",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Jump backward to character",
+    "new": "Перейти назад к символу",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Scroll by page",
+    "new": "Прокрутить на страницу",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "**Editing**",
+    "new": "**Редактирование**",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Send message",
+    "new": "Отправить сообщение",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "New line${process.platform",
+    "new": "Новая строка${process.platform",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": " (Ctrl+Enter on Windows Terminal)",
+    "new": " (Ctrl+Enter в Windows Terminal)",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Delete word backwards",
+    "new": "Удалить слово слева",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Delete word forwards",
+    "new": "Удалить слово справа",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Delete to start of line",
+    "new": "Удалить до начала строки",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Delete to end of line",
+    "new": "Удалить до конца строки",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Paste the most-recently-deleted text",
+    "new": "Вставить последний удалённый текст",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Cycle through the deleted text after pasting",
+    "new": "Перебрать удалённый текст после вставки",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "| Undo |",
+    "new": "| Отменить |",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "**Other**",
+    "new": "**Другое**",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Path completion / accept autocomplete",
+    "new": "Дополнить путь / принять подсказку",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Cancel autocomplete / abort streaming",
+    "new": "Закрыть подсказку / остановить ответ",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Clear editor (first) / exit (second)",
+    "new": "Очистить ввод / при повторе — выйти",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Exit (when editor is empty)",
+    "new": "Выйти (если поле ввода пусто)",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Suspend to background",
+    "new": "Приостановить в фоне",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Cycle thinking level",
+    "new": "Переключить уровень рассуждений",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Cycle models",
+    "new": "Переключить модель",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Open model selector",
+    "new": "Открыть выбор модели",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Toggle tool output expansion",
+    "new": "Развернуть / свернуть вывод инструментов",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Toggle thinking block visibility",
+    "new": "Показать / скрыть рассуждения",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Edit message in external editor",
+    "new": "Открыть сообщение во внешнем редакторе",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Copy selection or last assistant message",
+    "new": "Скопировать выделение или последний ответ",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Queue follow-up message",
+    "new": "Отправить сообщение после текущей задачи",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Restore queued messages",
+    "new": "Вернуть сообщения из очереди",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Paste files on macOS, images, or text from clipboard",
+    "new": "Вставить файлы macOS, изображение или текст",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Slash commands",
+    "new": "Команды чата",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Run bash command (excluded from context)",
+    "new": "Выполнить команду Bash вне контекста",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Run bash command |",
+    "new": "Выполнить команду Bash |",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "**Extensions**",
+    "new": "**Расширения**",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "AI coding assistant with read, bash, edit, write tools",
+    "new": "помощник с инструментами read, bash, edit и write",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Usage:",
+    "new": "Использование:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Commands:",
+    "new": "Команды:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Options:",
+    "new": "Параметры:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Examples:",
+    "new": "Примеры:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Environment Variables:",
+    "new": "Переменные окружения:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Built-in Tool Names:",
+    "new": "Встроенные инструменты:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Extension CLI Flags:",
+    "new": "Параметры расширений:",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "[options] [--] [@files...] [messages...]",
+    "new": "[параметры] [--] [@файлы...] [сообщения...]",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Install extension source and add to settings",
+    "new": "Установить расширение и добавить в настройки",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Remove extension source from settings",
+    "new": "Убрать расширение из настроек",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Alias for remove",
+    "new": "То же, что remove",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Update pi, extensions, or model catalogs",
+    "new": "Обновить pi, расширения или каталоги моделей",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "List installed extensions from settings",
+    "new": "Показать установленные расширения",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Open TUI to enable/disable package resources (Tab switches scope)",
+    "new": "Открыть управление ресурсами пакетов (Tab меняет область)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Log in or out, print credentials, or check provider readiness",
+    "new": "Войти, выйти, вывести данные входа или проверить провайдера",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Manage MCP servers",
+    "new": "Управлять MCP-серверами",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Show help for install/remove/uninstall/update/list/config/auth/mcp",
+    "new": "Справка install/remove/uninstall/update/list/config/auth/mcp",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Provider to search for --model (requires --model)",
+    "new": "Провайдер для поиска --model (нужен --model)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Model pattern or ID (supports \"provider/id\" and optional \":<thinking>\")",
+    "new": "Шаблон или ID модели (можно \"provider/id\" и \":<thinking>\")",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "API key (defaults to env vars)",
+    "new": "Ключ API (по умолчанию из переменных окружения)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "System prompt (default: coding assistant prompt)",
+    "new": "Системный промпт (по умолчанию — помощник по коду)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Append text or file contents to the system prompt (can be used multiple times)",
+    "new": "Добавить текст или файл к системному промпту (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Output mode: text (default), json, or rpc",
+    "new": "Формат вывода: text (по умолчанию), json или rpc",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Non-interactive mode: process prompt and exit",
+    "new": "Ответить на запрос и выйти",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Continue the most recent session for the current directory",
+    "new": "Продолжить последний чат текущей папки",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Pick a session to resume",
+    "new": "Выбрать чат для продолжения",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Open a session by file path or full/partial ID",
+    "new": "Открыть чат по пути или полному/частичному ID",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Use the current directory's existing session with the ID, creating it otherwise",
+    "new": "Открыть чат с указанным ID в текущей папке или создать новый",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Fork a session by file path or full/partial ID into the current directory",
+    "new": "Создать отдельный чат в текущей папке по пути или ID",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Directory for session storage and lookup",
+    "new": "Каталог хранения и поиска чатов",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Don't save session (ephemeral)",
+    "new": "Не сохранять чат",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Set session display name",
+    "new": "Задать название чата",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Comma-separated model patterns for Ctrl+P cycling",
+    "new": "Шаблоны моделей для Ctrl+P через запятую",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Supports globs (anthropic/*, *sonnet*) and fuzzy matching",
+    "new": "Поддерживает шаблоны (anthropic/*, *sonnet*) и нечёткий поиск",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable all tools by default (built-in and extension)",
+    "new": "Отключить все инструменты (встроенные и расширений)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable built-in tools by default but keep extension/custom tools enabled",
+    "new": "Отключить встроенные инструменты, оставив инструменты расширений",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Comma-separated allowlist of tool names or patterns (*) to enable",
+    "new": "Список разрешённых инструментов или шаблонов (*) через запятую",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Keeps MCP tools unless an entry starts with mcp__",
+    "new": "Сохраняет MCP-инструменты, пока нет записей с mcp__",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Only +name/-name entries add to or remove from the defaults",
+    "new": "Записи +name/-name меняют список по умолчанию",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Comma-separated denylist of tool names or patterns (*) to disable",
+    "new": "Список запрещённых инструментов или шаблонов (*) через запятую",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Applies to all tools, MCP tools included",
+    "new": "Применяется ко всем инструментам, включая MCP",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Set thinking level: off, minimal, low, medium, high, xhigh, max",
+    "new": "Уровень рассуждений: off, minimal, low, medium, high, xhigh, max",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Load an extension file or builtin:<name> (can be used multiple times)",
+    "new": "Загрузить расширение или builtin:<name> (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable extension discovery and built-in extensions (explicit -e paths still work)",
+    "new": "Отключить автозагрузку расширений (явные пути -e работают)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable built-in MCP support: no servers connect and no MCP tools",
+    "new": "Отключить MCP: серверы и инструменты не подключаются",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Load a skill file or directory (can be used multiple times)",
+    "new": "Загрузить файл или папку навыка (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable skills discovery and loading",
+    "new": "Отключить поиск и загрузку навыков",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Load a prompt template file or directory (can be used multiple times)",
+    "new": "Загрузить шаблон промпта или папку (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable prompt template discovery and loading",
+    "new": "Отключить поиск и загрузку шаблонов промптов",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Load a theme file or directory (can be used multiple times)",
+    "new": "Загрузить файл или папку темы (можно несколько раз)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Set the initial interactive theme for this run",
+    "new": "Выбрать тему интерфейса для текущего запуска",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable theme discovery and loading",
+    "new": "Отключить поиск и загрузку тем",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable AGENTS.md and CLAUDE.md discovery and loading",
+    "new": "Не загружать AGENTS.md и CLAUDE.md",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Export session file to HTML and exit",
+    "new": "Экспортировать чат в HTML и выйти",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "List available models (with optional fuzzy search)",
+    "new": "Показать доступные модели (можно указать нечёткий поиск)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Force verbose startup (overrides quietStartup setting)",
+    "new": "Показать подробности запуска (независимо от quietStartup)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "TUI mode: fullscreen (default) or regular",
+    "new": "Режим терминала: fullscreen (по умолчанию) или regular",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Trust project-local files for this run",
+    "new": "Доверять файлам проекта в текущем запуске",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Ignore project-local files for this run",
+    "new": "Игнорировать файлы проекта в текущем запуске",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable startup network operations (same as PI_OFFLINE=1)",
+    "new": "Не обращаться к сети при запуске (как PI_OFFLINE=1)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "End option parsing; treat remaining arguments as messages/files",
+    "new": "Остальные аргументы считать сообщениями или файлами",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Show this help",
+    "new": "Показать эту справку",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Show version number",
+    "new": "Показать версию",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Extensions can register additional flags (e.g., --plan from plan-mode extension).",
+    "new": "Расширения могут добавлять параметры (например --plan для режима планирования).",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Print a provider API key for an external client",
+    "new": "# Вывести ключ API провайдера для внешнего клиента",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Print an OAuth bearer token for an external client (refreshes if expired)",
+    "new": "# Вывести токен OAuth для внешнего клиента (при необходимости обновить)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Interactive mode with initial prompt",
+    "new": "# Интерактивный режим с первым сообщением",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Interactive mode",
+    "new": "# Интерактивный режим",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Include files in initial message",
+    "new": "# Приложить файлы к первому сообщению",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Non-interactive mode (process and exit)",
+    "new": "# Ответить и выйти",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Prompt beginning with a dash",
+    "new": "# Сообщение, начинающееся с дефиса",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Multiple messages (interactive)",
+    "new": "# Несколько сообщений в интерактивном режиме",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Continue previous session",
+    "new": "# Продолжить предыдущий чат",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Start a named session",
+    "new": "# Начать чат с названием",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Use different model",
+    "new": "# Выбрать другую модель",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Use model with provider prefix (no --provider needed)",
+    "new": "# Указать провайдера в имени модели (без --provider)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Use model with thinking level shorthand",
+    "new": "# Кратко указать уровень рассуждений в имени модели",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Limit model cycling to specific models",
+    "new": "# Ограничить переключение выбранными моделями",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Limit to a specific provider with glob pattern",
+    "new": "# Выбирать модели одного провайдера по шаблону",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Cycle models with fixed thinking levels",
+    "new": "# Переключать модели с заданными уровнями рассуждений",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Start with a specific thinking level",
+    "new": "# Задать уровень рассуждений при запуске",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Read-only mode (no file modifications possible)",
+    "new": "# Режим чтения (без изменения файлов)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Add codemode to the default tools",
+    "new": "# Добавить codemode к инструментам по умолчанию",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Codemode with only the tools of one MCP server",
+    "new": "# Codemode с инструментами одного MCP-сервера",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Disable one tool while keeping the rest available",
+    "new": "# Отключить один инструмент",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "# Export a session file to HTML",
+    "new": "# Экспортировать чат в HTML",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Read file contents",
+    "new": "Читать файлы",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Execute bash commands",
+    "new": "Выполнять команды Bash",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Execute PowerShell commands on Windows",
+    "new": "Выполнять команды PowerShell в Windows",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Edit files with find/replace",
+    "new": "Изменять файлы поиском и заменой",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Write files (creates/overwrites)",
+    "new": "Создавать и перезаписывать файлы",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Search file contents (read-only, off by default)",
+    "new": "Искать в содержимом файлов (чтение, по умолчанию выключено)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Find files by glob pattern (read-only, off by default)",
+    "new": "Искать файлы по шаблону (чтение, по умолчанию выключено)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "List directory contents (read-only, off by default)",
+    "new": "Показывать содержимое папки (чтение, по умолчанию выключено)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "`Unknown option: ${arg}`",
+    "new": "`Неизвестный параметр: ${arg}`",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "`Registered by ${flag.extensionPath}`",
+    "new": "`Добавлено расширением ${flag.extensionPath}`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Error: ${message}`",
+    "new": "`Ошибка: ${message}`",
+    "count": 6
+  },
+  {
+    "file": "main.js",
+    "old": "`Unknown option --${option} for \"${getAuthCommandName(command.kind)}\".`",
+    "new": "`Неизвестный параметр --${option} для «${getAuthCommandName(command.kind)}».`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Use \"${APP_NAME} --help\" or \"${getAuthCommandUsage(command.kind)}\".`",
+    "new": "`Справка: «${APP_NAME} --help» или «${getAuthCommandUsage(command.kind)}».`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Error: --fork cannot be combined with ${conflictingFlags.join(\", \")}`",
+    "new": "`Ошибка: --fork нельзя использовать вместе с ${conflictingFlags.join(\", \")}`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Error: --session-id cannot be combined with ${conflictingFlags.join(\", \")}`",
+    "new": "`Ошибка: --session-id нельзя использовать вместе с ${conflictingFlags.join(\", \")}`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Session already exists with id '${parsed.sessionId}'`",
+    "new": "`Чат с ID «${parsed.sessionId}» уже существует`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`No session found matching '${resolved.arg}'`",
+    "new": "`Чат «${resolved.arg}» не найден`",
+    "count": 2
+  },
+  {
+    "file": "main.js",
+    "old": "`Session found in different project: ${resolved.cwd}`",
+    "new": "`Чат найден в другом проекте: ${resolved.cwd}`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Warning: No project session found with id '${parsed.sessionId}'; creating a new session with that id.`",
+    "new": "`Предупреждение: в проекте нет чата с ID «${parsed.sessionId}»; будет создан новый чат с этим ID.`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "`Exported to: ${result}`",
+    "new": "`Экспортировано: ${result}`",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "\"Aborted.\"",
+    "new": "\"Отменено.\"",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "\"No session selected\"",
+    "new": "\"Чат не выбран\"",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "\"Error: The current working directory no longer exists. Change to an existing directory and try again.\"",
+    "new": "\"Ошибка: рабочая папка больше не существует. Перейди в существующую папку и повтори запуск.\"",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "\"Error: @file arguments are not supported in RPC mode\"",
+    "new": "\"Ошибка: аргументы @file не поддерживаются в режиме RPC\"",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "\"Error: --name requires a non-empty value\"",
+    "new": "\"Ошибка: --name требует непустого названия\"",
+    "count": 1
+  },
+  {
+    "file": "main.js",
+    "old": "\"Error: PI_STARTUP_BENCHMARK only supports interactive mode\"",
+    "new": "\"Ошибка: PI_STARTUP_BENCHMARK поддерживает только интерактивный режим\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "defaultWorkingMessage = \"Working\"",
+    "new": "defaultWorkingMessage = \"Работаю\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${this.defaultWorkingMessage} (${keyText(\"app.interrupt\")} to interrupt)`",
+    "new": "`${this.defaultWorkingMessage} (${keyText(\"app.interrupt\")} — остановить)`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Session name: ${currentName}`",
+    "new": "`Название чата: ${currentName}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Session name set: ${displayName}`",
+    "new": "`Название чата задано: ${displayName}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Retry failed after ${event.attempt} attempts: ${event.finalError || \"Unknown error\"}`",
+    "new": "`Не удалось завершить запрос после ${event.attempt} попыток: ${event.finalError || \"Неизвестная ошибка\"}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`HTTP idle timeout: ${formatHttpIdleTimeoutMs(timeoutMs)}`",
+    "new": "`Ожидание HTTP без данных: ${formatHttpIdleTimeoutMs(timeoutMs)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Cache warming: ${mode}`",
+    "new": "`Поддержание кеша: ${mode}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`TUI mode: ${mode}`",
+    "new": "`Режим терминала: ${mode}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Could not save project trust after reload: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось сохранить доверие к проекту после перечитывания: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Credentials removed for ${providerOption.name}, but local model state could not be synchronized: ${message}`",
+    "new": "`Данные входа ${providerOption.name} удалены, но состояние модели не удалось обновить: ${message}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Logout failed: ${message}`",
+    "new": "`Не удалось выйти: ${message}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but selecting its default model failed: ${errorMessage}. Use /model to select a model.`",
+    "new": "`${actionLabel}, но не удалось выбрать модель по умолчанию: ${errorMessage}. Выбери модель через /model.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}. Selected ${selectedModel.id}. Credentials saved to ${getAuthPath()}`",
+    "new": "`${actionLabel}. Выбрана ${selectedModel.id}. Данные входа сохранены в ${getAuthPath()}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}. Credentials saved to ${getAuthPath()}`",
+    "new": "`${actionLabel}. Данные входа сохранены в ${getAuthPath()}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}. Credentials saved to ${getAuthPath()}. Refreshing model catalog…`",
+    "new": "`${actionLabel}. Данные входа сохранены в ${getAuthPath()}. Обновляю каталог моделей…`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but its model catalog refresh timed out; using cached models.`",
+    "new": "`${actionLabel}, но каталог моделей не успел обновиться; использую сохранённый.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but its model catalog could not be refreshed; using cached models.`",
+    "new": "`${actionLabel}, но каталог моделей не удалось обновить; использую сохранённый.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but its model catalog could not be refreshed: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`${actionLabel}, но каталог моделей не удалось обновить: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Saved API key for ${providerName}, but local model state could not be synchronized: ${errorMsg}`",
+    "new": "`Ключ API ${providerName} сохранён, но состояние модели не удалось обновить: ${errorMsg}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Failed to save API key for ${providerName}: ${errorMsg}`",
+    "new": "`Не удалось сохранить ключ API ${providerName}: ${errorMsg}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Log in to ${providerName}`",
+    "new": "`Вход в ${providerName}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Logged in to ${providerName}, but local model state could not be synchronized: ${errorMsg}`",
+    "new": "`Вход в ${providerName} выполнен, но состояние модели не удалось обновить: ${errorMsg}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Failed to login to ${providerName}: ${errorMsg}`",
+    "new": "`Не удалось войти в ${providerName}: ${errorMsg}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Configure ${providerName} MCP in ${mcpPath}?`",
+    "new": "`Настроить MCP ${providerName} в ${mcpPath}?`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Could not update ${mcpPath}: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось обновить ${mcpPath}: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "${stats.toolCalls} calls, ${stats.toolResults} results",
+    "new": "вызовов — ${stats.toolCalls}, результатов — ${stats.toolResults}",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Restored ${restored} queued message${restored > 1 ? \"s\" : \"\"} to editor`",
+    "new": "`В поле ввода возвращено сообщений из очереди: ${restored}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Failed to send queued message${queuedMessages.length > 1 ? \"s\" : \"\"}: ${error instanceof Error ? error.message : String(error)}`",
+    "new": "`Не удалось отправить сообщения из очереди: ${error instanceof Error ? error.message : String(error)}`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Aborted after ${retryAttempt} retry attempt${retryAttempt > 1 ? \"s\" : \"\"}`",
+    "new": "`Прервано после повторных попыток: ${retryAttempt}`",
+    "count": 2
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`Press ${keyText(\"app.tools.expand\")} to show full startup help${showDetails ? \" and loaded resources\" : \"\"}.`",
+    "new": "`Нажми ${keyText(\"app.tools.expand\")}, чтобы показать справку запуска${showDetails ? \" и загруженные ресурсы\" : \"\"}.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Unknown error occurred\"",
+    "new": "\"Произошла неизвестная ошибка\"",
+    "count": 3
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Compaction cancelled\"",
+    "new": "\"Сжатие отменено\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Failed to fork session\"",
+    "new": "\"Не удалось создать отдельный чат\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "\"Failed to import session\"",
+    "new": "\"Не удалось импортировать чат\"",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Anthropic bearer auth token",
+    "new": "Токен авторизации Anthropic",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Anthropic Claude API key",
+    "new": "Ключ API Anthropic Claude",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Anthropic OAuth token (alternative to API key)",
+    "new": "Токен OAuth Anthropic (вместо ключа API)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Ant Ling API key",
+    "new": "Ключ API Ant Ling",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "OpenAI GPT API key",
+    "new": "Ключ API OpenAI GPT",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Azure OpenAI API key",
+    "new": "Ключ API Azure OpenAI",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Azure OpenAI/Cognitive Services base URL (e.g. https://{resource}.openai.azure.com)",
+    "new": "Базовый URL Azure OpenAI/Cognitive Services (например https://{resource}.openai.azure.com)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Azure OpenAI resource name (alternative to base URL)",
+    "new": "Имя ресурса Azure OpenAI (вместо базового URL)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Azure OpenAI API version (default: v1)",
+    "new": "Версия API Azure OpenAI (по умолчанию v1)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Azure OpenAI model=deployment map (comma-separated)",
+    "new": "Соответствия модель=развёртывание Azure OpenAI через запятую",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "DeepSeek API key",
+    "new": "Ключ API DeepSeek",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "NVIDIA NIM API key",
+    "new": "Ключ API NVIDIA NIM",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Google Gemini API key",
+    "new": "Ключ API Google Gemini",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Groq API key",
+    "new": "Ключ API Groq",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Cerebras API key",
+    "new": "Ключ API Cerebras",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "xAI Grok API key",
+    "new": "Ключ API xAI Grok",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Fireworks API key",
+    "new": "Ключ API Fireworks",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Together AI API key",
+    "new": "Ключ API Together AI",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Baseten API key",
+    "new": "Ключ API Baseten",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "OpenRouter API key",
+    "new": "Ключ API OpenRouter",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Vercel AI Gateway API key",
+    "new": "Ключ API Vercel AI Gateway",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "ZAI Coding Plan API key (Global)",
+    "new": "Ключ API Z.AI Coding Plan (международный)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "ZAI Coding Plan API key (China)",
+    "new": "Ключ API Z.AI Coding Plan (Китай)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Mistral API key",
+    "new": "Ключ API Mistral",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "MiniMax API key",
+    "new": "Ключ API MiniMax",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Moonshot AI API key",
+    "new": "Ключ API Moonshot AI",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "OpenCode Zen/OpenCode Go API key",
+    "new": "Ключ API OpenCode Zen/OpenCode Go",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Kimi For Coding API key",
+    "new": "Ключ API Kimi For Coding",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Meta Model API key",
+    "new": "Ключ API Meta Model",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Cloudflare API token (Workers AI and AI Gateway)",
+    "new": "Токен API Cloudflare (Workers AI и AI Gateway)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Cloudflare account id (required for both)",
+    "new": "ID аккаунта Cloudflare (нужен обоим сервисам)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Cloudflare AI Gateway slug (required for AI Gateway)",
+    "new": "Идентификатор Cloudflare AI Gateway",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Qwen Token Plan API key (international region)",
+    "new": "Ключ API Qwen Token Plan (международный регион)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Qwen Token Plan API key (China region)",
+    "new": "Ключ API Qwen Token Plan (Китай)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Xiaomi MiMo API key (api.xiaomimimo.com billing)",
+    "new": "Ключ API Xiaomi MiMo (оплата api.xiaomimimo.com)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Xiaomi MiMo Token Plan API key (China region)",
+    "new": "Ключ API Xiaomi MiMo Token Plan (Китай)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Xiaomi MiMo Token Plan API key (Amsterdam region)",
+    "new": "Ключ API Xiaomi MiMo Token Plan (Амстердам)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Xiaomi MiMo Token Plan API key (Singapore region)",
+    "new": "Ключ API Xiaomi MiMo Token Plan (Сингапур)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "AWS profile for Amazon Bedrock",
+    "new": "Профиль AWS для Amazon Bedrock",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "AWS access key for Amazon Bedrock",
+    "new": "Ключ доступа AWS для Amazon Bedrock",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "AWS secret key for Amazon Bedrock",
+    "new": "Секретный ключ AWS для Amazon Bedrock",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Bedrock API key (bearer token)",
+    "new": "Ключ API Bedrock (токен авторизации)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "AWS region for Amazon Bedrock (e.g., us-east-1)",
+    "new": "Регион AWS для Amazon Bedrock (например us-east-1)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Config directory (default: ~/${CONFIG_DIR_NAME}/agent)",
+    "new": "Каталог настроек (по умолчанию ~/${CONFIG_DIR_NAME}/agent)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Session storage directory (overridden by --session-dir)",
+    "new": "Каталог чатов (переопределяется через --session-dir)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Override package directory (for Nix/Guix store paths)",
+    "new": "Переопределить каталог пакета (для Nix/Guix)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Disable startup network operations when set to 1/true/yes",
+    "new": "Отключить сеть при запуске: 1/true/yes",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Command pi update runs to update pi itself ({packageName}, {version}, {installSpec})",
+    "new": "Команда обновления pi ({packageName}, {version}, {installSpec})",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Override install telemetry when set to 1/true/yes or 0/false/no",
+    "new": "Телеметрия установки: 1/true/yes или 0/false/no",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "Base URL for /share command (default: https://pi.dev/session/)",
+    "new": "Базовый URL команды /share (по умолчанию https://pi.dev/session/)",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"List all .ts files in src/\"",
+    "new": "\"Покажи все .ts файлы в src/\"",
+    "count": 2
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"What color is the sky?\"",
+    "new": "\"Какого цвета небо?\"",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"- Summarize these points\"",
+    "new": "\"- Кратко перескажи эти пункты\"",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"Read package.json\" \"What dependencies do we have?\"",
+    "new": "\"Прочитай package.json\" \"Какие у нас зависимости?\"",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"What did we discuss?\"",
+    "new": "\"Что мы обсуждали?\"",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"Refactor auth module\"",
+    "new": "\"Обновить модуль авторизации\"",
+    "count": 1
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"Help me refactor this code\"",
+    "new": "\"Помоги переработать этот код\"",
+    "count": 2
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"Solve this complex problem\"",
+    "new": "\"Реши эту сложную задачу\"",
+    "count": 2
+  },
+  {
+    "file": "cli/args.js",
+    "old": "\"Review the code in src/\"",
+    "new": "\"Проверь код в src/\"",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "function isEmbeddedStatus(editor) {",
+    "new": "const HANDY_THINKING_LABELS = {off:\"выкл\",minimal:\"минимально\",low:\"низко\",medium:\"средне\",high:\"высоко\",xhigh:\"очень высоко\",max:\"максимально\"};\nfunction isEmbeddedStatus(editor) {",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "label: level,",
+    "new": "label: HANDY_THINKING_LABELS[level] ?? level,",
+    "count": 1
+  }
+]

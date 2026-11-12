@@ -1,0 +1,23 @@
+{
+  "title": "Сводка по заказам",
+  "description": "Демо-данные. Поиск работает по всем столбцам. Нажми на заголовок, чтобы поменять порядок строк.",
+  "columns": [
+    {"key": "id", "label": "Заказ", "type": "text"},
+    {"key": "category", "label": "Категория", "type": "text"},
+    {"key": "status", "label": "Статус", "type": "text"},
+    {"key": "amount", "label": "Сумма", "type": "number", "unit": "₽"},
+    {"key": "date", "label": "Дата", "type": "date"}
+  ],
+  "rows": [
+    {"id": "WEB-1042", "category": "Аксессуары", "status": "Оплачен", "amount": 18420, "date": "2026-06-14"},
+    {"id": "WEB-1041", "category": "Оборудование", "status": "В пути", "amount": 52000, "date": "2026-06-13"},
+    {"id": "WEB-1040", "category": "Расходники", "status": "Доставлен", "amount": 2490, "date": "2026-06-12"},
+    {"id": "WEB-1039", "category": "Оборудование", "status": "Оплачен", "amount": 31500, "date": "2026-06-11"},
+    {"id": "WEB-1038", "category": "Аксессуары", "status": "Доставлен", "amount": 7900, "date": "2026-06-10"},
+    {"id": "WEB-1037", "category": "Расходники", "status": "Отменён", "amount": 990, "date": "2026-06-09"},
+    {"id": "WEB-1036", "category": "Аксессуары", "status": "Оплачен", "amount": 11990, "date": "2026-06-07"},
+    {"id": "WEB-1035", "category": "Оборудование", "status": "Доставлен", "amount": 28700, "date": "2026-06-05"},
+    {"id": "WEB-1034", "category": "Расходники", "status": "В пути", "amount": 3700, "date": "2026-06-04"},
+    {"id": "WEB-1033", "category": "Аксессуары", "status": "Доставлен", "amount": 4090, "date": "2026-06-03"}
+  ]
+}

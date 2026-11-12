@@ -1,0 +1,2118 @@
+{
+  "schema_version": 1,
+  "purpose": "Short, original developer guidance from official documentation. Code and commands are illustrative reference text.",
+  "technologies": {
+    "composer": {
+      "name": "Composer",
+      "aliases": [
+        "composer",
+        "composer.json",
+        "composer.lock"
+      ]
+    },
+    "express": {
+      "name": "Express",
+      "aliases": [
+        "express",
+        "express.js",
+        "expressjs"
+      ]
+    },
+    "fastapi": {
+      "name": "FastAPI",
+      "aliases": [
+        "fastapi"
+      ]
+    },
+    "laravel": {
+      "name": "Laravel",
+      "aliases": [
+        "laravel",
+        "ларавел"
+      ]
+    },
+    "next": {
+      "name": "Next.js",
+      "aliases": [
+        "next.js",
+        "nextjs",
+        "app router",
+        "некст"
+      ]
+    },
+    "node": {
+      "name": "Node.js",
+      "aliases": [
+        "node.js",
+        "nodejs",
+        "node",
+        "нода"
+      ]
+    },
+    "npm": {
+      "name": "npm",
+      "aliases": [
+        "npm"
+      ]
+    },
+    "nuxt": {
+      "name": "Nuxt",
+      "aliases": [
+        "nuxt",
+        "nuxt.js",
+        "nuxtjs",
+        "нукст"
+      ]
+    },
+    "php": {
+      "name": "PHP",
+      "aliases": [
+        "php"
+      ]
+    },
+    "pinia": {
+      "name": "Pinia",
+      "aliases": [
+        "pinia"
+      ]
+    },
+    "python": {
+      "name": "Python",
+      "aliases": [
+        "python",
+        "python3",
+        "питон"
+      ]
+    },
+    "react": {
+      "name": "React",
+      "aliases": [
+        "react",
+        "реакт"
+      ]
+    },
+    "redis": {
+      "name": "Redis",
+      "aliases": [
+        "redis",
+        "редис"
+      ]
+    },
+    "redux_toolkit": {
+      "name": "Redux Toolkit",
+      "aliases": [
+        "redux toolkit",
+        "redux",
+        "rtk"
+      ]
+    },
+    "sass": {
+      "name": "Sass",
+      "aliases": [
+        "sass",
+        "scss",
+        "libsass"
+      ]
+    },
+    "tanstack_query": {
+      "name": "TanStack Query",
+      "aliases": [
+        "tanstack query",
+        "react query",
+        "vue query"
+      ]
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "aliases": [
+        "typescript",
+        "tsc"
+      ]
+    },
+    "vite": {
+      "name": "Vite",
+      "aliases": [
+        "vite"
+      ]
+    },
+    "vue": {
+      "name": "Vue",
+      "aliases": [
+        "vue",
+        "vue.js",
+        "vuejs",
+        "вью"
+      ]
+    },
+    "zustand": {
+      "name": "Zustand",
+      "aliases": [
+        "zustand"
+      ]
+    }
+  },
+  "entries": [
+    {
+      "id": "python.venv",
+      "title": "Виртуальные окружения Python",
+      "text": "Виртуальное окружение использует выбранную установку Python и по умолчанию изолирует установленные пакеты. Команда `python3 -m venv .venv` создаёт окружение выбранной версией Python. В bash и zsh `source .venv/bin/activate` ставит его `bin` в начало PATH текущего терминала. Можно обращаться к `.venv/bin/python` напрямую, в том числе через `.venv/bin/python -m pip`. В Windows исполняемые файлы окружения находятся в `Scripts`.",
+      "match_any": [
+        ["\\b(?:venv|virtualenv)\\b", "\\b(?:зачем|почему|такое|созда\\w*|активир\\w*|изолир\\w*|what|why|activate\\w*|creat\\w*|isolat\\w*)\\b"],
+        ["\\bpython(?:3)?\\b", "\\b(?:виртуальн\\w*\\s+окружен\\w*|virtual\\s+environments?)\\b"]
+      ],
+      "anchors": ["\\b(?:venv|virtualenv)\\b", "^(?=.*\\bpython(?:3)?\\b).*\\b(?:виртуальн\\w*\\s+окружен\\w*|virtual\\s+environments?)\\b"],
+      "sources": ["https://docs.python.org/3/library/venv.html#how-venvs-work"]
+    },
+    {
+      "id": "python.pyproject",
+      "title": "Секции pyproject.toml",
+      "text": "`[build-system]` объявляет сборочный инструмент и его зависимости. В `[project]` хранятся метаданные пакета, в том числе `dependencies` для его работы и `requires-python` для допустимых версий Python. `[project.optional-dependencies]` объявляет дополнительные наборы зависимостей пакета. `[dependency-groups]` подходит для локальных задач вроде тестов, а `[tool.<имя>]` содержит настройки конкретного инструмента. Поддержку этих секций определяют установленные версии инструментов.",
+      "match_any": [
+        ["(?<!\\w)pyproject\\.toml(?!\\w)", "\\b(?:зачем|такое|означ\\w*|содерж\\w*|explain|what|why|purpose)\\b"],
+        ["(?<!\\w)pyproject\\.toml(?!\\w)", "\\b(?:build-system|dependency-groups|requires-python|dependencies|зависимост\\w*|секци\\w*|tables?|sections?)\\b", "\\b(?:чем|как|где|куда|отлич\\w*|what|which|where|how|difference)\\b"],
+        ["\\[(?:build-system|dependency-groups|project\\.optional-dependencies)\\]|\\brequires-python\\b", "\\b(?:зачем|означ\\w*|отлич\\w*|что|what|why|how|difference)\\b"]
+      ],
+      "anchors": ["(?<!\\w)pyproject\\.toml(?!\\w)", "\\[(?:build-system|dependency-groups|project\\.optional-dependencies)\\]|\\brequires-python\\b"],
+      "sources": ["https://packaging.python.org/en/latest/guides/writing-pyproject-toml/"]
+    },
+    {
+      "id": "python.module_not_found",
+      "title": "Диагностика ModuleNotFoundError в Python",
+      "text": "Посмотри имя в сообщении `No module named …` и последний импорт в traceback. Может отсутствовать вложенная зависимость, которую импортирует уже найденный пакет. Сравни интерпретатор приложения и тот, которым установлен пакет, через `python -c \"import sys; print(sys.executable)\"` и `python -m pip show <имя-дистрибутива>`. Имя дистрибутива для pip может отличаться от имени в `import`. Для локального пакета проверь, откуда запускается команда и как пакет установлен в это окружение.",
+      "terms": ["ModuleNotFoundError", "No module named", "импорт Python", "интерпретатор и pip"],
+      "identifiers": ["ModuleNotFoundError"],
+      "match_any": [["\\b(?:modulenotfounderror|no\\s+module\\s+named)\\b", "\\b(?:почему|причин\\w*|ошибк\\w*|означ\\w*|как|что|why|how|what|error)\\b"]],
+      "anchors": ["\\b(?:modulenotfounderror|no\\s+module\\s+named)\\b"],
+      "sources": ["https://docs.python.org/3/reference/import.html#searching", "https://packaging.python.org/en/latest/discussions/distribution-package-vs-import-package/", "https://pip.pypa.io/en/stable/cli/pip_show/"]
+    },
+    {
+      "id": "python.relative_imports",
+      "title": "Относительные импорты и запуск модуля Python",
+      "text": "В `from . import utils` одна точка означает текущий пакет, в `from .. import utils` две точки указывают на родительский. При запуске файла как `python pkg/main.py` интерпретатор может не знать пакет для относительного импорта. Из доступного для импорта пакета запускай модуль как `python -m pkg.main`. Передавай имя модуля с точками, без расширения `.py`.",
+      "terms": ["relative imports", "относительный импорт Python", "attempted relative import with no known parent package", "python -m"],
+      "match_any": [
+        ["\\bpython(?:3)?\\b", "\\b(?:относительн\\w*\\s+импорт\\w*|relative\\s+imports?)\\b", "\\b(?:зачем|как|почему|что|how|why|what)\\b"],
+        ["\\battempted relative import with no known parent package\\b"]
+      ],
+      "anchors": ["\\b(?:относительн\\w*\\s+импорт\\w*|relative\\s+imports?|no known parent package)\\b"],
+      "sources": ["https://docs.python.org/3/reference/import.html#package-relative-imports", "https://docs.python.org/3/using/cmdline.html#cmdoption-m"]
+    },
+    {
+      "id": "python.src_layout",
+      "title": "Импорты из src layout в Python",
+      "text": "В `src`-раскладке пакет находится в `src/<пакет>`. Если интерпретатор видит только корень проекта, пакет не попадёт в область поиска автоматически. Для разработки в выбранном виртуальном окружении обычно устанавливают проект в редактируемом режиме `python -m pip install -e .` из корня с `pyproject.toml`. Обычная установка или тест собранного пакета отдельно проверит, что нужные модули вошли в дистрибутив.",
+      "terms": ["src layout", "flat layout", "Python пакет в src", "editable install"],
+      "match_any": [["\\bpython(?:3)?\\b", "\\bsrc\\b", "\\b(?:импорт\\w*|import\\w*|layout|пакет\\w*)\\b", "\\b(?:зачем|как|почему|чем|what|why|how)\\b"]],
+      "anchors": ["\\bsrc\\s+layout\\b", "^(?=.*\\bpython(?:3)?\\b).*\\bsrc\\b"],
+      "sources": ["https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/"]
+    },
+    {
+      "id": "python.asyncio_tasks",
+      "title": "Корутины и задачи asyncio",
+      "identifiers": ["asyncio", "asyncio.create_task", "asyncio.TaskGroup", "asyncio.to_thread"],
+      "text": "Вызов `async def` создаёт объект корутины. `await` ждёт её результат в текущей задаче, а `asyncio.create_task()` планирует отдельную задачу в работающем цикле событий. `asyncio.TaskGroup` доступна с Python 3.11, дожидается задач группы и при обычном исключении в одной из них отменяет оставшиеся. Для блокирующей операции ввода-вывода можно использовать `asyncio.to_thread()` в Python 3.9 и новее.",
+      "match_any": [
+        ["\\basyncio\\b", "\\b(?:await|create_task|taskgroup|to_thread|задач\\w*|корутин\\w*|coroutines?|tasks?|блокир\\w*|blocking)\\b"],
+        ["\\bpython(?:3)?\\b", "\\b(?:async\\s+def|корутин\\w*|coroutines?)\\b", "\\b(?:await|запуск\\w*|вызов\\w*|конкурент\\w*|параллель\\w*|schedul\\w*|concurren\\w*|отлич\\w*|difference)\\b"]
+      ],
+      "anchors": ["\\basyncio\\b", "^(?=.*\\bpython(?:3)?\\b).*\\b(?:async\\s+def|корутин\\w*|coroutines?)\\b"],
+      "sources": ["https://docs.python.org/3/library/asyncio-task.html#coroutines", "https://docs.python.org/3/library/asyncio-task.html#task-groups", "https://docs.python.org/3/library/asyncio-task.html#running-in-threads"]
+    },
+    {
+      "id": "node.modules",
+      "title": "ES modules и CommonJS в Node.js",
+      "text": "Node.js читает `.mjs` как ES module, `.cjs` как CommonJS, а для `.js` учитывает поле `type` ближайшего `package.json`. При отсутствии поля поведение может зависеть от версии Node.js и синтаксиса файла. ES modules используют `import` и `export`, CommonJS обычно использует `require()` и `module.exports`. Начиная с Node.js 20.17 и 22.0 можно загружать через `require()` синхронный ES module. Для Node.js 20.17–20.18 и 22.0–22.11 нужен флаг `--experimental-require-module`. Из CommonJS граф модулей с `await` верхнего уровня загружают динамическим `import()`.",
+      "match_any": [
+        ["\\b(?:node(?:\\.js|js)?|нод[а-еуы])\\b", "\\b(?:commonjs|esm|es\\s+modules?|module\\.exports|err_require_(?:esm|async_module))\\b|\\.(?:mjs|cjs)\\b", "\\b(?:чем|как|почему|такое|отлич\\w*|смысл|what|why|how|difference|versus)\\b"],
+        ["\\b(?:commonjs|cjs)\\b", "\\b(?:esm|es\\s+modules?)\\b"],
+        ["\\bpackage\\.json\\b", "[\"']?type[\"']?\\s*[:=]?\\s*[\"']?(?:module|commonjs)\\b", "\\b(?:что|зачем|почему|как|означ\\w*|what|why|how)\\b"],
+        ["\\berr_require_(?:esm|async_module)\\b", "\\b(?:почему|причин\\w*|означ\\w*|what|why|mean\\w*)\\b"]
+      ],
+      "anchors": ["\\b(?:commonjs|esm|es\\s+modules?|module\\.exports|err_require_(?:esm|async_module))\\b", "\\.(?:mjs|cjs)\\b"],
+      "sources": ["https://nodejs.org/api/packages.html#determining-module-system", "https://nodejs.org/api/modules.html#loading-ecmascript-modules-using-require"]
+    },
+    {
+      "id": "node.esm_paths",
+      "title": "Относительный путь в импорте ESM в Node.js",
+      "text": "В обычном Node.js относительному импорту ESM нужен полный путь с расширением, например `./utils.mjs`. Для индекса папки напиши `./utils/index.js`. Импорты ESM обрабатываются как URL. В имени файла `#` и `?` записываются как `%23` и `%3F`; без кодирования это границы фрагмента и параметров URL. Для абсолютного локального пути в динамическом `import()` можно получить файловый URL через `pathToFileURL()`.",
+      "terms": ["ERR_UNSUPPORTED_DIR_IMPORT", "Node.js ESM", "relative specifier", "расширение файла в импорте"],
+      "identifiers": ["ERR_UNSUPPORTED_DIR_IMPORT"],
+      "match_any": [
+        ["\\bnode(?:\\.js|js)?\\b", "\\b(?:esm|es\\s+modules?)\\b", "\\b(?:относительн\\w*|relative|specifier|импорт\\w*|imports?)\\b", "\\b(?:расширени\\w*|пут\\w*|extension\\w*|index|url)\\b"],
+        ["\\bnode(?:\\.js|js)?\\b", "\\b(?:импорт\\w*|imports?)\\b", "\\b(?:без\\s+расширени\\w*|without\\s+(?:a\\s+|the\\s+)?(?:file\\s+)?extension)\\b"],
+        ["\\berr_unsupported_dir_import\\b", "\\b(?:почему|причин\\w*|ошибк\\w*|означ\\w*|как|что|why|how|what|error)\\b"]
+      ],
+      "anchors": ["\\berr_unsupported_dir_import\\b", "^(?=.*\\b(?:esm|es\\s+modules?)\\b).*\\b(?:относительн\\w*|relative|specifier)\\b"],
+      "sources": ["https://nodejs.org/api/esm.html#mandatory-file-extensions", "https://nodejs.org/api/esm.html#urls"]
+    },
+    {
+      "id": "node.package_exports",
+      "title": "ERR_PACKAGE_PATH_NOT_EXPORTED и поле exports",
+      "text": "Поле `exports` в `package.json` задаёт публичные точки входа пакета. `ERR_PACKAGE_PATH_NOT_EXPORTED` означает, что запрошенный подпуть недоступен через этот интерфейс. Проверь импорты, опубликованные в документации установленной версии пакета, и замени обращение к внутреннему пути на поддерживаемое. В собственном пакете можно явно объявить подпуть, например `\"./feature\": \"./dist/feature.js\"` в объекте `exports`.",
+      "terms": ["ERR_PACKAGE_PATH_NOT_EXPORTED", "package exports", "subpath exports", "публичный импорт пакета"],
+      "identifiers": ["ERR_PACKAGE_PATH_NOT_EXPORTED"],
+      "match_any": [
+        ["\\berr_package_path_not_exported\\b"],
+        ["\\b(?:node(?:\\.js|js)?|package\\.json)\\b", "\\bexports\\b", "\\b(?:подпут\\w*|subpath\\w*|импорт\\w*|imports?)\\b"]
+      ],
+      "anchors": ["\\berr_package_path_not_exported\\b", "\\bsubpath\\s+exports\\b"],
+      "sources": ["https://nodejs.org/api/packages.html#subpath-exports"]
+    },
+    {
+      "id": "node.test_runner",
+      "title": "Встроенный запуск тестов Node.js",
+      "text": "`node:test` предоставляет встроенный тестовый API, стабильный начиная с Node.js 20. Утверждения удобно брать из `node:assert/strict`. `node --test` запускает тесты, для одного файла можно передать его путь. `npm test` выполняет скрипт `test` из `package.json`, поэтому его команда определяется проектом. Имена обнаруживаемых файлов и доступные флаги стоит сверять с версией Node.js.",
+      "match_any": [
+        ["\\bnode:test\\b|\\bnode\\s+--test\\b", "\\b(?:как|зачем|чем|такое|отлич\\w*|работает|what|why|how|difference)\\b"],
+        ["\\b(?:node(?:\\.js|js)?|нод[а-еуы])\\b", "\\b(?:тест\\w*|tests?|testing)\\b", "\\b(?:встроенн\\w*|built[- ]in|без\\s+jest|without\\s+jest)\\b", "\\b(?:как|чем|какой|какие|зачем|how|what|which|can\\s+i)\\b"]
+      ],
+      "anchors": ["\\bnode:test\\b|\\bnode\\s+--test\\b", "^(?=.*\\b(?:node(?:\\.js|js)?|нод[а-еуы])\\b).*\\b(?:тест\\w*|tests?|testing)\\b"],
+      "sources": ["https://nodejs.org/api/test.html", "https://docs.npmjs.com/cli/v11/commands/npm-test/"]
+    },
+    {
+      "id": "npm.clean_install",
+      "title": "Воспроизводимая установка с npm ci",
+      "text": "`npm ci` устанавливает зависимости по существующему `package-lock.json` или `npm-shrinkwrap.json`. Если lockfile расходится с `package.json`, команда завершится ошибкой. Перед установкой npm удаляет имеющийся `node_modules`. `npm install` подходит для осознанного изменения набора зависимостей и обновления lockfile. Установка может выполнять lifecycle-скрипты, так что важны доверие к проекту и настройки npm.",
+      "match_any": [
+        ["\\bnpm\\s+ci\\b", "\\b(?:зачем|такое|означ\\w*|почему|отлич\\w*|чем|как|what|why|difference|how|when)\\b"],
+        ["\\bnpm\\b", "\\b(?:lockfile|package-lock\\.json|локфайл\\w*)\\b", "\\b(?:чист\\w*|воспроизвод\\w*|clean|frozen|reproducible)\\b"]
+      ],
+      "anchors": ["\\bnpm\\s+ci\\b", "^(?=.*\\bnpm\\b).*\\b(?:npm-shrinkwrap\\.json|package-lock\\.json|lockfile)\\b"],
+      "sources": ["https://docs.npmjs.com/cli/v11/commands/npm-ci/", "https://docs.npmjs.com/cli/v11/commands/npm-install/"]
+    },
+    {
+      "id": "npm.scripts",
+      "title": "Аргументы и окружение npm run",
+      "text": "`npm run <имя>` выполняет соответствующий скрипт из поля `scripts` в `package.json`. npm добавляет `node_modules/.bin` в PATH скрипта, так что доступна локальная версия утилиты. Для передачи флагов скрипту используют `--`, например `npm run test -- --help`. При наличии `pre<имя>` и `post<имя>` npm обычно запускает их вокруг основного скрипта, передавая флаги только ему. Конкретные флаги и эффекты зависят от содержимого скрипта.",
+      "match_any": [
+        ["\\bnpm\\s+run\\b", "\\b(?:флаг\\w*|аргумент\\w*|параметр\\w*|передать|pass|flags?|arguments?|args?)\\b"],
+        ["\\bnpm\\s+run\\b", "\\b(?:path|pre\\s*[/и-]\\s*post|префикс\\w*|lifecycle|локальн\\w*|local)\\b", "\\b(?:как|почему|откуда|что|how|why|where|what)\\b"],
+        ["\\bpackage\\.json\\b", "\\b(?:scripts|скрипт\\w*)\\b", "\\b(?:флаг\\w*|аргумент\\w*|параметр\\w*|pretest|posttest|flags?|arguments?|args?)\\b"]
+      ],
+      "anchors": ["\\bnpm\\s+run\\b", "node_modules/\\.bin", "^(?=.*\\bpackage\\.json\\b).*\\b(?:pretest|posttest|флаг\\w*|аргумент\\w*|flags?|arguments?)\\b"],
+      "sources": ["https://docs.npmjs.com/cli/v11/commands/npm-run/", "https://docs.npmjs.com/cli/v11/using-npm/scripts/"]
+    },
+    {
+      "id": "react.state_snapshot",
+      "title": "Значение состояния между рендерами React",
+      "text": "Обработчик React видит состояние того рендера, в котором был создан. Вызов функции из `useState` ставит обновление в очередь для следующего рендера, поэтому сразу после вызова текущая переменная ещё содержит прежнее значение. Когда новое значение зависит от предыдущего, передай функцию, например `setCount(count => count + 1)`. Для обновления объекта или массива в состоянии создай новое значение.",
+      "match_any": [
+        ["\\b(?:usestate|setstate)\\b", "\\b(?:стар\\w*|прежн\\w*|сразу|обновл\\w*|предыдущ\\w*|очеред\\w*|снимок|stale|old|previous|snapshot|updat\\w*|batch\\w*)\\b"],
+        ["\\breact\\b", "\\b(?:state|состояни\\w*)\\b", "\\b(?:рендер\\w*|сразу|снимок|прежн\\w*|render\\w*|stale|snapshot)\\b"]
+      ],
+      "anchors": ["\\b(?:usestate|setstate)\\b", "^(?=.*\\breact\\b).*\\b(?:state|состояни\\w*)\\b"],
+      "sources": ["https://react.dev/learn/state-as-a-snapshot", "https://react.dev/reference/react/useState#updating-state-based-on-the-previous-state", "https://react.dev/reference/react/useState#updating-objects-and-arrays-in-state"]
+    },
+    {
+      "id": "react.effects",
+      "title": "Эффекты, зависимости и очистка в React",
+      "text": "`useEffect` синхронизирует компонент с внешней системой. React вызывает очистку перед повторным запуском при изменении зависимости и при размонтировании. При корневом Strict Mode в режиме разработки React добавляет цикл запуска и очистки при первом монтировании. Strict Mode внутри поддерева такого повторного запуска при первом монтировании не добавляет. Бесконечный цикл возникает, когда эффект обновляет состояние, а новый рендер снова меняет его зависимости. Проверь, какие зависимости меняются и нужно ли эффекту обновлять состояние. Производное значение часто достаточно вычислить при рендере.",
+      "match_any": [
+        ["\\buseeffect\\b", "\\b(?:зачем|такое|почему|как|зависимост\\w*|очистк\\w*|срабатыва\\w*|зацикли\\w*|бесконечн\\w*\\s+цикл\\w*|дважды|what|why|how|dependenc\\w*|cleanup|twice|re[- ]runs?|infinite\\s+(?:loop|cycle))\\b"],
+        ["\\breact\\b", "\\b(?:эффект\\w*|effects?)\\b", "\\b(?:зависимост\\w*|очистк\\w*|размонтир\\w*|strict\\s+mode|зацикли\\w*|dependenc\\w*|cleanup|unmount\\w*|infinite\\s+(?:loop|cycle)|re[- ]runs?)\\b"]
+      ],
+      "anchors": ["\\buseeffect\\b", "^(?=.*\\breact\\b).*\\b(?:эффект\\w*|effects?)\\b"],
+      "sources": ["https://react.dev/reference/react/useEffect", "https://react.dev/reference/react/useEffect#my-effect-keeps-re-running-in-an-infinite-cycle", "https://react.dev/learn/you-might-not-need-an-effect", "https://react.dev/reference/react/StrictMode#enabling-strict-mode-for-a-part-of-the-app"]
+    },
+    {
+      "id": "react.hook_rules",
+      "title": "Где можно вызывать хуки React",
+      "text": "Хуки вроде `useState` и `useEffect` вызывают на верхнем уровне функционального компонента или собственного хука, до условного `return`. React рассчитывает на одинаковый порядок этих вызовов при каждом рендере. API `use` в React 19 допускает вызов в цикле или условии внутри компонента или хука. Ошибка `Invalid hook call` также может указывать на несовместимые версии React и рендерера или на две копии React.",
+      "match_any": [
+        ["^(?=.*\\breact\\b).*\\b(?:хуки?|хук[а-я]+|hooks?)\\b|\\b(?:usestate|useeffect|usecontext|usememo|usecallback|useref)\\b", "\\b(?:call(?:ing|s)?|invoke|invoking|place|put|вызыва(?:ть|ю|ешь|ем|ете)|вызвать|поместить)\\b", "\\b(?:услови\\w*|цикле?|top\\s+level|conditional\\w*|if|loops?|early\\s+return|ранн\\w*\\s+return)\\b"],
+        ["\\b(?:usestate|useeffect|usecontext|usememo|usecallback|useref)\\b", "\\b(?:внутри\\s+(?:услови\\w*|цикл\\w*)|(?:inside|within)\\s+(?:(?:an?|the)\\s+)?(?:if|for|while)\\b|after\\s+an?\\s+early\\s+return|после\\s+(?:ранн\\w*|условн\\w*)\\s+return)", "\\b(?:можно\\s+ли|почему|как|нельзя|can|may|why|how|should)\\b"],
+        ["\\binvalid\\s+hook\\s+call\\b", "\\b(?:почему|причин\\w*|означ\\w*|what|why|how|error)\\b"],
+        ["\\brules\\s+of\\s+hooks\\b|\\bправил\\w*\\s+хуков\\b"]
+      ],
+      "anchors": ["\\brules\\s+of\\s+hooks\\b|\\binvalid\\s+hook\\s+call\\b|\\bправил\\w*\\s+хуков\\b", "^(?=.*\\b(?:react|usestate|useeffect|usecontext|usememo|usecallback|useref)\\b)(?=.*\\b(?:call(?:ing|s)?|invoke|invoking|place|put|вызыва(?:ть|ю|ешь|ем|ете)|вызвать|поместить)\\b).*\\b(?:услови\\w*|цикле?|conditional\\w*|if|loops?|top\\s+level|early\\s+return|ранн\\w*\\s+return)\\b", "^(?=.*\\b(?:usestate|useeffect|usecontext|usememo|usecallback|useref)\\b).*\\b(?:внутри\\s+(?:услови\\w*|цикл\\w*)|(?:inside|within)\\s+(?:(?:an?|the)\\s+)?(?:if|for|while))\\b"],
+      "sources": ["https://react.dev/reference/rules/rules-of-hooks", "https://react.dev/reference/react/use", "https://react.dev/warnings/invalid-hook-call-warning"]
+    },
+    {
+      "id": "redux_toolkit.store",
+      "title": "Слайсы и создание хранилища Redux Toolkit",
+      "text": "`createSlice()` объединяет имя, начальное состояние и редьюсеры, из которых Redux Toolkit генерирует функции создания действий. `configureStore()` собирает редьюсеры в хранилище. В Next.js App Router хранилище для SSR создают заново на каждый запрос, чтобы состояние разных пользователей было изолировано. Клиентский `Provider` даёт компонентам доступ к хранилищу. Серверные компоненты получают данные отдельно и могут передать начальное состояние через свойства.",
+      "match_any": [
+        ["\\b(?:redux(?:\\s+toolkit)?|редакс)\\b", "\\b(?:createslice|configurestore|stores?|стор\\w*|хранилищ\\w*|reducers?|редьюсер\\w*|slices?|слайс\\w*)\\b", "\\b(?:как|почему|зачем|чем|что|такое|why|what|how|which|does|can)\\b"],
+        ["\\b(?:redux(?:\\s+toolkit)?|редакс)\\b", "\\b(?:stores?|стор\\w*|хранилищ\\w*|ssr|provider)\\b", "\\b(?:next\\.?js|app\\s+router|ssr|per[- ]request|на\\s+каждый\\s+запрос)\\b", "\\b(?:как|почему|зачем|где|куда|что|why|what|how|where|should|can)\\b"],
+        ["\\b(?:createslice|configurestore)\\b", "\\b(?:как|почему|зачем|чем|что|такое|why|what|how|difference)\\b"]
+      ],
+      "anchors": ["\\b(?:createslice|configurestore)\\b", "^(?=.*\\b(?:redux(?:\\s+toolkit)?|редакс)\\b).*\\b(?:stores?|стор\\w*|хранилищ\\w*|reducers?|редьюсер\\w*|slices?|слайс\\w*|ssr|provider)\\b"],
+      "sources": ["https://redux.js.org/toolkit/api/createSlice", "https://redux.js.org/toolkit/api/configureStore", "https://redux.js.org/usage/nextjs"]
+    },
+    {
+      "id": "zustand.selectors_ssr",
+      "title": "Селекторы и серверный рендеринг Zustand",
+      "text": "Селектор Zustand, например `state => state.count`, подписывает компонент на выбранное значение. Обычно результат сравнивается через `Object.is`. `useShallow()` помогает, когда селектор возвращает новый объект с теми же полями верхнего уровня. При SSR в Next.js для каждого запроса создают своё хранилище. Клиентский Provider инициализируют теми же данными, которые использованы на сервере, чтобы вывод совпал при гидратации.",
+      "match_any": [
+        ["\\b(?:zustand|зустанд\\w*)\\b", "\\b(?:useshallow|selectors?|селектор\\w*|stores?|стор\\w*|хранилищ\\w*|ssr|гидратац\\w*|hydrati\\w*|re[- ]?render\\w*|перерендер\\w*|подпис\\w*|subscrib\\w*)\\b", "\\b(?:как|почему|зачем|чем|что|why|what|how|which|does|should|can)\\b"],
+        ["\\b(?:zustand|зустанд\\w*)\\b", "\\b(?:stores?|стор\\w*|хранилищ\\w*|ssr|гидратац\\w*|hydrati\\w*)\\b", "\\b(?:next\\.?js|app\\s+router|per[- ]request|на\\s+каждый\\s+запрос)\\b", "\\b(?:как|почему|зачем|что|why|what|how|should|can|is)\\b"],
+        ["\\buseshallow\\b", "\\b(?:как|почему|зачем|что|такое|why|what|how|difference)\\b"]
+      ],
+      "anchors": ["\\buseshallow\\b", "^(?=.*\\b(?:zustand|зустанд\\w*)\\b).*\\b(?:selectors?|селектор\\w*|stores?|стор\\w*|хранилищ\\w*|ssr|гидратац\\w*|hydrati\\w*|re[- ]?render\\w*|перерендер\\w*|подпис\\w*|subscrib\\w*)\\b"],
+      "sources": ["https://zustand.docs.pmnd.rs/learn/guides/prevent-rerenders-with-use-shallow.html", "https://zustand.docs.pmnd.rs/learn/guides/nextjs.html"]
+    },
+    {
+      "id": "tanstack_query.cache",
+      "title": "Свежесть и хранение данных в TanStack Query",
+      "text": "TanStack Query загружает и кэширует данные сервера. `queryKey` идентифицирует запрос, а `queryFn` получает результат. `staleTime` задаёт, сколько миллисекунд данные считаются свежими, по умолчанию 0. Устаревшие данные могут обновиться в фоне при монтировании, фокусе окна или восстановлении сети. `gcTime` в v5 задаёт срок хранения после ухода последнего наблюдателя. По умолчанию это 5 минут в браузере и бесконечность при SSR. В v4 параметр назывался `cacheTime`.",
+      "match_any": [
+        ["\\b(?:tanstack\\s+query|tanstack/react-query|react[- ]query)\\b", "\\b(?:staletime|gctime|cachetime|usequery|querykey|queryfn|server\\s+state|свеж\\w*|устаре\\w*|к[еэ]ш\\w*|cach\\w*|refetch\\w*|garbage\\s+collect\\w*)\\b", "\\b(?:как|почему|зачем|чем|что|такое|когда|отлич\\w*|why|what|how|when|difference|does)\\b"],
+        ["^(?!.*\\b(?:rtk\\s+query|apollo)\\b).*\\b(?:staletime|gctime)\\b", "\\b(?:как|почему|зачем|чем|что|такое|когда|отлич\\w*|why|what|how|when|difference|does)\\b"]
+      ],
+      "anchors": ["^(?!.*\\b(?:rtk\\s+query|apollo)\\b).*\\b(?:staletime|gctime)\\b", "^(?=.*\\b(?:tanstack\\s+query|tanstack/react-query|react[- ]query)\\b).*\\b(?:cachetime|usequery|querykey|queryfn|server\\s+state|свеж\\w*|устаре\\w*|к[еэ]ш\\w*|cach\\w*|refetch\\w*|garbage\\s+collect\\w*)\\b"],
+      "sources": ["https://tanstack.com/query/latest/docs/framework/react/guides/important-defaults", "https://tanstack.com/query/latest/docs/framework/react/reference/functions/useQuery", "https://tanstack.com/query/latest/docs/framework/react/guides/migrating-to-v5#rename-cachetime-to-gctime"]
+    },
+    {
+      "id": "vue.reactivity",
+      "title": "ref и reactive в Vue 3",
+      "text": "`ref()` хранит реактивное значение, которое в JavaScript обычно читают и меняют через `.value`. Vue раскрывает ref верхнего уровня в шаблоне, а для вложенных значений действуют дополнительные правила. `reactive()` возвращает прокси для объекта. Если извлечь из него примитивное свойство обычной деструктуризацией, отдельная переменная перестаёт следить за изменениями исходного свойства. Для связи с ним можно использовать `toRef()`.",
+      "match_any": [
+        ["\\bvue(?:\\.js)?\\b", "\\b(?:ref|reactive|torefs?|реактивност\\w*)\\b", "\\b(?:чем|как|почему|такое|отлич\\w*|value|прокси|деструктур\\w*|what|why|how|difference|unwrap\\w*)\\b"],
+        ["\\bref\\b", "\\breactive\\b"]
+      ],
+      "anchors": ["\\btorefs?\\b", "^(?=.*\\bvue(?:\\.js)?\\b).*\\b(?:ref|reactive|реактивност\\w*)\\b", "^(?=.*\\bref\\b).*\\breactive\\b"],
+      "sources": ["https://vuejs.org/guide/essentials/reactivity-fundamentals.html", "https://vuejs.org/api/reactivity-utilities.html#toref"]
+    },
+    {
+      "id": "vue.computed_watch",
+      "title": "Вычисления и наблюдатели Vue 3",
+      "text": "`computed()` возвращает вычисляемое значение и кэширует результат до изменения его реактивных зависимостей. `watch()` следит за явно выбранным источником и удобен для побочного эффекта, например сохранения фильтра. `watchEffect()` автоматически отслеживает значения, которые его функция читает синхронно. В асинхронной функции такое отслеживание продолжается до первого `await`.",
+      "match_any": [
+        ["\\bvue(?:\\.js)?\\b", "\\b(?:computed|watch|watcheffect|наблюдател\\w*|вычисляем\\w*)\\b", "\\b(?:чем|как|почему|зачем|отлич\\w*|what|why|how|when|difference)\\b"],
+        ["\\bcomputed\\b", "\\b(?:watch|watcheffect)\\b"],
+        ["\\bwatcheffect\\b", "\\b(?:await|отслежива\\w*|зависимост\\w*|tracks?|dependenc\\w*)\\b"]
+      ],
+      "anchors": ["\\bwatcheffect\\b", "^(?=.*\\bvue(?:\\.js)?\\b).*\\b(?:computed|watch|наблюдател\\w*|вычисляем\\w*)\\b", "^(?=.*\\bcomputed\\b).*\\bwatch\\b"],
+      "sources": ["https://vuejs.org/guide/essentials/computed.html", "https://vuejs.org/guide/essentials/watchers.html#watch-vs-watcheffect"]
+    },
+    {
+      "id": "pinia.store_refs",
+      "title": "Реактивность хранилища Pinia и SSR в Nuxt",
+      "text": "Pinia создаёт хранилище через `defineStore()`. При деструктуризации состояния и геттеров используй `storeToRefs(store)`, чтобы сохранить реактивность. Действия можно извлекать напрямую, они привязаны к хранилищу. В Nuxt 3 и 4 модуль `@pinia/nuxt` связывает Pinia с экземпляром приложения и передаёт состояние при SSR. В данные, которые попадут в браузер, помещай только значения, доступные клиенту.",
+      "match_any": [
+        ["\\b(?:pinia|пини[яию])\\b", "\\b(?:definestore|storetorefs|stores?|стор\\w*|хранилищ\\w*|getters?|геттер\\w*|деструктур\\w*|destructur\\w*|ssr|nuxt|гидратац\\w*|hydrati\\w*)\\b", "\\b(?:как|почему|зачем|чем|что|такое|why|what|how|which|does|should|can)\\b"],
+        ["\\b(?:pinia|пини[яию])\\b", "\\b(?:деструктур\\w*|destructur\\w*)\\b", "\\b(?:stores?|стор\\w*|хранилищ\\w*|reactiv\\w*|реактив\\w*)\\b", "\\b(?:как|почему|зачем|чем|why|what|how|does)\\b"],
+        ["\\bstoretorefs\\b", "\\b(?:как|почему|зачем|что|такое|why|what|how|does)\\b"]
+      ],
+      "anchors": ["\\bstoretorefs\\b|@pinia/nuxt\\b", "^(?=.*\\b(?:pinia|пини[яию])\\b).*\\b(?:definestore|stores?|стор\\w*|хранилищ\\w*|getters?|геттер\\w*|деструктур\\w*|destructur\\w*|ssr|nuxt|гидратац\\w*|hydrati\\w*)\\b"],
+      "sources": ["https://pinia.vuejs.org/core-concepts/#destructuring-from-a-store", "https://pinia.vuejs.org/ssr/nuxt.html"]
+    },
+    {
+      "id": "next.server_client_components",
+      "title": "Серверные и клиентские компоненты Next.js",
+      "text": "В App Router страницы и layouts по умолчанию являются Server Components. Директива `'use client'` обозначает границу клиентского графа модулей для интерактивности, состояния и API браузера. Она относится и к импортам такого модуля. При первой загрузке Next.js может подготовить HTML для Client Components на сервере, а в браузере React добавит интерактивность. Свойства, передаваемые с сервера на эту границу, должны сериализоваться средствами React. Секреты хранят на серверной стороне.",
+      "match_any": [
+        ["\\b(?:next\\.?js|next\\s+js|app\\s+router)\\b", "\\b(?:use\\s+client|(?:server|client)\\s+components?|(?:серверн|клиентск)\\w*\\s+компонент\\w*|rsc)\\b"],
+        ["[\"'`]use\\s+client[\"'`]", "\\b(?:зачем|почему|такое|работает|означ\\w*|what|why|how)\\b"]
+      ],
+      "anchors": ["[\"'`]use\\s+client[\"'`]", "^(?=.*\\b(?:next\\.?js|next\\s+js|app\\s+router)\\b).*\\b(?:rsc|use\\s+client|(?:server|client)\\s+components?|(?:серверн|клиентск)\\w*\\s+компонент\\w*)\\b"],
+      "sources": ["https://nextjs.org/docs/app/getting-started/server-and-client-components"]
+    },
+    {
+      "id": "next.app_routing",
+      "title": "Страницы, layouts и API в Next.js App Router",
+      "text": "В App Router папки внутри `app` задают сегменты адреса, `page.tsx` открывает страницу по адресу, а `layout.tsx` добавляет общий интерфейс для страниц сегмента. Для HTTP-эндпоинта создают `route.ts` с экспортами по методам, например `GET`. `page` и `route` одного сегмента конфликтуют, поэтому обработчик можно вынести в отдельный сегмент. В проектах с Pages Router действуют свои соглашения.",
+      "match_any": [
+        ["\\b(?:next\\.?js|next\\s+js|app\\s+router)\\b", "\\b(?:route\\s+handlers?|эндпоинт\\w*|маршрут\\w*|page\\.(?:jsx?|tsx?)|route\\.(?:js|ts)|layout\\.(?:jsx?|tsx?))\\b", "\\b(?:как|почему|чем|такое|зачем|отлич\\w*|можно|what|why|how|where|difference|can)\\b"],
+        ["\\bpage\\.(?:jsx?|tsx?)\\b", "\\broute\\.(?:js|ts)\\b"]
+      ],
+      "anchors": ["\\bapp/(?:[^\\s/]+/){0,5}(?:page|layout|route)\\.(?:jsx?|tsx?)\\b", "^(?=.*\\b(?:next\\.?js|next\\s+js|app\\s+router)\\b).*\\b(?:route\\s+handlers?|эндпоинт\\w*|маршрут\\w*|(?:page|route|layout)\\.(?:jsx?|tsx?))\\b"],
+      "sources": ["https://nextjs.org/docs/app/getting-started/layouts-and-pages", "https://nextjs.org/docs/app/getting-started/route-handlers"]
+    },
+    {
+      "id": "next.data_caching",
+      "title": "Получение и кэширование данных в Next.js App Router",
+      "text": "В Server Components можно использовать `fetch` и запросы к БД. С Next.js 15 кэширование `fetch` между запросами включают явно. При статическом рендеринге данные могут быть получены во время сборки, а одинаковые GET в одном рендере переиспользуют результат. Без Cache Components `cache: 'force-cache'` включает Data Cache, `cache: 'no-store'` запрашивает свежие данные, `next.revalidate` задаёт срок в секундах. В Next.js 16 с Cache Components директива `'use cache'` кэширует результат функции или компонента, а `cacheLife` задаёт профиль срока.",
+      "match_any": [
+        ["\\b(?:next\\.?js|next\\s+(?:js|1[3-6])|app\\s+router|некст\\w*)\\b", "\\b(?:fetch|data\\s+cache|cache\\s+components|cachecomponents|cachelife|revalidate|к[еэ]ш\\w*|cach(?:e|es|ed|ing))\\b", "\\b(?:чем|как|почему|зачем|когда|такое|отлич\\w*|what|why|how|when|does|do|is|difference)\\b"],
+        ["\\b(?:cachecomponents|cache\\s+components|cachelife|next\\.revalidate)\\b|[\"'`]use\\s+cache[\"'`]", "\\b(?:как|почему|зачем|такое|чем|что|what|why|how|when|does|do|is|difference)\\b"]
+      ],
+      "anchors": ["\\b(?:cachecomponents|cache\\s+components|cachelife|next\\.revalidate)\\b|[\"'`]use\\s+cache[\"'`]", "^(?=.*\\b(?:next\\.?js|next\\s+(?:js|1[3-6])|app\\s+router|некст\\w*)\\b).*\\b(?:fetch|data\\s+cache|revalidate|к[еэ]ш\\w*|cach(?:e|es|ed|ing))\\b"],
+      "sources": ["https://nextjs.org/docs/app/guides/upgrading/version-15#fetch-requests", "https://nextjs.org/docs/app/api-reference/functions/fetch", "https://nextjs.org/docs/app/getting-started/caching"]
+    },
+    {
+      "id": "nuxt.data_fetching",
+      "title": "Получение данных при SSR и гидратации в Nuxt 4",
+      "text": "Для начальных данных страницы в Nuxt 4 подойдёт `useFetch()` для HTTP или `useAsyncData()` для произвольной асинхронной функции. `useFetch()` объединяет `useAsyncData()` и `$fetch`. При обычном SSR результат передаётся браузеру в payload и используется при гидратации. Если вызвать `$fetch` напрямую в `setup`, запрос может пройти на сервере и повториться в браузере. Прямой `$fetch` подходит для запроса по событию пользователя, например после отправки формы.",
+      "match_any": [
+        ["\\b(?:nuxt(?:\\.js|js)?|нукст\\w*)\\b", "\\b(?:usefetch|useasyncdata|data\\s+fetching|fetch\\w*\\s+data|(?:загруз|загруж|получ)\\w*\\s+данн\\w*)\\b|(?<!\\w)\\$fetch\\b", "\\b(?:чем|как|почему|зачем|когда|отлич\\w*|what|why|how|when|which|does|do|should|difference)\\b"],
+        ["\\b(?:nuxt(?:\\.js|js)?|нукст\\w*)\\b", "\\b(?:ssr|hydrati\\w*|гидра(?:та)?ц\\w*|дважды|twice)\\b", "\\b(?:fetch\\w*|запрос\\w*|requests?)\\b", "\\b(?:как|почему|зачем|why|how|does|do)\\b"],
+        ["\\buseasyncdata\\b|^(?=.*(?<!\\w)\\$fetch\\b).*\\b(?:usefetch|hydrati\\w*|гидра(?:та)?ц\\w*|ssr)\\b", "\\b(?:чем|как|почему|зачем|когда|такое|отлич\\w*|what|why|how|when|does|do|should|difference)\\b"]
+      ],
+      "anchors": ["\\buseasyncdata\\b", "^(?=.*(?<!\\w)\\$fetch\\b).*\\b(?:usefetch|ssr|hydrati\\w*|гидра(?:та)?ц\\w*)\\b", "^(?=.*\\b(?:nuxt(?:\\.js|js)?|нукст\\w*)\\b).*(?:(?<!\\w)\\$fetch\\b|\\b(?:usefetch|data\\s+fetching|fetch\\w*\\s+data|(?:загруз|загруж|получ)\\w*\\s+данн\\w*)\\b)", "^(?=.*\\b(?:nuxt(?:\\.js|js)?|нукст\\w*)\\b)(?=.*\\b(?:ssr|hydrati\\w*|гидра(?:та)?ц\\w*|дважды|twice)\\b).*\\b(?:fetch\\w*|запрос\\w*|requests?)\\b"],
+      "sources": ["https://nuxt.com/docs/4.x/getting-started/data-fetching", "https://nuxt.com/docs/4.x/api/composables/use-async-data"]
+    },
+    {
+      "id": "nuxt.runtime_config",
+      "title": "Серверные и публичные настройки Nuxt 4",
+      "text": "Ключи приложения объявляют в `runtimeConfig` внутри `nuxt.config.ts` и читают через `useRuntimeConfig()`. Значения из `runtimeConfig.public` доступны браузеру. Приватный `apiSecret` можно объявить на верхнем уровне `runtimeConfig` и читать в серверном обработчике. В окружении запущенного сервера `NUXT_API_SECRET` переопределяет `apiSecret`, а `NUXT_PUBLIC_API_BASE` — `public.apiBase`. Секреты передают серверу через его окружение. Файл `.env` Nuxt CLI читает при разработке и сборке.",
+      "match_any": [
+        ["\\b(?:nuxt(?:\\.js|js)?|нукст\\w*)\\b", "\\b(?:runtime\\s*config|useruntimeconfig|nuxt_public_[a-z0-9_]*|nuxt_api_secret|секрет\\w*|secrets?|переменн\\w*\\s+окружен\\w*|environment\\s+variables?)\\b|(?<!\\w)\\.env\\b", "\\b(?:как|почему|зачем|чем|куда|где|когда|что|why|what|how|where|when|difference)\\b"],
+        ["\\b(?:useruntimeconfig|runtimeconfig\\.public|nuxt_public_[a-z0-9_]*|nuxt_api_secret)\\b", "\\b(?:как|почему|зачем|чем|куда|где|когда|что|такое|why|what|how|where|when|difference)\\b"]
+      ],
+      "anchors": ["\\b(?:useruntimeconfig|runtimeconfig\\.public|nuxt_public_[a-z0-9_]*|nuxt_api_secret)\\b", "^(?=.*\\b(?:nuxt(?:\\.js|js)?|нукст\\w*)\\b).*(?:\\b(?:runtime\\s*config|секрет\\w*|secrets?|переменн\\w*\\s+окружен\\w*|environment\\s+variables?)\\b|(?<!\\w)\\.env\\b)"],
+      "sources": ["https://nuxt.com/docs/4.x/guide/going-further/runtime-config", "https://nuxt.com/docs/4.x/api/composables/use-runtime-config"]
+    },
+    {
+      "id": "nuxt.file_routing",
+      "title": "Страницы и серверные маршруты в Nuxt 4",
+      "text": "В стандартной структуре Nuxt 4 файлы `app/pages/` задают страницы. Например `app/pages/posts/[id].vue` открывается по `/posts/:id`. Nitro регистрирует серверные обработчики из `server/` в корне проекта. `server/api/posts.get.ts` соответствует `GET /api/posts`, а `server/routes/health.get.ts` — `GET /health`. В проектах Nuxt 3 часто встречается `pages/` в корне. Фактическую структуру определяет конфигурация проекта.",
+      "match_any": [
+        ["\\b(?:nuxt(?:\\.js|js)?|нукст\\w*|nitro)\\b", "\\b(?:app/pages|server/(?:api|routes)|(?:server|file[- ]based)\\s+rout\\w*|маршрут\\w*|роут\\w*|эндпоинт\\w*|endpoints?|routing)\\b", "\\b(?:как|почему|чем|куда|где|такое|како\\w*|отлич\\w*|what|why|how|where|which|difference)\\b"],
+        ["\\bapp/pages\\b", "\\bserver/(?:api|routes)\\b", "\\b(?:как|чем|где|куда|отлич\\w*|what|how|where|difference)\\b"]
+      ],
+      "anchors": ["^(?=.*\\b(?:nuxt(?:\\.js|js)?|нукст\\w*|nitro)\\b).*\\b(?:app/pages|server/(?:api|routes)|(?:server|file[- ]based)\\s+rout\\w*|маршрут\\w*|роут\\w*|эндпоинт\\w*|endpoints?|routing)\\b", "^(?=.*\\bapp/pages\\b).*\\bserver/(?:api|routes)\\b"],
+      "sources": ["https://nuxt.com/docs/4.x/directory-structure/app/pages", "https://nuxt.com/docs/4.x/directory-structure/server", "https://nitro.build/docs/routing#specific-request-method"]
+    },
+    {
+      "id": "vite.workflow",
+      "title": "Разработка, сборка и просмотр проекта Vite",
+      "text": "Команда `vite` запускает сервер разработки, `vite build` собирает проект, а `vite preview` предназначена для локальной проверки готовой сборки. Для продакшена используют отдельный веб-сервер или целевую платформу. Типичный выходной каталог статической сборки — `dist`, его можно изменить через `build.outDir`. Имена npm-скриптов задаёт `package.json`, а способ развёртывания зависит от того, статический ли это проект или приложение с серверным рендерингом.",
+      "match_any": [
+        ["\\bvite\\s+(?:build|preview|dev)\\b", "\\b(?:чем|зачем|для\\s+чего|как|почему|отлич\\w*|можно|what|why|how|difference|can)\\b"],
+        ["\\bvite\\b", "\\b(?:сборк\\w*|сервер\\w*|разв[её]ртыван\\w*|dist|preview|build|outdir)\\b", "\\b(?:чем|зачем|такое|разниц\\w*|отлич\\w*|where|difference|purpose)\\b"]
+      ],
+      "anchors": ["\\bvite\\s+(?:build|preview|dev)\\b", "^(?=.*\\bvite\\b).*\\b(?:сборк\\w*|разв[её]ртыван\\w*|dist|preview|build|outdir)\\b"],
+      "sources": ["https://vite.dev/guide/#command-line-interface", "https://vite.dev/guide/static-deploy.html"]
+    },
+    {
+      "id": "vite.environment",
+      "title": "Переменные окружения и режимы Vite",
+      "text": "Vite подставляет доступные клиенту переменные `import.meta.env` в сборку. По умолчанию из пользовательских переменных туда попадают имена с префиксом `VITE_`, их значения читаются как строки. Файл `.env.local` исключают из Git, но сам файл не защищает `VITE_`-значения от попадания в клиентский код. Секреты следует читать на сервере. `--mode` управляет выбором файлов `.env.[mode]`, а изменения `.env` требуют перезапуска сервера разработки.",
+      "match_any": [
+        ["\\b(?:vite_[a-z0-9_]*|import\\.meta\\.env)\\b", "\\b(?:как|почему|зачем|секрет\\w*|переменн\\w*|сборк\\w*|what|why|how|secrets?|variables?|expos\\w*)\\b"],
+        ["\\bvite\\b", "(?<!\\w)\\.env(?:\\.[\\w-]+)?(?!\\w)|\\b(?:переменн\\w*\\s+окружен\\w*|environment\\s+variables?)\\b", "\\b(?:как|почему|зачем|чем|why|what|how|difference)\\b"]
+      ],
+      "anchors": ["\\b(?:vite_[a-z0-9_]*|import\\.meta\\.env)\\b", "^(?=.*\\bvite\\b).*(?:(?<!\\w)\\.env(?:\\.[\\w-]+)?(?!\\w)|\\b(?:переменн\\w*\\s+окружен\\w*|environment\\s+variables?)\\b)"],
+      "sources": ["https://vite.dev/guide/env-and-mode"]
+    },
+    {
+      "id": "sass.modules",
+      "title": "Модули Sass и переход с @import",
+      "text": "`@use` загружает модуль Sass и даёт доступ к его переменным, функциям и миксинам через пространство имён. CSS модуля включается в результат один раз. `@forward` собирает публичные элементы нескольких файлов в общий входной модуль. Чтобы пользоваться ими внутри этого же файла, добавь `@use`. Sass-директива `@import` устарела в Dart Sass 1.80.0. Обычный CSS `@import` подчиняется правилам CSS.",
+      "match_any": [
+        ["\\b(?:sass|scss|libsass)\\b", "@(?:use|forward|import)\\b", "\\b(?:как|почему|зачем|чем|что|такое|отлич\\w*|устар\\w*|why|what|how|difference|deprecat\\w*|does|should)\\b"],
+        ["@use\\b", "@(?:forward|import)\\b", "\\b(?:как|почему|зачем|чем|что|отлич\\w*|why|what|how|difference|does|should)\\b"]
+      ],
+      "anchors": ["^(?=.*\\b(?:sass|scss|libsass)\\b).*@(?:use|forward|import)\\b", "^(?=.*@use\\b).*@(?:forward|import)\\b"],
+      "sources": ["https://sass-lang.com/documentation/at-rules/use/", "https://sass-lang.com/documentation/at-rules/forward/", "https://sass-lang.com/documentation/breaking-changes/import/"]
+    },
+    {
+      "id": "express.error_middleware",
+      "title": "Обработка ошибок Express 5",
+      "text": "Express отличает обработчик ошибок по четырём аргументам `(err, req, res, next)`. Такой middleware обычно регистрируют после маршрутов. В Express 5 исключение из `async`-обработчика или отклонение возвращённого Promise автоматически передаётся в `next`. Ошибку отдельного callback передают явно через `next(err)`. В Express 4 передачу отклонённого Promise нужно организовать явно.",
+      "match_any": [
+        ["\\bexpress(?:\\.js|js)?\\b", "\\b(?:ошиб\\w*|errors?|reject\\w*|next\\s*\\(\\s*err)\\b", "\\b(?:middleware|обработчик\\w*|async|promise|next)\\b"]
+      ],
+      "anchors": ["^(?=.*\\bexpress(?:\\.js|js)?\\b).*\\b(?:middleware|async|promise|next\\s*\\(\\s*err)\\b"],
+      "sources": ["https://expressjs.com/en/guide/error-handling/", "https://expressjs.com/en/guide/migrating-5/#rejected-promises-handled-from-middleware-and-handlers"]
+    },
+    {
+      "id": "fastapi.request_data",
+      "title": "Данные запроса и Pydantic в FastAPI",
+      "text": "FastAPI обычно берёт параметр из пути, если его имя есть в шаблоне маршрута. Обычный скалярный параметр, отсутствующий в пути, читается из query string, а параметр с типом модели Pydantic — из тела запроса. `Query`, `Path` и `Body` позволяют задать источник или ограничения явно. FastAPI проверяет входные данные по модели и использует её для схемы OpenAPI.",
+      "match_any": [
+        ["\\bfastapi\\b", "\\b(?:body|query|pydantic|basemodel|тел[оауе]|параметр\\w*|валидир\\w*)\\b", "\\b(?:как|почему|чем|такое|что|why|what|how|where|difference)\\b"]
+      ],
+      "anchors": ["^(?=.*\\bfastapi\\b).*\\b(?:body|query|pydantic|basemodel|тел[оауе]|параметр\\w*|валидир\\w*)\\b"],
+      "sources": ["https://fastapi.tiangolo.com/tutorial/body/#request-body-path-query-parameters", "https://fastapi.tiangolo.com/tutorial/query-params/"]
+    },
+    {
+      "id": "typescript.narrowing",
+      "title": "Сужение типов и проверка входных данных TypeScript",
+      "text": "TypeScript сужает тип внутри ветви программы по проверкам `typeof`, `instanceof`, `in` или по полю, которое различает варианты объекта. Аннотации типов и приведение через `as` исчезают при преобразовании к JavaScript. Поэтому при получении внешних данных, например JSON, проверку полей и значений нужно выполнять в самом коде.",
+      "match_any": [
+        ["\\btypescript\\b", "\\b(?:сужен\\w*\\s+тип\\w*|narrow\\w*|type\\s+guards?|typeof|instanceof|discriminated\\s+union)\\b"],
+        ["\\btypescript\\b", "\\b(?:аннотаци\\w*|приведени\\w*|assertions?|annotations?)\\b", "\\b(?:выполнени\\w*|runtime|валидир\\w*|проверя\\w*|validat\\w*|check\\w*)\\b"]
+      ],
+      "anchors": ["\\b(?:type\\s+guards?|discriminated\\s+union|сужен\\w*\\s+тип\\w*)\\b", "^(?=.*\\btypescript\\b).*\\b(?:narrow\\w*|typeof|instanceof|runtime|аннотаци\\w*|приведени\\w*)\\b"],
+      "sources": ["https://www.typescriptlang.org/docs/handbook/2/narrowing.html", "https://www.typescriptlang.org/docs/handbook/2/basic-types.html#erased-types", "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions"]
+    },
+    {
+      "id": "php.strict_types",
+      "title": "Строгая типизация аргументов в PHP",
+      "text": "`declare(strict_types=1)` в начале PHP-файла включает строгую проверку скалярных аргументов для вызовов из этого файла. Если объявить директиву только в файле с определением функции, вызов из другого файла всё ещё определяется режимом вызывающей стороны. При несовместимом значении PHP выдаёт `TypeError`; `int` по-прежнему можно передать в параметр `float`. Директива не заменяет проверку входных данных запроса.",
+      "match_any": [
+        [
+          "\\bphp(?:\\s*[78](?:\\.\\d+)?)?\\b",
+          "\\b(?:strict_types|typeerror|скалярн\\w*\\s+тип\\w*|scalar\\s+types?)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\bstrict_types\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ]
+      ],
+      "anchors": [
+        "\\bstrict_types\\b",
+        "^(?=.*\\bphp(?:\\s*[78](?:\\.\\d+)?)?\\b).*\\b(?:strict_types|typeerror|скалярн\\w*\\s+тип\\w*|scalar\\s+types?)\\b"
+      ],
+      "sources": [
+        "https://www.php.net/manual/en/language.types.declarations.php#language.types.declarations.strict"
+      ]
+    },
+    {
+      "id": "composer.install_update",
+      "title": "Composer install, update и composer.lock",
+      "text": "При наличии `composer.lock` команда `composer install` ставит версии из lockfile. `composer update` заново разрешает зависимости по ограничениям `composer.json` и обновляет lockfile. Для повторяемой установки приложения используют сохранённый `composer.lock`. Без lockfile `install` тоже разрешает зависимости и создаёт его. Оба действия могут вызывать скрипты или плагины проекта.",
+      "match_any": [
+        [
+          "\\bcomposer\\b|(?<!\\w)composer\\.(?:lock|json)(?!\\w)",
+          "\\b(?:composer\\s+(?:install|update)|composer\\.lock|lockfile)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\bcomposer\\s+install\\b",
+          "\\bcomposer\\s+update\\b"
+        ]
+      ],
+      "anchors": [
+        "\\b(?:composer\\s+(?:install|update)|composer\\.lock)\\b"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/01-basic-usage.md#installing-from-composer-lock",
+        "https://getcomposer.org/doc/03-cli.md#update-u-upgrade"
+      ]
+    },
+    {
+      "id": "composer.psr4",
+      "title": "Автозагрузка классов PHP через Composer и PSR-4",
+      "text": "В `composer.json` секция `autoload.psr-4` связывает префикс пространства имён с папкой. Например `App\\` → `src/` означает, что `App\\Service\\Mailer` ищется в `src/Service/Mailer.php`. Регистр имён и файла должен совпадать. Точка входа подключает `vendor/autoload.php`. После изменения карты `composer dump-autoload` пересобирает файлы автозагрузчика.",
+      "match_any": [
+        [
+          "\\bcomposer\\b|(?<!\\w)composer\\.(?:lock|json)(?!\\w)",
+          "\\b(?:psr-4|autoload\\w*|автозагруз\\w*|dump-autoload)\\b|vendor/autoload\\.php",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\bphp(?:\\s*[78](?:\\.\\d+)?)?\\b",
+          "\\b(?:psr-4|autoload\\w*|автозагруз\\w*|dump-autoload)\\b|vendor/autoload\\.php",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\bpsr-4\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ]
+      ],
+      "anchors": [
+        "\\bpsr-4\\b|vendor/autoload\\.php",
+        "^(?=.*\\b(?:composer|php)\\b).*\\b(?:autoload\\w*|автозагруз\\w*|dump-autoload)\\b"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/04-schema.md#psr-4",
+        "https://www.php-fig.org/psr/psr-4/"
+      ]
+    },
+    {
+      "id": "laravel.config_cache",
+      "title": "Кэш конфигурации и переменные окружения Laravel",
+      "text": "`php artisan config:cache` объединяет конфигурацию в кэш. Пока он активен, Laravel не читает `.env` при обработке запросов и запуске Artisan. Вызов `env()` видит только переменные, переданные окружением процесса. Читай `env()` в файлах `config/`, а в приложении используй `config('services.example.key')`. При изменениях пересобери кэш по процедуре развёртывания и проверь, нужны ли перезапуски долгоживущих процессов.",
+      "match_any": [
+        [
+          "\\b(?:laravel|ларавел\\w*)\\b",
+          "\\b(?:к[еэ]ш\\w*\\s+конфиг\\w*|configuration\\s+cache)\\b|(?<!\\w)(?:\\.env\\b|env\\(|config\\()",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\bconfig:(?:cache|clear)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ]
+      ],
+      "anchors": [
+        "\\bconfig:(?:cache|clear)\\b",
+        "^(?=.*\\b(?:laravel|ларавел\\w*)\\b).*(?:\\benv\\(\\)|(?<!\\w)\\.env\\b)"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/configuration#configuration-caching"
+      ]
+    },
+    {
+      "id": "laravel.queue_workers",
+      "title": "Долгоживущие воркеры очередей Laravel",
+      "text": "Процесс `queue:work` держит загруженное приложение в памяти и может продолжить выполнять старый код после развёртывания. `php artisan queue:restart` отправляет через кэш сигнал воркерам завершиться после текущей задачи. Для запуска нового процесса обычно используют настроенный supervisor. Таймаут выполнения воркера следует держать меньше `retry_after` для драйвера, где этот параметр используется, иначе одна задача может попасть на обработку дважды.",
+      "match_any": [
+        [
+          "\\bqueue:(?:work|listen|restart)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\b(?:laravel|ларавел\\w*)\\b",
+          "\\b(?:воркер\\w*|workers?|очеред\\w*|queues?)\\b",
+          "\\b(?:депло\\w*|стар\\w*|таймаут\\w*|повтор\\w*|restart\\w*|deploy\\w*|timeouts?|retry_after|old\\s+code)\\b"
+        ]
+      ],
+      "anchors": [
+        "\\bqueue:(?:work|listen|restart)\\b",
+        "^(?=.*\\b(?:laravel|ларавел\\w*)\\b).*\\b(?:воркер\\w*|workers?|очеред\\w*|queues?)\\b"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/queues#queue-workers-and-deployment",
+        "https://laravel.com/docs/13.x/queues#worker-timeouts"
+      ]
+    },
+    {
+      "id": "laravel.migrations",
+      "title": "Статус и предварительный просмотр миграций Laravel",
+      "text": "`php artisan migrate:status` показывает, какие миграции уже применены. `php artisan migrate --pretend` выводит SQL, который миграции подготовили бы. Сначала проверь файлы миграций и целевое подключение, особенно если миграция содержит пользовательский PHP-код. `migrate` изменяет базу, а `migrate:rollback` выполняет `down()` у последней партии миграций. Откат может удалить данные.",
+      "match_any": [
+        [
+          "\\b(?:laravel|ларавел\\w*)\\b",
+          "\\b(?:миграци\\w*|migrations?|migrate)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\bmigrate(?::(?:status|rollback))?\\b",
+          "\\b(?:pretend|rollback|status|провер\\w*|откат\\w*|sql)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ]
+      ],
+      "anchors": [
+        "\\b(?:migrate:(?:status|rollback)|migrate\\s+--pretend)\\b",
+        "^(?=.*\\b(?:laravel|ларавел\\w*)\\b).*\\b(?:миграци\\w*|migrations?|migrate)\\b"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/migrations#running-migrations",
+        "https://laravel.com/docs/13.x/migrations#rolling-back-migrations"
+      ]
+    },
+    {
+      "id": "redis.key_expiry",
+      "title": "Время жизни ключа и SET в Redis",
+      "text": "`TTL` показывает оставшиеся секунды. Значение `-1` означает, что ключ существует без срока, а `-2` означает, что ключа нет. `PTTL` возвращает миллисекунды. Обычный `SET` заменяет значение и сбрасывает прежний срок. `SET example:value ready EX 60` задаёт значение и срок в одном запросе. `KEEPTTL` сохраняет имеющийся срок в Redis 6.0 и новее, а `NX` ограничивает запись случаем, когда ключ отсутствует.",
+      "match_any": [
+        [
+          "\\b(?:redis|редис\\w*)\\b",
+          "\\b(?:ttl|pttl|keepttl|expire|expiration|врем[яени]+\\s+жизни)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\b(?:ttl|pttl)\\b",
+          "(?:-[12]\\b|\\bkeepttl\\b)",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ],
+        [
+          "\\b(?:redis|редис\\w*)\\b",
+          "\\bset\\b",
+          "\\b(?:nx|ex|px|ttl|keepttl)\\b",
+          "\\b(?:как|почему|чем|зачем|когда|что|отлич\\w*|what|how|why|when|which|difference|does)\\b"
+        ]
+      ],
+      "anchors": [
+        "\\bkeepttl\\b",
+        "^(?=.*\\b(?:redis|редис\\w*)\\b).*\\b(?:ttl|pttl|keepttl|expire|expiration|врем[яени]+\\s+жизни)\\b"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/commands/ttl/",
+        "https://redis.io/docs/latest/commands/set/"
+      ]
+    },
+    {
+      "id": "redis.scan",
+      "title": "Поиск ключей через SCAN в Redis",
+      "text": "`SCAN` перебирает ключи порциями по курсору. Начни с курсора `0`, передавай возвращённый курсор в следующий вызов и закончи, когда он снова станет `0`. `MATCH` фильтрует по шаблону, а `COUNT` задаёт примерный объём работы. Одна порция может быть пустой, а ключи могут повторяться. Это не снимок базы. Для большой базы такой обход распределяет нагрузку, тогда как `KEYS` сканирует весь набор за один вызов.",
+      "match_any": [
+        [
+          "\\b(?:redis|редис\\w*)\\b",
+          "\\b(?:scan|cursor|курсором)\\b",
+          "\\b(?:чем|как|почему|зачем|разниц\\w*|what|why|how|which|difference)\\b"
+        ],
+        [
+          "\\b(?:redis|редис\\w*)\\b",
+          "\\b(?:ключ\\w*|keys?|keyspace)\\b",
+          "\\b(?:найти|перебра\\w*|префикс\\w*|шаблон\\w*|перечисл\\w*|вывести\\s+список|find|iterate|scan|prefix|pattern|listing|list)\\b"
+        ],
+        [
+          "\\bscan\\b",
+          "\\bkeys\\b",
+          "\\b(?:how|why|difference|чем|почему|отлич\\w*)\\b"
+        ]
+      ],
+      "anchors": [
+        "^(?=.*\\b(?:redis|редис\\w*)\\b).*\\b(?:scan|keys|keyspace|cursor|ключ\\w*|cursor\\w*)\\b",
+        "^(?=.*\\bscan\\b).*\\b(?:keys|cursor|keyspace)\\b"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/commands/scan/",
+        "https://redis.io/docs/latest/commands/keys/"
+      ]
+    },
+    {
+      "id": "composer.check_platform",
+      "identifiers": ["composer check-platform-reqs"],
+      "title": "Проверка требований PHP при развёртывании Composer",
+      "text": "`composer check-platform-reqs` проверяет требования установленных пакетов по фактической версии PHP и расширениям текущего окружения. Это помогает обнаружить расхождение между средой сборки и production. Команда завершается с ненулевым кодом, если требования не выполнены; её удобно включать в проверку образа или deployment pipeline.",
+      "terms": [
+        "composer check-platform-reqs",
+        "ext-* requirements",
+        "platform_check.php"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/07-runtime.md#platform-check"
+      ]
+    },
+    {
+      "id": "composer.require_dev",
+      "identifiers": ["composer require --dev"],
+      "title": "Добавление зависимости Composer",
+      "text": "`composer require vendor/package` добавляет требование в `composer.json`, разрешает зависимости и обновляет `composer.lock`. Для инструмента разработки используй `--dev`, чтобы записать пакет в `require-dev`; такие зависимости исключаются при установке с `--no-dev`. После изменения lock-файл нужно включить в контроль версий приложения.",
+      "terms": [
+        "composer require --dev",
+        "require-dev",
+        "composer.lock update"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/03-cli.md#require-r"
+      ]
+    },
+    {
+      "id": "composer.scripts",
+      "identifiers": ["composer run-script"],
+      "title": "События и скрипты Composer",
+      "text": "Секция `scripts` в `composer.json` связывает имена событий Composer с командами или PHP callbacks. `composer run-script test` запускает именованный пользовательский скрипт; команды могут выполняться при install/update через соответствующие события. Скрипты исполняют код проекта, поэтому перед установкой незнакомого проекта проверь его конфигурацию.",
+      "terms": [
+        "composer run-script",
+        "post-install-cmd",
+        "composer scripts events"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/articles/scripts.md"
+      ]
+    },
+    {
+      "id": "composer.validate",
+      "identifiers": ["composer validate"],
+      "title": "Проверка composer.json и lock-файла",
+      "text": "`composer validate` проверяет синтаксис и схему `composer.json`, а также соответствие lock-файла манифесту. Если lock устарел после изменения зависимостей, команда сообщает об этом; при подготовке релиза можно использовать `--strict`, чтобы предупреждения приводили к ненулевому коду завершения. Проверка не устанавливает зависимости.",
+      "terms": [
+        "composer validate --strict",
+        "lock file is not up to date",
+        "composer.json schema"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/03-cli.md#validate"
+      ]
+    },
+    {
+      "id": "composer.why",
+      "identifiers": ["composer why", "composer depends"],
+      "title": "Поиск причины установки пакета Composer",
+      "text": "`composer why vendor/package` (синоним `depends`) показывает, какие пакеты требуют указанную зависимость. С флагом `--tree` команда отображает цепочку зависимостей деревом. Это полезно, когда пакет транзитивный и его нельзя просто удалить из корневого `composer.json`.",
+      "terms": [
+        "composer why",
+        "composer depends --tree",
+        "transitive dependency"
+      ],
+      "sources": [
+        "https://getcomposer.org/doc/03-cli.md#depends-why"
+      ]
+    },
+    {
+      "id": "express.body_parser",
+      "title": "Встроенные парсеры тела Express",
+      "text": "Express включает middleware `express.json()` для JSON и `express.urlencoded()` для форм с URL-кодированными полями. Подключи их до маршрутов: иначе `req.body` не будет заполнен этим парсером. `req.body` остаётся пользовательским вводом, поэтому проверь его структуру и значения перед использованием.",
+      "terms": [
+        "express.json()",
+        "express.urlencoded()",
+        "req.body"
+      ],
+      "sources": [
+        "https://expressjs.com/en/api.html#express.json",
+        "https://expressjs.com/en/api.html#express.urlencoded"
+      ]
+    },
+    {
+      "id": "express.middleware_order",
+      "title": "Порядок middleware в Express",
+      "text": "Express выполняет цепочку middleware в порядке регистрации. Middleware должен завершить ответ или вызвать `next()`, иначе запрос зависнет; `next('route')` пропускает оставшиеся обработчики текущего маршрута, а `next('router')` выходит из текущего Router. Парсер `express.json()` регистрируй до обработчиков, которым нужно читать `req.body`.",
+      "terms": [
+        "app.use()",
+        "next('route')",
+        "next('router')",
+        "express.json()"
+      ],
+      "sources": [
+        "https://expressjs.com/en/guide/using-middleware/",
+        "https://expressjs.com/en/api.html#express.json"
+      ]
+    },
+    {
+      "id": "express.router_mount",
+      "title": "Монтирование модульного Express Router",
+      "text": "`express.Router()` создаёт отдельный набор маршрутов и middleware, который можно подключить через `app.use('/api', router)`. Путь внутри Router дополняет префикс монтирования: `router.get('/users')` обслуживает `/api/users`. Внутри обработчика `req.baseUrl` содержит фактически совпавший префикс, а `req.originalUrl` сохраняет исходный URL целиком.",
+      "terms": [
+        "express.Router()",
+        "req.baseUrl",
+        "req.originalUrl"
+      ],
+      "sources": [
+        "https://expressjs.com/en/guide/routing/",
+        "https://expressjs.com/en/api/request/"
+      ]
+    },
+    {
+      "id": "express.static_mount",
+      "title": "Раздача статики с express.static",
+      "text": "`express.static(root)` раздаёт файлы из каталога, причём имя каталога не входит в URL: файл `public/css/app.css` доступен как `/css/app.css`. Для URL-префикса смонтируй middleware, например `app.use('/static', express.static(root))`. Путь root относительно рабочего каталога процесса; абсолютный путь снижает зависимость от того, откуда запустили Node.js.",
+      "terms": [
+        "express.static",
+        "root",
+        "path.join(__dirname"
+      ],
+      "sources": [
+        "https://expressjs.com/en/starter/static-files/"
+      ]
+    },
+    {
+      "id": "express.trust_proxy",
+      "title": "Настройка trust proxy в Express",
+      "text": "За reverse proxy Express по умолчанию считает соединение прямым, поэтому `req.ip`, `req.protocol` и `req.hostname` могут не отражать исходный клиентский запрос. Настрой `app.set('trust proxy', ...)` под точную топологию доверенных прокси; безусловное `true` безопасно только если последний прокси перезаписывает `X-Forwarded-For`, `X-Forwarded-Host` и `X-Forwarded-Proto`. Число hops требует одинакового числа прокси на всех путях к приложению.",
+      "terms": [
+        "trust proxy",
+        "X-Forwarded-For",
+        "req.ip"
+      ],
+      "sources": [
+        "https://expressjs.com/en/guide/behind-proxies/"
+      ]
+    },
+    {
+      "id": "fastapi.backgroundtasks_limits",
+      "title": "Когда BackgroundTasks не заменяет очередь",
+      "text": "`BackgroundTasks` подходит для небольшой работы после отправки ответа, например записи уведомления. Задачи выполняются приложением после ответа и не образуют устойчивую распределённую очередь: при остановке процесса задача может не завершиться. Для тяжёлых или длительных работ документация рекомендует отдельную очередь и worker, например Celery.",
+      "terms": [
+        "BackgroundTasks Celery",
+        "FastAPI task after response",
+        "background task durability"
+      ],
+      "sources": [
+        "https://fastapi.tiangolo.com/tutorial/background-tasks/"
+      ]
+    },
+    {
+      "id": "fastapi.dependencies_yield",
+      "title": "Освобождение ресурса в FastAPI dependency",
+      "text": "Зависимость FastAPI с `yield` может открыть ресурс перед передачей значения обработчику и закрыть его в `finally`, например закрыть сессию базы. Для простой зависимости с `yield` FastAPI управляет контекстом автоматически; исключения из обработчика проходят обратно в зависимость. Не подавляй их без явной причины.",
+      "terms": [
+        "yield dependency finally",
+        "FastAPI Depends cleanup",
+        "dependency exception handling"
+      ],
+      "sources": [
+        "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield/"
+      ]
+    },
+    {
+      "id": "fastapi.http_exception",
+      "title": "HTTP-ошибка из обработчика FastAPI",
+      "text": "Чтобы вернуть HTTP-ошибку из path operation или зависимости, подними `fastapi.HTTPException`, например `raise HTTPException(status_code=404, detail='Not found')`. Её нужно именно выбросить, а не вернуть: исключение прекращает обработку и формирует ответ с заданным статусом и detail. Для собственных типов исключений можно зарегистрировать exception handler.",
+      "terms": [
+        "raise HTTPException",
+        "HTTPException detail",
+        "RequestValidationError handler"
+      ],
+      "sources": [
+        "https://fastapi.tiangolo.com/tutorial/handling-errors/#use-httpexception"
+      ]
+    },
+    {
+      "id": "fastapi.query_validation",
+      "title": "Ограничения параметров query в FastAPI",
+      "text": "`Query()` позволяет задавать ограничения query-параметрам: например `limit: Annotated[int, Query(ge=1, le=100)]` принимает только целые значения от 1 до 100. FastAPI возвращает ошибку валидации для несоответствующего ввода и включает ограничения в OpenAPI. `Annotated` используется как метаданные типа и требует Python 3.9+ для встроенного generic-синтаксиса.",
+      "terms": [
+        "Query ge le",
+        "Annotated FastAPI",
+        "query parameter validation"
+      ],
+      "sources": [
+        "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/"
+      ]
+    },
+    {
+      "id": "fastapi.response_model",
+      "title": "Фильтрация ответа через response_model",
+      "text": "В FastAPI параметр `response_model` проверяет и сериализует результат обработчика и ограничивает ответ объявленными полями. Это помогает не отправить лишние поля внутренней модели, например хэш пароля. Тип возвращаемого значения можно оставить шире модели ответа: FastAPI использует указанную response model для схемы и вывода.",
+      "terms": [
+        "response_model",
+        "ResponseValidationError",
+        "exclude_unset FastAPI"
+      ],
+      "sources": [
+        "https://fastapi.tiangolo.com/tutorial/response-model/"
+      ]
+    },
+    {
+      "id": "laravel.cache_lock",
+      "title": "Блокировки через кэш Laravel",
+      "text": "`Cache::lock('report:'.$id, 10)` создаёт блокировку с конечным сроком, чтобы конкурентные процессы не выполняли одну критическую секцию одновременно. Блокировку нужно освобождать после работы; передача её owner token позволяет восстановить и освободить lock в другом процессе. Поддержка атомарности зависит от выбранного cache driver.",
+      "terms": [
+        "Cache::lock",
+        "owner token Laravel",
+        "lock timeout cache"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/cache#atomic-locks"
+      ]
+    },
+    {
+      "id": "laravel.form_request",
+      "title": "Валидация через Form Request в Laravel",
+      "text": "Класс Form Request объединяет правила валидации и авторизацию запроса. Созданный `php artisan make:request StorePostRequest` можно указать типом аргумента контроллера; Laravel проверит его до вызова метода. Успешные данные получай через `$request->validated()`, чтобы работать только с прошедшими проверку полями.",
+      "terms": [
+        "FormRequest validated()",
+        "make:request",
+        "authorize rules Laravel"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/validation#form-request-validation"
+      ]
+    },
+    {
+      "id": "laravel.http_client_retry",
+      "title": "Повтор HTTP-запроса в Laravel",
+      "text": "HTTP client Laravel не выбрасывает исключение только из-за ответа 4xx или 5xx; проверь `successful()`, `failed()` или вызови `throw()` для исключения на ошибочном статусе. `retry()` повторяет запрос с заданным числом попыток и паузой. Повторяй только безопасные или идемпотентные операции либо применяй ключ идемпотентности, чтобы не создать побочный эффект повторно.",
+      "terms": [
+        "Http::retry",
+        "Response::throw",
+        "Laravel HTTP 4xx no exception"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/http-client#error-handling",
+        "https://laravel.com/docs/13.x/http-client#retries"
+      ]
+    },
+    {
+      "id": "laravel.rate_limiter",
+      "title": "Лимитер попыток Laravel",
+      "text": "`RateLimiter::attempt($key, $maxAttempts, $callback, $decaySeconds)` выполняет callback только если ключ не исчерпал лимит попыток, и возвращает результат callback либо `false`. Идентификатор ключа следует строить с учётом пользователя или IP и конкретного действия. Сброс счётчика для ключа выполняет `RateLimiter::clear($key)`.",
+      "terms": [
+        "RateLimiter::attempt",
+        "RateLimiter::clear",
+        "too many attempts Laravel"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/rate-limiting#manually-incrementing-attempts"
+      ]
+    },
+    {
+      "id": "laravel.signed_urls",
+      "title": "Временные подписанные URL Laravel",
+      "text": "`URL::temporarySignedRoute()` создаёт подписанный URL с временем окончания действия; middleware `signed` проверяет подпись и срок. Подпись обнаруживает изменение параметров, но не скрывает их: секретные данные нельзя помещать в URL. При необходимости можно использовать относительную подпись через параметр `absolute: false` и соответствующий middleware.",
+      "terms": [
+        "temporarySignedRoute",
+        "middleware signed",
+        "InvalidSignatureException"
+      ],
+      "sources": [
+        "https://laravel.com/docs/13.x/urls#signed-urls"
+      ]
+    },
+    {
+      "id": "next.dynamic_metadata",
+      "title": "Метаданные маршрута Next.js",
+      "text": "Для метаданных, зависящих от параметров или данных записи, экспортируй `generateMetadata()` из `page` или `layout`; для констант достаточно экспорта `metadata`. Не экспортируй оба варианта из одного сегмента, а `metadata` API доступен только в Server Components.",
+      "terms": [
+        "generateMetadata",
+        "Metadata",
+        "metadata",
+        "Server Components"
+      ],
+      "sources": [
+        "https://nextjs.org/docs/app/api-reference/functions/generate-metadata"
+      ]
+    },
+    {
+      "id": "next.force_dynamic_render",
+      "title": "Динамический рендеринг без Dynamic API",
+      "text": "Если серверный компонент должен вычислять значение на запросе, но не использует автоматически динамические API, вызови `await connection()` из `next/server` перед этим вычислением. Всё ниже вызова исключается из prerendering; API стабилен с Next.js 15.",
+      "terms": [
+        "connection()",
+        "next/server",
+        "prerendering",
+        "Next.js 15"
+      ],
+      "sources": [
+        "https://nextjs.org/docs/app/api-reference/functions/connection"
+      ]
+    },
+    {
+      "id": "next.not_found",
+      "title": "404 для сегмента App Router",
+      "text": "Вызов `notFound()` в App Router прекращает рендер текущего сегмента и показывает ближайший `not-found.tsx`; функция также вставляет `noindex` для поисковых роботов. Используй её, когда запись отсутствует, вместо ручного формирования страницы ошибки.",
+      "terms": [
+        "notFound()",
+        "not-found.tsx",
+        "noindex",
+        "next/navigation"
+      ],
+      "sources": [
+        "https://nextjs.org/docs/app/api-reference/functions/not-found"
+      ]
+    },
+    {
+      "id": "next.redirect_control_flow",
+      "title": "redirect как управление потоком Next.js",
+      "text": "`redirect()` в App Router прекращает рендер сегмента, выбрасывая `NEXT_REDIRECT`; поэтому вызывай его вне `try/catch`, иначе перехватишь штатный переход. В Server Action он отвечает перенаправлением 303, а в остальных серверных сценариях обычно 307.",
+      "terms": [
+        "redirect()",
+        "NEXT_REDIRECT",
+        "303",
+        "307",
+        "next/navigation"
+      ],
+      "sources": [
+        "https://nextjs.org/docs/app/api-reference/functions/redirect"
+      ]
+    },
+    {
+      "id": "next.request_cookies",
+      "title": "Чтение и изменение cookies в Next.js",
+      "text": "В актуальном App Router `cookies()` — асинхронная функция: сначала `await cookies()`, затем читают cookie. Чтение request cookies делает маршрут динамическим; изменение разрешено в Server Function или Route Handler, но не во время рендера Server Component.",
+      "terms": [
+        "cookies()",
+        "await cookies()",
+        "Server Function",
+        "Route Handler"
+      ],
+      "sources": [
+        "https://nextjs.org/docs/app/api-reference/functions/cookies"
+      ]
+    },
+    {
+      "id": "node.eventemitter_error",
+      "title": "Событие error в EventEmitter",
+      "text": "У `EventEmitter` событие `'error'` имеет особое поведение: если в момент `emit('error', err)` нет обычного слушателя `'error'`, Node.js выбрасывает ошибку и процесс может завершиться. `events.errorMonitor` позволяет наблюдать ошибку, но сам по себе не заменяет обычную обработку. Регистрируй обработчик там, где событие может возникнуть.",
+      "terms": [
+        "EventEmitter error event",
+        "events.errorMonitor",
+        "Unhandled error event"
+      ],
+      "sources": [
+        "https://nodejs.org/api/events.html#error-events"
+      ]
+    },
+    {
+      "id": "node.fs_promises_abort",
+      "title": "Отмена чтения файла в Node.js",
+      "text": "`node:fs/promises` предоставляет `readFile(path, { signal })`; `AbortController` может отменить выполняющееся чтение, и промис отклонится с `AbortError`. Отмена — best effort: она прекращает внутреннюю буферизацию, но не гарантирует остановку уже начатых системных операций. Для больших файлов используй потоковое чтение.",
+      "terms": [
+        "fs/promises readFile",
+        "AbortError",
+        "AbortController file read"
+      ],
+      "sources": [
+        "https://nodejs.org/api/fs.html#fspromisesreadfilepath-options"
+      ]
+    },
+    {
+      "id": "node.process_exitcode",
+      "title": "Корректный код завершения Node.js",
+      "text": "Для указания кода завершения обычно присваивай `process.exitCode` и позволяй циклу событий завершить оставшуюся работу. Немедленный `process.exit()` может оборвать ожидающуюся запись в stdout или другие операции ввода-вывода. Код `0` означает успешное завершение; ненулевой код сигнализирует вызывающей оболочке об ошибке.",
+      "terms": [
+        "process.exitCode",
+        "process.exit() truncates stdout",
+        "Node exit status"
+      ],
+      "sources": [
+        "https://nodejs.org/api/process.html#processexitcode"
+      ]
+    },
+    {
+      "id": "node.stream_pipeline",
+      "title": "Обработка ошибок в цепочке потоков",
+      "text": "`node:stream/promises` функция `pipeline()` связывает потоки, ожидает завершения и отклоняет промис при ошибке в любой части цепочки. При ошибке она уничтожает связанные потоки, помогая не забыть обработку отказа между `Readable`, преобразователем и `Writable`. Для отмены цепочки можно передать `AbortSignal` в опциях.",
+      "terms": [
+        "stream/promises pipeline",
+        "ERR_STREAM_PREMATURE_CLOSE",
+        "AbortSignal pipeline"
+      ],
+      "sources": [
+        "https://nodejs.org/api/stream.html#streampipelinestreams-options"
+      ]
+    },
+    {
+      "id": "node.url_class",
+      "title": "Разбор и сборка URL в Node.js",
+      "text": "Класс `URL` разбирает и валидирует абсолютный URL, например `new URL('/items', base)`. Переданный относительный путь требует корректной базовой URL; иначе конструктор выбрасывает `TypeError`. Используй свойства `searchParams` для query-параметров вместо ручной конкатенации строк, чтобы значения правильно кодировались.",
+      "terms": [
+        "new URL TypeError",
+        "URL.searchParams",
+        "ERR_INVALID_URL"
+      ],
+      "sources": [
+        "https://nodejs.org/api/url.html#the-whatwg-url-api"
+      ]
+    },
+    {
+      "id": "npm.audit_fix",
+      "identifiers": ["npm audit fix"],
+      "title": "Что меняет npm audit fix",
+      "text": "`npm audit` сверяет дерево зависимостей с опубликованными уязвимостями; `npm audit fix` пытается установить совместимые исправления и может изменить lockfile. Он запускает установку и выполняет её lifecycle-скрипты. Изменения следует просмотреть как обычное обновление зависимостей; `--force` может разрешить несовместимые мажорные обновления.",
+      "terms": [
+        "npm audit fix",
+        "npm audit --force",
+        "package-lock vulnerability"
+      ],
+      "sources": [
+        "https://docs.npmjs.com/cli/v11/commands/npm-audit/"
+      ]
+    },
+    {
+      "id": "npm.cache_verify",
+      "identifiers": ["npm cache verify"],
+      "title": "Проверка кэша npm",
+      "text": "`npm cache verify` проверяет индекс и целостность содержимого локального кэша, удаляя ненужные элементы. Кэш npm сам проверяет целостность при чтении и повторно получает повреждённые данные, поэтому очистка через `npm cache clean --force` обычно не нужна для исправления обычной ошибки установки. Кэш не следует использовать как постоянное хранилище пакетов.",
+      "terms": [
+        "npm cache verify",
+        "npm cache clean --force",
+        "cacache integrity"
+      ],
+      "sources": [
+        "https://docs.npmjs.com/cli/v11/commands/npm-cache/"
+      ]
+    },
+    {
+      "id": "npm.exec_local_package",
+      "identifiers": ["npm exec"],
+      "title": "Разовый запуск пакета через npm exec",
+      "text": "`npm exec -- <команда>` запускает исполняемый файл пакета, доступного в проекте или загружаемого npm по правилам команды. Разделитель `--` явно отделяет параметры запускаемой программы от параметров npm. Для воспроизводимости версию пакета можно зафиксировать в спецификации, например `npm exec --package=typescript@5.8.3 -- tsc --version`.",
+      "terms": [
+        "npm exec --",
+        "--package npm exec",
+        "npx package execution"
+      ],
+      "sources": [
+        "https://docs.npmjs.com/cli/v11/commands/npm-exec/"
+      ]
+    },
+    {
+      "id": "npm.outdated_wanted_latest",
+      "identifiers": ["npm outdated"],
+      "title": "Как читать npm outdated",
+      "text": "`npm outdated` показывает версии `current`, `wanted` и `latest`: `wanted` — максимальная версия, подходящая под диапазон из `package.json`, а `latest` — версия с dist-tag `latest` в реестре. Поэтому обновление до `latest` может выйти за заявленный диапазон совместимости. Флаг `--all` включает транзитивные зависимости.",
+      "terms": [
+        "npm outdated wanted",
+        "npm latest dist-tag",
+        "npm outdated --all"
+      ],
+      "sources": [
+        "https://docs.npmjs.com/cli/v11/commands/npm-outdated/"
+      ]
+    },
+    {
+      "id": "npm.workspace_run",
+      "identifiers": ["npm --workspace", "npm -w"],
+      "title": "Запуск скриптов в npm workspaces",
+      "text": "В проекте с workspaces флаг `--workspace=<имя>` направляет команду npm к выбранному workspace, например `npm run test --workspace=client`. `--workspaces` выбирает все настроенные workspaces. Команда запускается в контексте выбранного пакета; имя workspace может быть именем из его `package.json` или путём.",
+      "terms": [
+        "npm --workspace",
+        "npm --workspaces",
+        "workspace script"
+      ],
+      "sources": [
+        "https://docs.npmjs.com/cli/v11/using-npm/workspaces/"
+      ]
+    },
+    {
+      "id": "nuxt.call_once",
+      "title": "Однократная инициализация Nuxt",
+      "text": "`callOnce(key, callback)` запускает инициализацию один раз, не дублируя её при SSR и гидратации; переданный ключ отличает вызовы. Для данных, которые должны реактивно обновляться и попадать в payload, используй `useAsyncData` или `useFetch`, а не `callOnce`.",
+      "terms": [
+        "callOnce",
+        "key",
+        "useAsyncData",
+        "hydration"
+      ],
+      "sources": [
+        "https://nuxt.com/docs/4.x/api/utils/call-once"
+      ]
+    },
+    {
+      "id": "nuxt.navigate_to",
+      "title": "Программная навигация Nuxt",
+      "text": "В Nuxt используй `navigateTo()` для перехода из middleware, setup или обработчика события и возвращай его результат из middleware. При серверном переходе Nuxt создаёт redirect; при переходе из обработчика события обязательно `await` или `return` результат, чтобы не потерять навигационное поведение.",
+      "terms": [
+        "navigateTo",
+        "middleware",
+        "redirectCode",
+        "Nuxt 4"
+      ],
+      "sources": [
+        "https://nuxt.com/docs/4.x/api/utils/navigate-to"
+      ]
+    },
+    {
+      "id": "nuxt.request_fetch",
+      "title": "Проброс cookies при SSR в Nuxt",
+      "text": "Для запроса к API из компонента во время SSR используй `useRequestFetch()` или composable `useFetch()`: контекстный fetch может переслать входящие заголовки и cookies внутреннему API. Глобальный `$fetch` сам по себе не переносит cookies браузерного запроса на серверный вызов.",
+      "terms": [
+        "useRequestFetch",
+        "useFetch",
+        "cookies",
+        "SSR"
+      ],
+      "sources": [
+        "https://nuxt.com/docs/4.x/api/composables/use-request-fetch"
+      ]
+    },
+    {
+      "id": "nuxt.route_middleware",
+      "title": "Middleware маршрутов Nuxt",
+      "text": "Файл `middleware/auth.ts` создаёт именованный middleware `auth`, который можно назначить странице через `definePageMeta({ middleware: 'auth' })`. Для глобального middleware добавь суффикс `.global`; middleware выполняется на клиентской и серверной навигации, поэтому не полагайся на browser-only API без проверки окружения.",
+      "terms": [
+        "definePageMeta",
+        "middleware/auth.ts",
+        ".global",
+        "route middleware"
+      ],
+      "sources": [
+        "https://nuxt.com/docs/4.x/guide/directory-structure/middleware"
+      ]
+    },
+    {
+      "id": "nuxt.shared_state",
+      "title": "Общее SSR-состояние Nuxt",
+      "text": "`useState(key, init)` хранит сериализуемое состояние, которое Nuxt разделяет между компонентами и переносит из SSR в гидратацию. Уникальный ключ обязателен для различения состояний; не помещай туда классы, функции или другие значения, которые нельзя сериализовать.",
+      "terms": [
+        "useState",
+        "key",
+        "SSR",
+        "hydration"
+      ],
+      "sources": [
+        "https://nuxt.com/docs/4.x/api/composables/use-state"
+      ]
+    },
+    {
+      "id": "php.array_filter_keys",
+      "title": "Сохранение ключей при array_filter",
+      "text": "`array_filter($items, $callback)` сохраняет исходные ключи элементов, прошедших проверку. Если нужен плотный индексированный список, оберни результат в `array_values()`. Без callback функция удаляет все значения, которые PHP считает пустыми, включая `0`, `'0'`, `false` и `null`; для точного фильтра задавай условие явно.",
+      "terms": [
+        "array_filter preserves keys",
+        "array_values reindex",
+        "array_filter removes empty"
+      ],
+      "sources": [
+        "https://www.php.net/manual/en/function.array-filter.php"
+      ]
+    },
+    {
+      "id": "php.foreach_reference",
+      "title": "Сброс ссылки после foreach в PHP",
+      "text": "Если обходить массив по ссылке — `foreach ($items as &$item)` — переменная `$item` после цикла остаётся ссылкой на последний элемент. Повторный `foreach` с той же переменной может случайно перезаписать последний элемент массива. После такого цикла вызови `unset($item)`.",
+      "terms": [
+        "foreach &$value",
+        "unset foreach reference",
+        "PHP reference last element"
+      ],
+      "sources": [
+        "https://www.php.net/manual/en/control-structures.foreach.php"
+      ]
+    },
+    {
+      "id": "php.json_throw",
+      "title": "Ошибки разбора JSON в PHP",
+      "text": "Передай `JSON_THROW_ON_ERROR` в `json_decode()` или `json_encode()`, чтобы ошибка вызвала `JsonException`, а не требовала отдельно проверять `null` или `false` и читать глобальное состояние через `json_last_error()`. Флаг доступен с PHP 7.3. `json_decode()` принимает JSON в UTF-8; объект можно получить как объект или ассоциативный массив через аргумент `$associative`.",
+      "terms": [
+        "JSON_THROW_ON_ERROR",
+        "JsonException",
+        "json_last_error_msg"
+      ],
+      "sources": [
+        "https://www.php.net/manual/en/json.constants.php#constant.json-throw-on-error",
+        "https://www.php.net/manual/en/function.json-decode.php"
+      ]
+    },
+    {
+      "id": "php.null_coalescing",
+      "title": "Оператор PHP null coalescing",
+      "text": "Выражение `$value = $input['name'] ?? 'гость'` использует правую часть, когда значение слева отсутствует или равно `null`; для отсутствующего ключа оно не выдаёт notice, подобно `isset()`. В отличие от `?:`, значение `0`, `false` или пустая строка не заменяется запасным. Из-за низкого приоритета оператора при сочетании с конкатенацией ставь скобки.",
+      "terms": [
+        "?? null coalescing",
+        "isset undefined array key",
+        "PHP operator precedence"
+      ],
+      "sources": [
+        "https://www.php.net/manual/en/language.operators.comparison.php#language.operators.comparison.coalesce"
+      ]
+    },
+    {
+      "id": "php.nullsafe_operator",
+      "title": "Nullsafe-оператор PHP",
+      "text": "Оператор `?->` позволяет безопасно продолжить цепочку вызовов, если объект слева равен `null`: выражение `$user?->profile?->name` вернёт `null`, когда цепочка обрывается на null. Оператор появился в PHP 8.0. Он предназначен для доступа к объектам, не присваивает значение через цепочку и не заменяет валидацию обязательных данных.",
+      "terms": [
+        "?-> nullsafe operator",
+        "PHP 8 nullsafe",
+        "null property chain"
+      ],
+      "sources": [
+        "https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.nullsafe"
+      ]
+    },
+    {
+      "id": "pinia.action_observer",
+      "title": "Наблюдение за действиями Pinia",
+      "text": "`store.$onAction()` позволяет подключить логирование или измерение времени без изменения action. Callback получает имя, аргументы и хуки `after()` и `onError()`; `after()` ждёт завершения возвращённого Promise. По умолчанию слушатель, созданный в компоненте, удаляется вместе с ним; второй аргумент `true` отсоединяет его от этого жизненного цикла.",
+      "terms": [
+        "$onAction",
+        "after()",
+        "onError()"
+      ],
+      "sources": [
+        "https://pinia.vuejs.org/core-concepts/actions.html"
+      ]
+    },
+    {
+      "id": "pinia.detached_subscribe",
+      "title": "Подписка Pinia вне жизненного цикла компонента",
+      "text": "`store.$subscribe()` уведомляет об изменениях состояния и после функционального `$patch()` срабатывает один раз на группу изменений. Подписка, созданная внутри компонента, обычно удаляется при его размонтировании; передай `{ detached: true }`, если, например, сохраняешь состояние в localStorage и подписка должна жить дольше компонента. Для синхронного вызова после каждого изменения есть `flush: 'sync'`, но он отменяет пакетирование уведомлений.",
+      "terms": [
+        "$subscribe",
+        "detached: true",
+        "flush: 'sync'"
+      ],
+      "sources": [
+        "https://pinia.vuejs.org/core-concepts/state.html"
+      ]
+    },
+    {
+      "id": "pinia.option_store_reset",
+      "title": "Сброс Option и Setup Store в Pinia",
+      "text": "У Option Store вызов `store.$reset()` заново получает исходное состояние из функции `state()`. В Setup Store Pinia не может вывести исходные значения автоматически, поэтому реализацию `$reset()` нужно написать самому и вернуть из setup-функции. Состояние, добавленное плагином, штатный `$reset()` сам по себе не сбрасывает.",
+      "terms": [
+        "$reset()",
+        "state()",
+        "Setup Store"
+      ],
+      "sources": [
+        "https://pinia.vuejs.org/core-concepts/state.html",
+        "https://pinia.vuejs.org/core-concepts/plugins.html"
+      ]
+    },
+    {
+      "id": "pinia.patch_grouping",
+      "title": "Группировка изменений Pinia через $patch",
+      "text": "`store.$patch()` принимает объект частичного состояния или синхронную функцию. Функциональная форма удобна для нескольких изменений массива и объединяет их в одну запись devtools; она не принимает асинхронный callback. Присваивание `store.$state` внутри Pinia также сводится к patch, а не заменяет реактивный объект целиком.",
+      "terms": [
+        "$patch",
+        "MutationType",
+        "store.$state"
+      ],
+      "sources": [
+        "https://pinia.vuejs.org/core-concepts/state.html",
+        "https://pinia.vuejs.org/api/pinia/interfaces/StoreWithState.html"
+      ]
+    },
+    {
+      "id": "pinia.plugin_markraw",
+      "title": "Добавление внешних объектов плагином Pinia",
+      "text": "Плагин подключают через `pinia.use()` и он может возвращать дополнительные свойства для каждого хранилища. Если добавляешь внешний не реактивный объект или экземпляр класса, например router, документация Pinia рекомендует обернуть его в `markRaw()`. Дополнительное состояние плагина можно положить в `$state`, чтобы оно участвовало в сериализации SSR; для корректного сброса его нужно обработать отдельно.",
+      "terms": [
+        "pinia.use()",
+        "markRaw()",
+        "$state"
+      ],
+      "sources": [
+        "https://pinia.vuejs.org/core-concepts/plugins.html"
+      ]
+    },
+    {
+      "id": "python.contextlib_suppress",
+      "title": "Точечное подавление исключений",
+      "text": "`contextlib.suppress(FileNotFoundError)` пропускает только указанный тип исключения внутри блока `with`; остальные исключения продолжают распространяться. Используй его для ожидаемых ситуаций вроде удаления отсутствующего временного файла, а не для сокрытия широкого `Exception`. В Python 3.12 `suppress` умеет удалять совпавшие исключения из `BaseExceptionGroup`.",
+      "terms": [
+        "contextlib.suppress",
+        "BaseExceptionGroup",
+        "FileNotFoundError"
+      ],
+      "sources": [
+        "https://docs.python.org/3/library/contextlib.html#contextlib.suppress"
+      ]
+    },
+    {
+      "id": "python.dataclass_default_factory",
+      "title": "Изменяемые значения по умолчанию в dataclass",
+      "text": "Для отдельного списка или словаря каждого экземпляра dataclass указывай `field(default_factory=list)` или `field(default_factory=dict)`. Не передавай общий изменяемый объект как `default`: так экземпляры могут непреднамеренно разделять состояние. Фабрика вызывается при создании каждого экземпляра.",
+      "terms": [
+        "dataclasses.field",
+        "default_factory=list",
+        "mutable default"
+      ],
+      "sources": [
+        "https://docs.python.org/3/library/dataclasses.html#default-factory-functions"
+      ]
+    },
+    {
+      "id": "python.exception_chaining",
+      "title": "Сохранение причины при преобразовании ошибки",
+      "text": "Если при обработке низкоуровневой ошибки нужно поднять понятную доменную, используй `raise DomainError(...) from exc`. Цепочка сохраняет исходное исключение в `__cause__` и обычно показывает его в traceback. `raise ... from None` скрывает отображение контекста, но не предназначен для обычного преобразования ошибок.",
+      "terms": [
+        "raise from",
+        "__cause__",
+        "traceback exception chaining"
+      ],
+      "sources": [
+        "https://docs.python.org/3/tutorial/errors.html#exception-chaining"
+      ]
+    },
+    {
+      "id": "python.json_decode",
+      "title": "Разбор JSON и типы данных Python",
+      "text": "`json.loads()` разбирает JSON-строку, а `json.load()` читает JSON из файлового объекта. Объекты JSON обычно превращаются в `dict`, массивы — в `list`; ошибочный JSON вызывает `json.JSONDecodeError`. JSON-сериализация не является проверкой схемы: отдельно проверяй обязательные поля и типы полученных значений.",
+      "terms": [
+        "json.loads",
+        "json.JSONDecodeError",
+        "json.load"
+      ],
+      "sources": [
+        "https://docs.python.org/3/library/json.html#json.loads"
+      ]
+    },
+    {
+      "id": "python.pathlib_read_write",
+      "title": "Чтение и запись файлов через pathlib",
+      "text": "Импортируй `Path` через `from pathlib import Path`. Выражение `Path('notes.txt').read_text(encoding='utf-8')` прочитает текст и закроет файл. `Path.write_text()` заменяет содержимое файла, закрывает его и возвращает число записанных символов. Для бинарных данных есть `read_bytes()` и `write_bytes()`. Встроенная функция `open()` принимает режим `'rb'` для чтения байтов.",
+      "terms": [
+        "Path.read_text",
+        "Path.write_text",
+        "pathlib UTF-8"
+      ],
+      "sources": [
+        "https://docs.python.org/3/library/pathlib.html#reading-and-writing-files",
+        "https://docs.python.org/3/library/functions.html#open"
+      ],
+      "match_any": [
+        [
+          "\\bpython\\b",
+          "\\b(?:прочитать|читать|чтени\\w*|read\\w*)\\b",
+          "\\b(?:файл\\w*|files?)\\b"
+        ]
+      ]
+    },
+    {
+      "id": "react.action_state",
+      "title": "Результат формы через useActionState",
+      "text": "`useActionState(action, initialState)` связывает Action с состоянием его результата и флагом `isPending`; функция получает предыдущее состояние первым аргументом. Для Server Function форма может отправиться до загрузки JavaScript, а `permalink` задаёт URL назначения progressive enhancement.",
+      "terms": [
+        "useActionState",
+        "permalink",
+        "dispatchAction",
+        "isPending"
+      ],
+      "sources": [
+        "https://react.dev/reference/react/useActionState"
+      ]
+    },
+    {
+      "id": "react.external_store",
+      "title": "Подписка React на внешний store",
+      "text": "Для подписки на внешний store используй `useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?)`. `subscribe` возвращает отписку, а `getSnapshot` должен возвращать тот же неизменяемый снимок, пока данные не изменились; при SSR передай согласованный с клиентом `getServerSnapshot`.",
+      "terms": [
+        "useSyncExternalStore",
+        "getSnapshot",
+        "getServerSnapshot",
+        "subscribe"
+      ],
+      "sources": [
+        "https://react.dev/reference/react/useSyncExternalStore"
+      ]
+    },
+    {
+      "id": "react.hydration_ids",
+      "title": "Стабильные ID для SSR в React",
+      "text": "Используй `useId()` для связывания label и поля или ARIA-ссылок: ID согласуется между серверным HTML и гидратацией. Дерево сервера и клиента должно совпадать; для нескольких независимых SSR-приложений укажи одинаковый `identifierPrefix` в `renderToPipeableStream` и `hydrateRoot`.",
+      "terms": [
+        "useId",
+        "identifierPrefix",
+        "hydrateRoot",
+        "renderToPipeableStream"
+      ],
+      "sources": [
+        "https://react.dev/reference/react/useId"
+      ]
+    },
+    {
+      "id": "react.optimistic_ui",
+      "title": "Оптимистическое состояние React",
+      "text": "`useOptimistic(base, reducer?)` показывает временное значение, пока выполняется Action, а затем возвращается к актуальному `base`. Вызывай setter внутри Action или `startTransition`; при ошибке действие завершается и интерфейс снова показывает базовое значение.",
+      "terms": [
+        "useOptimistic",
+        "optimisticState",
+        "startTransition",
+        "Action"
+      ],
+      "sources": [
+        "https://react.dev/reference/react/useOptimistic"
+      ]
+    },
+    {
+      "id": "react.transitions_pending",
+      "title": "Переходы для тяжёлых обновлений React",
+      "text": "`useTransition()` возвращает `isPending` и `startTransition`: помеченные обновления рендерятся как переходы и могут уступать срочному вводу. Не управляй таким обновлением текстовым полем; после `await` обновления состояния сейчас нужно снова обернуть в `startTransition`.",
+      "terms": [
+        "useTransition",
+        "startTransition",
+        "isPending",
+        "text inputs"
+      ],
+      "sources": [
+        "https://react.dev/reference/react/useTransition"
+      ]
+    },
+    {
+      "id": "redis.hash_fields",
+      "title": "Структура хэша Redis",
+      "text": "`HSET key field value` создаёт хэш при отсутствии ключа и задаёт поле; существующее поле перезаписывается. Ответ — число новых полей, а не число всех обработанных пар. `HGET` читает одно поле, `HGETALL` возвращает все поля и значения, поэтому для больших хэшей учитывай объём ответа.",
+      "terms": [
+        "HSET return new fields",
+        "HGETALL Redis hash",
+        "WRONGTYPE hash"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/commands/hset/",
+        "https://redis.io/docs/latest/commands/hgetall/"
+      ]
+    },
+    {
+      "id": "redis.incr_atomic",
+      "title": "Атомарное увеличение счётчика Redis",
+      "text": "`INCR key` атомарно увеличивает целочисленное значение строкового ключа на единицу; если ключа нет, Redis начинает с нуля и сохраняет результат `1`. Значение должно быть целым числом, иначе команда завершится ошибкой WRONGTYPE или ошибкой формата числа. Для заданного шага используй `INCRBY key n`.",
+      "terms": [
+        "INCR atomic counter",
+        "INCRBY",
+        "WRONGTYPE INCR"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/commands/incr/",
+        "https://redis.io/docs/latest/commands/incrby/"
+      ]
+    },
+    {
+      "id": "redis.pubsub_delivery",
+      "title": "Ограничения доставки Redis Pub/Sub",
+      "text": "Redis Pub/Sub доставляет сообщения активным подписчикам, но не хранит историю: отключённый клиент пропускает публикации, сделанные пока он не подписан. Если нужны повторное чтение и подтверждение обработки, используй Redis Streams с consumer groups вместо Pub/Sub. Канал Pub/Sub не является очередью с гарантией доставки.",
+      "terms": [
+        "Redis Pub/Sub at-most-once",
+        "PUBLISH SUBSCRIBE",
+        "Redis Streams consumer group"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/develop/pubsub/",
+        "https://redis.io/docs/latest/develop/data-types/streams/"
+      ]
+    },
+    {
+      "id": "redis.transaction_watch",
+      "title": "Оптимистическая блокировка Redis с WATCH",
+      "text": "`WATCH key` следит за изменением ключа до `EXEC`. Если watched-ключ поменялся до выполнения транзакции, `EXEC` отменяется и возвращает null, так что клиент может перечитать состояние и повторить логику. `MULTI` и `EXEC` группируют команды, но сами по себе не обеспечивают откат уже некорректных команд как транзакция SQL.",
+      "terms": [
+        "WATCH EXEC null",
+        "Redis optimistic locking",
+        "MULTI DISCARD"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/develop/using-commands/transactions/"
+      ]
+    },
+    {
+      "id": "redis.type_wrongtype",
+      "title": "Ошибка WRONGTYPE в Redis",
+      "text": "Redis назначает каждому ключу тип данных; команды структур применимы только к соответствующему типу. Ошибка `WRONGTYPE Operation against a key holding the wrong kind of value` обычно означает, что код обращается к строковому ключу как к списку, хэшу или другому типу. `TYPE key` помогает проверить тип, а ключи с разными назначениями лучше разделять по именам.",
+      "terms": [
+        "WRONGTYPE Operation against a key",
+        "TYPE key",
+        "Redis key data type"
+      ],
+      "sources": [
+        "https://redis.io/docs/latest/commands/type/",
+        "https://redis.io/docs/latest/develop/data-types/"
+      ]
+    },
+    {
+      "id": "redux_toolkit.async_thunk_lifecycle",
+      "title": "Жизненный цикл createAsyncThunk",
+      "text": "`createAsyncThunk(typePrefix, payloadCreator)` создаёт thunk и действия `pending`, `fulfilled`, `rejected`; обрабатывай их в `extraReducers` через builder. Payload creator получает `thunkAPI`, включая `signal`, `requestId`, `dispatch` и `getState`. При сетевом запросе передай `signal` клиенту, который поддерживает отмену.",
+      "terms": [
+        "createAsyncThunk",
+        "extraReducers",
+        "thunkAPI.signal"
+      ],
+      "sources": [
+        "https://redux-toolkit.js.org/api/createAsyncThunk",
+        "https://redux-toolkit.js.org/usage/usage-guide/#asynchronous-logic-and-data-fetching"
+      ]
+    },
+    {
+      "id": "redux_toolkit.entity_adapter",
+      "title": "Нормализация коллекций через createEntityAdapter",
+      "text": "`createEntityAdapter()` предлагает форму состояния `{ ids, entities }` и готовые reducer-функции и селекторы для коллекции. Если ключ сущности называется не `id`, укажи `selectId`; `sortComparer` может задать порядок `ids`. Селекторы создаются через `adapter.getSelectors(selectState)` для ветки корневого состояния.",
+      "terms": [
+        "createEntityAdapter",
+        "selectId",
+        "getSelectors"
+      ],
+      "sources": [
+        "https://redux-toolkit.js.org/api/createEntityAdapter",
+        "https://redux-toolkit.js.org/usage/usage-guide/#normalizing-with-createentityadapter"
+      ]
+    },
+    {
+      "id": "redux_toolkit.listener_middleware",
+      "title": "Побочные эффекты через listenerMiddleware",
+      "text": "`createListenerMiddleware()` запускает побочную логику в ответ на действие или изменение состояния, отдельно от reducer и компонентов. Слушатель регистрируют через `startListening()` и добавляют middleware в `configureStore`; для типизированного приложения можно создать типизированный `startAppListening`. Это вариант для реакций на действия и последовательностей задач, которым не нужен отдельный saga runtime.",
+      "terms": [
+        "createListenerMiddleware",
+        "startListening",
+        "startAppListening"
+      ],
+      "sources": [
+        "https://redux-toolkit.js.org/api/createListenerMiddleware",
+        "https://redux-toolkit.js.org/usage/usage-guide/#working-with-non-serializable-data"
+      ]
+    },
+    {
+      "id": "redux_toolkit.reject_value",
+      "title": "Передача типизированной ошибки из createAsyncThunk",
+      "text": "Если сервер вернул ожидаемую прикладную ошибку, верни `thunkAPI.rejectWithValue(errorPayload)`. В reducer для `rejected` такое значение доступно в `action.payload`; исключение или необработанный reject обычно представлены сериализованным `action.error`. Так форма может показать серверное сообщение, не помещая произвольный объект ошибки в Redux state.",
+      "terms": [
+        "rejectWithValue",
+        "action.payload",
+        "action.error"
+      ],
+      "sources": [
+        "https://redux-toolkit.js.org/api/createAsyncThunk#handling-thunk-errors"
+      ]
+    },
+    {
+      "id": "redux_toolkit.rtkq_tags",
+      "title": "Автообновление RTK Query по тегам",
+      "text": "В RTK Query query endpoint объявляет `providesTags`, а mutation endpoint — `invalidatesTags`. При совпадении инвалидированного тега активная подписка на query запускает повторный запрос; неиспользуемая запись удаляется из кэша. Тег с `id` позволяет инвалидировать отдельную сущность или условный список вроде `{ type: 'Post', id: 'LIST' }`.",
+      "terms": [
+        "providesTags",
+        "invalidatesTags",
+        "id: 'LIST'"
+      ],
+      "sources": [
+        "https://redux.js.org/toolkit/rtk-query/usage/automated-refetching"
+      ]
+    },
+    {
+      "id": "sass.map_get",
+      "title": "Чтение Sass map",
+      "text": "Для map используй `map.get($map, $key)` из встроенного модуля `sass:map`, предварительно подключив `@use 'sass:map'`. Например, это удобно для токенов темы; функция возвращает `null`, если ключ отсутствует, поэтому проверь наличие значения до генерации обязательного CSS.",
+      "terms": [
+        "map.get",
+        "sass:map",
+        "@use",
+        "null"
+      ],
+      "sources": [
+        "https://sass-lang.com/documentation/modules/map/"
+      ]
+    },
+    {
+      "id": "sass.math_module",
+      "title": "Математические функции Sass",
+      "text": "В Sass используй явные функции `math.div($a, $b)` из `sass:math`, когда нужно именно деление: `/` теперь также служит CSS-разделителем и его арифметический смысл устаревает. Перед применением подключи модуль `@use 'sass:math'`.",
+      "terms": [
+        "math.div",
+        "sass:math",
+        "slash division",
+        "@use 'sass:math'"
+      ],
+      "sources": [
+        "https://sass-lang.com/documentation/breaking-changes/slash-div/"
+      ]
+    },
+    {
+      "id": "sass.mixin_content",
+      "title": "Переиспользуемые правила Sass",
+      "text": "Sass mixin принимает позиционные или именованные аргументы, а `@content` позволяет вызывающей стороне передать блок стилей. Аргументы передаваемого блока задаются через `@content($value)` и `@include mixin using ($value)`; меняя публичный набор аргументов mixin, учитывай совместимость потребителей.",
+      "terms": [
+        "@mixin",
+        "@include",
+        "@content",
+        "using"
+      ],
+      "sources": [
+        "https://sass-lang.com/documentation/at-rules/mixin/"
+      ]
+    },
+    {
+      "id": "sass.parent_selector",
+      "title": "Родительский селектор Sass",
+      "text": "Вложенный селектор Sass подставляет родительский селектор; `&:hover` создаёт псевдокласс родителя, а `.theme-dark &` размещает вложенный компонент под внешней темой. Используй `&` внутри вложенных правил для состояний и контекста, а не создавай случайно чрезмерно длинную цепочку селекторов.",
+      "terms": [
+        "&",
+        "parent selector",
+        ".theme-dark &",
+        "nesting"
+      ],
+      "sources": [
+        "https://sass-lang.com/documentation/style-rules/parent-selector/"
+      ]
+    },
+    {
+      "id": "sass.placeholder_extend",
+      "title": "Общие стили без лишнего CSS в Sass",
+      "text": "Селектор-заполнитель `%name` сам не попадает в CSS; его правила появляются только после применения `@extend %name`. Это удобно в библиотеке, где общий стиль нужен лишь некоторым классам; для обычного приложения документация Sass часто рекомендует расширять существующий класс только при ясной связи селекторов.",
+      "terms": [
+        "%placeholder",
+        "@extend",
+        "placeholder selector",
+        "CSS output"
+      ],
+      "sources": [
+        "https://sass-lang.com/documentation/style-rules/placeholder-selectors/"
+      ]
+    },
+    {
+      "id": "tanstack_query.cancellation",
+      "title": "Отмена запроса через AbortSignal TanStack Query",
+      "text": "Функция `queryFn` получает `signal` в контексте. Передай его в `fetch(url, { signal })`, чтобы устаревший или неиспользуемый запрос можно было оборвать. По умолчанию Promise не отменяется при уходе последнего наблюдателя и успешный результат может попасть в кэш; если queryFn использовала сигнал, отмена возвращает состояние запроса к предыдущему.",
+      "terms": [
+        "AbortSignal",
+        "signal",
+        "cancelQueries"
+      ],
+      "sources": [
+        "https://tanstack.com/query/latest/docs/framework/react/guides/query-cancellation"
+      ]
+    },
+    {
+      "id": "tanstack_query.dependent",
+      "title": "Условное выполнение зависимого query",
+      "text": "Для зависимого запроса укажи `enabled: !!userId`, чтобы запрос проектов ждал загрузки пользователя. До готовности условие `status` может быть `pending`, а `fetchStatus` — `idle`; после разрешения `enabled` начинается загрузка. Такая последовательность образует сетевой waterfall, поэтому если API можно изменить, один endpoint с нужными данными часто позволяет запросить их быстрее.",
+      "terms": [
+        "enabled",
+        "fetchStatus",
+        "userId"
+      ],
+      "sources": [
+        "https://tanstack.com/query/latest/docs/framework/react/guides/dependent-queries"
+      ]
+    },
+    {
+      "id": "tanstack_query.mutation_optimistic",
+      "title": "Откат оптимистичного обновления TanStack Query",
+      "text": "Для обновления кэша до ответа сервера обработчик `onMutate` может сначала отменить текущий query, сохранить прежнее значение и сделать `setQueryData`. Верни снимок из `onMutate`, восстанови его через `onError`, а после успеха или ошибки обнови серверное состояние через `invalidateQueries` в `onSettled`. Если оптимистичный результат нужен только в одном компоненте, проще временно отобразить `variables` мутации без ручного изменения кэша.",
+      "terms": [
+        "onMutate",
+        "setQueryData",
+        "onError",
+        "invalidateQueries"
+      ],
+      "sources": [
+        "https://tanstack.com/query/latest/docs/framework/react/guides/optimistic-updates",
+        "https://tanstack.com/query/latest/docs/framework/react/guides/mutations"
+      ]
+    },
+    {
+      "id": "tanstack_query.placeholder_pagination",
+      "title": "Сохранение страницы списка через placeholderData",
+      "text": "При смене `page` ключа запроса кэш рассматривает страницу как отдельную запись. В v5 `placeholderData: keepPreviousData` временно показывает предыдущую страницу, пока новая загружается; `isPlaceholderData` показывает это состояние интерфейсу. Placeholder — временные данные наблюдателя, а не запись кэша новой страницы.",
+      "terms": [
+        "placeholderData",
+        "keepPreviousData",
+        "isPlaceholderData"
+      ],
+      "sources": [
+        "https://tanstack.com/query/latest/docs/framework/react/guides/paginated-queries",
+        "https://tanstack.com/query/latest/docs/framework/react/guides/migrating-to-v5"
+      ]
+    },
+    {
+      "id": "tanstack_query.query_keys",
+      "title": "Переменные запроса в queryKey",
+      "text": "В TanStack Query `queryKey` должен включать переменные, от которых зависит `queryFn`, например идентификатор пользователя и параметры фильтра. Тогда разные входные данные получают отдельные записи кэша, а смена ключа обновляет запрос при включённом query. Ключ — массив; объекты внутри хешируются детерминированно по содержимому, порядок элементов массива значим.",
+      "terms": [
+        "queryKey",
+        "queryFn",
+        "hashKey"
+      ],
+      "sources": [
+        "https://tanstack.com/query/latest/docs/framework/react/guides/query-keys"
+      ]
+    },
+    {
+      "id": "typescript.catch_unknown",
+      "title": "Тип ошибки в catch TypeScript",
+      "text": "Опция `useUnknownInCatchVariables` делает переменную `catch (err)` типом `unknown`, поскольку выброшено может быть любое значение. Сначала сузь её проверкой `err instanceof Error` или `typeof err === 'string'`, затем безопасно читай свойства.",
+      "terms": [
+        "useUnknownInCatchVariables",
+        "unknown",
+        "catch (err)",
+        "instanceof Error"
+      ],
+      "sources": [
+        "https://www.typescriptlang.org/tsconfig/useUnknownInCatchVariables.html"
+      ]
+    },
+    {
+      "id": "typescript.const_type_params",
+      "title": "Точное выведение аргументов TypeScript",
+      "text": "В TypeScript 5.0 модификатор `const` у параметра типа просит выводить литеральные аргументы вызова как можно точнее, например tuple вместо `string[]`. Ограничение типа должно принимать readonly-значения, например `T extends readonly string[]`, иначе вывод может откатиться к более широкому типу.",
+      "terms": [
+        "const T",
+        "readonly string[]",
+        "TypeScript 5.0",
+        "const type parameters"
+      ],
+      "sources": [
+        "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html#const-type-parameters"
+      ]
+    },
+    {
+      "id": "typescript.satisfies",
+      "title": "Проверка формы значения через satisfies",
+      "text": "Оператор TypeScript 4.9 `satisfies` проверяет соответствие объектного литерала типу, сохраняя его более точный выведенный тип. Это помогает обнаружить лишние или пропущенные ключи в конфигурации, не превращая каждое свойство в широкое объединение типа-аннотации.",
+      "terms": [
+        "satisfies",
+        "TypeScript 4.9",
+        "Record",
+        "inference"
+      ],
+      "sources": [
+        "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#the-satisfies-operator"
+      ]
+    },
+    {
+      "id": "typescript.type_only_import",
+      "title": "Импорт, стираемый из JavaScript",
+      "text": "Пиши `import type { User }` или inline `import { type User }`, когда импортируешь только тип: TypeScript удалит type-only импорт при генерации JavaScript. Это особенно полезно с Babel, SWC или esbuild, которым иначе сложнее определить, какие импорты нужны во время выполнения.",
+      "identifiers": [
+        "import type",
+        "type-only imports",
+        "TS1361"
+      ],
+      "terms": [
+        "import type",
+        "type-only",
+        "TS1361",
+        "verbatimModuleSyntax"
+      ],
+      "sources": [
+        "https://www.typescriptlang.org/docs/handbook/2/modules.html#type-only-imports-and-exports"
+      ]
+    },
+    {
+      "id": "typescript.unchecked_index",
+      "title": "Безопасность индексирования TypeScript",
+      "text": "Включи `noUncheckedIndexedAccess`, если нужно, чтобы индексирование массива или словаря отражало возможное отсутствие элемента: выражение получает `undefined` в типе. После чтения проверь границы или наличие ключа, прежде чем передавать результат функции, ожидающей гарантированное значение.",
+      "terms": [
+        "noUncheckedIndexedAccess",
+        "undefined",
+        "tsconfig.json",
+        "index signature"
+      ],
+      "sources": [
+        "https://www.typescriptlang.org/tsconfig/noUncheckedIndexedAccess.html"
+      ]
+    },
+    {
+      "id": "vite.base_path",
+      "title": "Путь размещения сборки Vite",
+      "text": "Если приложение опубликовано в подпапке, настрой `base` в Vite-конфиге, например `base: '/my-app/'`, чтобы сборка формировала корректные URL ресурсов. Для относительной публикации можно задать `base: './'`; проверь, что сервер размещает содержимое `build.outDir` по соответствующему пути.",
+      "terms": [
+        "base",
+        "build.outDir",
+        "'./'",
+        "public base path"
+      ],
+      "sources": [
+        "https://vite.dev/guide/build.html#public-base-path"
+      ]
+    },
+    {
+      "id": "vite.glob_import",
+      "title": "Динамический каталог модулей Vite",
+      "text": "`import.meta.glob('./dir/*.js')` генерирует карту модулей, по умолчанию загружаемых лениво через dynamic import. Аргументы glob должны быть литералами; для синхронной загрузки используй `{ eager: true }`, учитывая увеличение начального бандла.",
+      "terms": [
+        "import.meta.glob",
+        "eager: true",
+        "dynamic import",
+        "literal"
+      ],
+      "sources": [
+        "https://vite.dev/guide/features.html#glob-import"
+      ]
+    },
+    {
+      "id": "vite.library_mode",
+      "title": "Сборка библиотеки через Vite",
+      "text": "Для браузерной библиотеки включи `build.lib` и задай точку входа; зависимости вроде `react` или `vue`, которые потребитель должен предоставить сам, укажи во внешних зависимостях. При необходимости CSS библиотеки публикуется отдельным файлом и экспортируется через `package.json`.",
+      "terms": [
+        "build.lib",
+        "externalize",
+        "cssFileName",
+        "library mode"
+      ],
+      "sources": [
+        "https://vite.dev/guide/build.html#library-mode"
+      ]
+    },
+    {
+      "id": "vite.load_env_config",
+      "title": "Чтение .env в vite.config",
+      "text": "Файлы `.env*` загружаются после разрешения Vite-конфига, поэтому не доступны там напрямую через `process.env`. Если значение из них должно менять `server.port` или конфигурацию плагина, вызови `loadEnv(mode, process.cwd(), '')` внутри конфига.",
+      "terms": [
+        "loadEnv",
+        "process.env",
+        "mode",
+        "vite.config"
+      ],
+      "sources": [
+        "https://vite.dev/config/#using-environment-variables-in-config"
+      ]
+    },
+    {
+      "id": "vite.worker_import",
+      "title": "Создание Worker через Vite",
+      "text": "Чтобы Vite распознал и собрал web worker, создай его через `new Worker(new URL('./worker.js', import.meta.url), { type: 'module' })`. Выражение `new URL()` должно оставаться непосредственно в аргументе конструктора, иначе статическое обнаружение и переписывание пути сборщиком могут не сработать.",
+      "terms": [
+        "new Worker",
+        "new URL",
+        "import.meta.url",
+        "type: 'module'"
+      ],
+      "sources": [
+        "https://vite.dev/guide/features.html#web-workers"
+      ]
+    },
+    {
+      "id": "vue.component_model",
+      "title": "Двусторонняя привязка компонента Vue",
+      "text": "В Vue 3.4+ `defineModel()` в `<script setup>` объявляет ref-модель для `v-model`; модель с именем, например `defineModel('title')`, поддерживает `v-model:title`. Значение `default` может рассинхронизировать ребёнка с родителем, если родитель передал `undefined`.",
+      "terms": [
+        "defineModel",
+        "v-model:title",
+        "update:modelValue",
+        "Vue 3.4"
+      ],
+      "sources": [
+        "https://vuejs.org/guide/components/v-model.html"
+      ]
+    },
+    {
+      "id": "vue.once_watch",
+      "title": "Однократный watcher Vue",
+      "text": "Если реакцию нужно выполнить только при первом изменении источника, в Vue 3.4+ задай `once: true` в опциях `watch()`. Это прекращает повторные срабатывания после первого изменения и подходит вместо ручной остановки watcher для такого сценария.",
+      "terms": [
+        "once: true",
+        "watch()",
+        "Vue 3.4"
+      ],
+      "sources": [
+        "https://vuejs.org/guide/essentials/watchers.html#once-watchers"
+      ]
+    },
+    {
+      "id": "vue.post_flush_watch",
+      "title": "Доступ к обновлённому DOM в watcher Vue",
+      "text": "Обычный callback `watch()` выполняется до обновления DOM его компонента. Если эффекту нужен уже обновлённый DOM, задай `{ flush: 'post' }` или используй `watchPostEffect()`; синхронный `flush: 'sync'` не пакетирует вызовы и опасен для часто меняемых массивов.",
+      "terms": [
+        "flush: 'post'",
+        "watchPostEffect",
+        "flush: 'sync'"
+      ],
+      "sources": [
+        "https://vuejs.org/guide/essentials/watchers.html#callback-flush-timing"
+      ]
+    },
+    {
+      "id": "vue.shallow_ref",
+      "title": "Поверхностная реактивность Vue",
+      "text": "`shallowRef()` отслеживает замену `.value`, но не делает вложенный объект реактивным: изменение `state.value.count` само по себе не обновит подписчиков. Для крупных неизменяемых структур замещай корень; после намеренной глубокой мутации можно явно вызвать `triggerRef()`.",
+      "terms": [
+        "shallowRef",
+        "triggerRef",
+        ".value",
+        "deep reactivity"
+      ],
+      "sources": [
+        "https://vuejs.org/api/reactivity-advanced.html#shallowref"
+      ]
+    },
+    {
+      "id": "vue.watcher_cleanup",
+      "title": "Отмена устаревшей работы в watcher Vue",
+      "text": "При запросе из watcher зарегистрируй очистку через `onWatcherCleanup()` и, например, вызови `AbortController.abort()`, чтобы отменить устаревший запрос при смене источника. API доступен с Vue 3.5+ и должен быть вызван синхронно до `await`; альтернатива — callback `onCleanup`.",
+      "terms": [
+        "onWatcherCleanup",
+        "AbortController",
+        "onCleanup",
+        "Vue 3.5"
+      ],
+      "sources": [
+        "https://vuejs.org/guide/essentials/watchers.html#side-effect-cleanup"
+      ]
+    },
+    {
+      "id": "zustand.immer_middleware",
+      "title": "Immer для вложенных обновлений Zustand",
+      "text": "Middleware `immer` позволяет писать callback для `set()` с изменениями draft-состояния, а Immer строит иммутабельное следующее значение. Пакет `immer` нужно установить как прямую зависимость. Если используешь экземпляры классов, пометь их `[immerable] = true`; иначе Immer может изменить исходный объект без proxy, и Zustand пропустит уведомление подписчиков.",
+      "terms": [
+        "zustand/middleware/immer",
+        "immerable",
+        "set((state)"
+      ],
+      "sources": [
+        "https://zustand.docs.pmnd.rs/reference/integrations/immer-middleware.html"
+      ]
+    },
+    {
+      "id": "zustand.persist_hydration",
+      "title": "Гидратация Zustand persist",
+      "text": "При асинхронном хранилище, например React Native AsyncStorage, `persist` гидратирует состояние асинхронно после создания store. До завершения гидратации интерфейс может увидеть начальные значения; проверяй `hasHydrated()` или используй `onRehydrateStorage`. Для синхронного управления можно включить `skipHydration` и вызвать `rehydrate()` в подходящий момент.",
+      "terms": [
+        "hasHydrated()",
+        "onRehydrateStorage",
+        "skipHydration",
+        "rehydrate()"
+      ],
+      "sources": [
+        "https://zustand.docs.pmnd.rs/reference/middlewares/persist.html"
+      ]
+    },
+    {
+      "id": "zustand.persist_partialize",
+      "title": "Выбор сохраняемых полей Zustand persist",
+      "text": "Middleware `persist` сохраняет состояние между перезагрузками, а `partialize(state)` позволяет оставить в хранилище только выбранные поля — например, настройки, исключив временный статус запроса. По умолчанию используется localStorage в браузере; `createJSONStorage(() => sessionStorage)` меняет хранилище. Для несовместимого старого формата предусмотрены `version` и `migrate`.",
+      "terms": [
+        "persist",
+        "partialize",
+        "createJSONStorage",
+        "migrate"
+      ],
+      "sources": [
+        "https://zustand.docs.pmnd.rs/reference/middlewares/persist.html"
+      ]
+    },
+    {
+      "id": "zustand.subscribe_selector",
+      "title": "Точечные подписки vanilla Zustand",
+      "text": "Middleware `subscribeWithSelector` расширяет `store.subscribe()` формой `subscribe(selector, listener, options)`. Она вызывает listener при изменении выбранного значения, а `equalityFn` позволяет задать сравнение; `fireImmediately` вызывает его сразу при регистрации. Это удобно для интеграции vanilla store с внешним кодом без подписки на весь state.",
+      "terms": [
+        "subscribeWithSelector",
+        "equalityFn",
+        "fireImmediately"
+      ],
+      "sources": [
+        "https://zustand.docs.pmnd.rs/reference/middlewares/subscribe-with-selector.html"
+      ]
+    },
+    {
+      "id": "zustand.vanilla_store",
+      "title": "Создание Zustand store без React",
+      "text": "`createStore` из `zustand/vanilla` создаёт store с `getState()`, `setState()` и `subscribe()` без React hook. В компоненте React его можно подключить через `useStore(store, selector)` из `zustand`. Это подходит для доступа к одному хранилищу из React и внешних модулей, например обработчика событий или интеграционного слоя.",
+      "terms": [
+        "zustand/vanilla",
+        "createStore",
+        "useStore(store"
+      ],
+      "sources": [
+        "https://zustand.docs.pmnd.rs/reference/apis/create-store",
+        "https://zustand.docs.pmnd.rs/reference/hooks/use-store"
+      ]
+    }
+  ]
+}

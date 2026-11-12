@@ -1,0 +1,62 @@
+[
+  {
+    "file": "core/slash-commands.js",
+    "old": "    { name: \"model\", description: \"Выбрать модель\", argumentHint: \"<провайдер/модель>\" },\n",
+    "new": "",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "            if (text === \"/model\" || text.startsWith(\"/model \")) {\n                const searchTerm = text.startsWith(\"/model \") ? text.slice(7).trim() : undefined;\n                this.editor.setText(\"\");\n                await this.handleModelCommand(searchTerm);\n                return;\n            }",
+    "new": "            if (text === \"/model\" || text.startsWith(\"/model \")) {\n                this.editor.setText(\"\");\n                this.showStatus(\"Выбор провайдера и модели: /models\");\n                return;\n            }",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "this.defaultEditor.onAction(\"app.model.select\", () => this.showModelSelector());",
+    "new": "this.defaultEditor.onAction(\"app.model.select\", () => { void this.session.prompt(\"/models\").catch((error) => this.showError(String(error))); });",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}. No llama.cpp models are loaded. Use /llama to load a model, then /model to select it.`",
+    "new": "`${actionLabel}. В llama.cpp нет загруженных моделей. Настрой модели через /handy-settings и выбери через /models.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}. Use /model to select a loaded llama.cpp model, or /llama to manage models.`",
+    "new": "`${actionLabel}. Выбери модель через /models; настройки — /handy-settings.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but no default model is configured for provider \"${providerId}\". Use /model to select a model.`",
+    "new": "`${actionLabel}, но у провайдера \"${providerId}\" не выбрана модель по умолчанию. Выбери модель через /models.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but no models are available for that provider. Use /model to select a model.`",
+    "new": "`${actionLabel}, но у провайдера нет доступных моделей. Проверь /handy-settings и выбери через /models.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "`${actionLabel}, but its default model \"${defaultModelId}\" is not available. Use /model to select a model.`",
+    "new": "`${actionLabel}, но модель по умолчанию \"${defaultModelId}\" недоступна. Выбери модель через /models.`",
+    "count": 1
+  },
+  {
+    "file": "modes/interactive/interactive-mode.js",
+    "old": "Выбери модель через /model.",
+    "new": "Выбери модель через /models.",
+    "count": 1
+  },
+  {
+    "file": "core/auth-guidance.js",
+    "old": "`No model selected.\\n\\n${getProviderLoginHelp()}\\n\\nThen use /model to select a model.`",
+    "new": "`Модель не выбрана. Открой /models; настройки провайдеров — /handy-settings.`",
+    "count": 1
+  }
+]

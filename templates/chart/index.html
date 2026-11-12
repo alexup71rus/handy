@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>График · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="chart.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="intro">
+      <h1>График</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю данные…</p>
+    <section id="report" class="card" aria-labelledby="series" hidden>
+      <div class="card-heading">
+        <h2 id="series">Ряд данных</h2>
+        <div class="card-tools">
+          <div class="choice" role="group" aria-label="Вид графика">
+            <button type="button" id="line-chart" aria-controls="chart" aria-pressed="true">Линия</button>
+            <button type="button" id="bar-chart" aria-controls="chart" aria-pressed="false">Столбцы</button>
+            <button type="button" id="donut-chart" aria-controls="chart" aria-describedby="donut-note" aria-pressed="false">Кольцо</button>
+          </div>
+          <div id="period" class="choice" role="group" aria-label="Диапазон графика">
+            <button type="button" id="all-points" aria-pressed="true">Все точки</button>
+            <button type="button" id="recent-points" aria-pressed="false">Последние 7</button>
+          </div>
+        </div>
+      </div>
+      <p id="donut-note" class="chart-note" role="status" hidden>Для кольца нужно от 1 до 12 категорий с неотрицательными значениями и общей суммой больше нуля.</p>
+      <dl class="metrics">
+        <div><dt>Последнее</dt><dd id="last"></dd></div>
+        <div><dt>Минимум</dt><dd id="minimum"></dd></div>
+        <div><dt>Максимум</dt><dd id="maximum"></dd></div>
+      </dl>
+      <div class="plot">
+        <svg id="chart" role="img" aria-labelledby="chart-label"></svg>
+      </div>
+      <ul id="donut-key" class="donut-key" aria-label="Доли категорий" hidden></ul>
+      <div class="chart-picker">
+        <label for="point">Точка графика</label>
+        <input id="point" type="range" min="0" max="0" step="1">
+        <p id="selection"></p>
+      </div>
+      <details>
+        <summary>Значения за выбранный период</summary>
+        <div class="scroll" role="region" aria-label="Значения графика" tabindex="0">
+          <table>
+            <thead><tr><th scope="col">Точка</th><th scope="col" id="value-column" class="number">Значение</th></tr></thead>
+            <tbody id="point-rows"></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+    <p class="source">Источник данных · <a href="data.json">data.json</a></p>
+  </main>
+</body>
+</html>

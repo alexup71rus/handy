@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Таймер · Handy</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <script type="module" src="timer.js"></script>
+</head>
+<body>
+  <main class="shell utility-shell">
+    <header class="intro">
+      <h1>Таймер</h1>
+      <p id="description"></p>
+    </header>
+    <p id="notice" class="notice" role="status">Загружаю настройки…</p>
+    <section id="report" class="card timer-card" aria-labelledby="timer-phase" hidden>
+      <div class="card-heading">
+        <h2 id="timer-phase">Обратный отсчёт</h2>
+        <span class="badge" id="timer-rounds" hidden></span>
+      </div>
+      <div class="timer-face">
+        <output id="timer-time" class="timer-number" role="timer" aria-live="off" aria-label="Оставшееся время"></output>
+        <progress id="timer-progress" max="1" value="0" aria-label="Ход отсчёта"></progress>
+        <p id="timer-status" role="status"></p>
+      </div>
+      <div class="timer-actions">
+        <button type="button" class="primary" id="timer-toggle">Старт</button>
+        <button type="button" class="timer-secondary" id="timer-reset">Сбросить</button>
+        <button type="button" class="timer-secondary" id="timer-skip" hidden>Пропустить этап</button>
+      </div>
+      <div class="timer-settings">
+        <fieldset id="countdown-settings" hidden>
+          <legend>Длительность</legend>
+          <div class="timer-fields">
+            <label>Часы <input type="number" name="hours" min="0" max="24" step="1" inputmode="numeric"></label>
+            <label>Минуты <input type="number" name="minutes" min="0" max="59" step="1" inputmode="numeric"></label>
+            <label>Секунды <input type="number" name="seconds" min="0" max="59" step="1" inputmode="numeric"></label>
+          </div>
+        </fieldset>
+        <fieldset id="pomodoro-settings" hidden>
+          <legend>Настройки цикла</legend>
+          <div class="timer-fields">
+            <label>Фокус, мин <input type="number" name="focusMinutes" min="1" max="120" step="1" inputmode="numeric"></label>
+            <label>Короткий перерыв, мин <input type="number" name="shortBreakMinutes" min="1" max="60" step="1" inputmode="numeric"></label>
+            <label>Длинный перерыв, мин <input type="number" name="longBreakMinutes" min="1" max="60" step="1" inputmode="numeric"></label>
+            <label>Сессий в цикле <input type="number" name="rounds" min="1" max="12" step="1" inputmode="numeric"></label>
+          </div>
+        </fieldset>
+        <label class="timer-sound"><input type="checkbox" id="timer-sound" checked> Звук по окончании</label>
+      </div>
+    </section>
+    <p class="source">Оставь вкладку открытой на время отсчёта · <a href="data.json">Настройки</a></p>
+  </main>
+</body>
+</html>
