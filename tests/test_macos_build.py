@@ -4,6 +4,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import tomllib
 import unittest
 from unittest import mock
 
@@ -22,6 +23,8 @@ class MacOSBuildTests(unittest.TestCase):
                 macos_build.build(destination, python, state)
                 plist = destination / 'Contents/Info.plist'
                 original = plist.read_bytes()
+                version = tomllib.loads((macos_build.CHECKOUT / 'pyproject.toml').read_text())['project']['version']
+                self.assertEqual(plistlib.loads(original)['CFBundleShortVersionString'], version)
                 sentinel = destination / 'keep-existing-app'
                 sentinel.write_text('existing bundle')
                 run.return_value = subprocess.CompletedProcess([], 0, stdout=str(destination / 'Contents/MacOS/HandyMenu') + '\n')

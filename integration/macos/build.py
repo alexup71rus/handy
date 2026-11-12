@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import tomllib
 from xml.parsers.expat import ExpatError
 
 
@@ -57,7 +58,7 @@ def build(destination, python, state_directory):
         'CFBundleInfoDictionaryVersion': '6.0',
         'CFBundleName': 'Handy Menu',
         'CFBundlePackageType': 'APPL',
-        'CFBundleShortVersionString': '1.0',
+        'CFBundleShortVersionString': tomllib.loads((CHECKOUT / 'pyproject.toml').read_text())['project']['version'],
         'CFBundleVersion': '1',
         'CFBundleIconFile': 'Handy',
         'LSMinimumSystemVersion': '13.0',
